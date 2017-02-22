@@ -23,4 +23,5 @@ export default class Sidenav extends Component {
 
 Sidenav.propTypes = {
   menuItems: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  active: React.PropTypes.bool.isRequired,
 };

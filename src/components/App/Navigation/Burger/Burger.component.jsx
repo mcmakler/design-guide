@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Burger.scss';
 
-export default class extends Component {
-  constructor(props) {
-    super(props);
-  }
+const BurgerComponent = props => (
+  <div className={`burger ${props.active ? 'active' : ''}`} >
+    <div className="burger__circle" >
+      <div className="burger__bars" />
+    </div>
+  </div>
+);
 
-  render() {
-    return (
-      <div className={`burger ${this.props.active ? 'active' : ''}`}>
-        <div className="burger__circle" >
-          <div className="burger__bars" />
-        </div>
-      </div>
-    );
-  }
-}
+BurgerComponent.propTypes = {
+  active: React.PropTypes.bool.isRequired,
+};
+
+export default BurgerComponent;

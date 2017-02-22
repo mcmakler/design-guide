@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Burger from './Burger/Burger.component';
 import Sidenav from './Sidenav/Sidenav.component';
+import './Navigation.scss';
 
 export default class extends Component {
 
@@ -31,8 +32,10 @@ export default class extends Component {
 
   render() {
     return (
-      <div onClick={(e) => this.toggleBurger()}>
-        <Burger active={this.state.burgerOpen} />
+      <div className="navigation">
+        <a tabIndex="-1" onClick={() => this.toggleBurger()}>
+          <Burger active={this.state.burgerOpen} />
+        </a>
         <Sidenav active={this.state.burgerOpen} menuItems={this.menuItems} />
       </div>
     );

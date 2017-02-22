@@ -10,7 +10,6 @@
     "lint": "eslint . --ext js --ext jsx"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.3",
     "babel-preset-stage-2": "6.13.0",
     "css-loader": "0.23.1",
     "eslint-config-airbnb": "latest",
@@ -25,6 +24,7 @@
     "webpack-dashboard": "^0.3.0"
   },
   "dependencies": {
+    "autoprefixer": "^6.7.3",
     "babel": "^6.23.0",
     "babel-core": "6.13.2",
     "babel-loader": "6.2.4",
