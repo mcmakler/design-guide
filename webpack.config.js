@@ -12,7 +12,7 @@ module.exports = {
   ],
   context: path.resolve(__dirname, 'src'),
   output: {
-    filename: './bundle.js',
+    filename: './[name].[hash].js',
     path: path.resolve(__dirname),
   },
   devtool: 'inline-source-map',
@@ -24,16 +24,23 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'postcss-loader', 'css-loader?modules', 'sass-loader'],
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', {
+          loader: 'sass-loader',
+          options: {
+            data: '@import "./src/scss/variables";',
+          },
+        }],
       },
     ],
   },
   resolve: {
-    extensions: ['js', 'jsx'],
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -42,5 +49,9 @@ module.exports = {
     new DashboardPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: module => module.context && module.context.indexOf('node_modules') !== -1,
+    }),
   ],
 };

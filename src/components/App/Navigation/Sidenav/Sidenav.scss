@@ -1,0 +1,18 @@
+$sidenav-width: 320px;
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidenav-width;
+  height: 100vh;
+  z-index: 100;
+  transition: .3s transform ease;
+  will-change: transform;
+  transform: translateX($sidenav-width * -1);
+  background-color: map_get($colors, 'neutral-lightest');
+
+  &.active {
+    transform: none;
+  }
+}
