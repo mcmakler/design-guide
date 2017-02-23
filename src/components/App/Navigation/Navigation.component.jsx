@@ -12,16 +12,16 @@ export default class extends Component {
     };
     this.menuItems = [
       {
-        link: '/something',
-        label: 'Something',
+        path: '/grid',
+        label: 'Grid',
       },
       {
-        link: '/something',
-        label: 'Something',
+        path: '/typography',
+        label: 'Typography',
       },
       {
-        link: '/something',
-        label: 'Something',
+        path: '/colors',
+        label: 'Colors',
       },
     ];
   }
