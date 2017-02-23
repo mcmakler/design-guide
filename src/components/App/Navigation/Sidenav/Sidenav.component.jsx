@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 import './Sidenav.scss';
 
 export default class Sidenav extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   renderMenuItems() {
     return this.props.menuItems && this.props.menuItems.map(item =>
       <li><Link to={item.path} >{item.label}</Link></li>,

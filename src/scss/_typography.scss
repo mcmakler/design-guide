@@ -1,0 +1,72 @@
+@import 'variables';
+
+.inverted {
+  color: map_get($greys, 'secondary');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: map_get($greys, 'darkest');
+}
+
+.inverted h1,
+.inverted h2,
+.inverted h4 {
+  color: map_get($greys, 'lightest');
+}
+
+h1,
+h2 {
+  font-family: map_get($fonts, 'headingFont') map_get($fonts, 'headingFontFallback');
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 1.227;
+}
+
+h2 {
+  margin-bottom: 23px;
+  font-size: 32px;
+  line-height: 1.188;
+}
+
+h3, h4 {
+  font-family: map_get($fonts, 'bodyFont') map_get($fonts, 'bodyFontFallback');
+}
+
+h3 {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.417;
+}
+
+.inverted h3 {
+  color: map_get($greys, 'secondary');
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.471;
+}
+
+h5 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.462;
+  color: map_get($greys, 'secondary');
+}
+
+body {
+  font-family: map_get($fonts, 'bodyFont') map_get($fonts, 'bodyFontFallback');
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.733;
+  color: map_get($greys, 'darkest');
+}

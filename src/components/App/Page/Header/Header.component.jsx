@@ -2,8 +2,18 @@ import React from 'react';
 
 import './Header.scss';
 
-export default (props) => (
+const Header = props => (
   <div className="header">
-    <h1>{props.children}</h1>
+    <h2>{props.children}</h2>
   </div>
-)
+);
+
+Header.propTypes = {
+  children: React.PropTypes.string,
+};
+
+Header.defaultProps = {
+  children: 'Header',
+};
+
+export default Header;

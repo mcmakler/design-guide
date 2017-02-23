@@ -1,0 +1,28 @@
+@import 'variables';
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 12fr);
+}
+
+.column {
+  margin-left: $grid-spacing;
+  margin-right: $grid-spacing;
+}
+
+.page-section {
+  padding: $grid-spacing * 5 0;
+  text-align: center;
+}
+
+.page-section + .page-section {
+  border-top: 1px solid map_get($greys, 'border');
+}

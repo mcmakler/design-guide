@@ -1,0 +1,6 @@
+@import '../../../../node_modules/highlight.js/styles/tomorrow-night.css';
+
+.code-snippet {
+  text-align: left;
+  padding: $grid-spacing ($grid-spacing * 2);
+}

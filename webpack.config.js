@@ -29,6 +29,10 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
+        test: /\.html$/,
+        use: ['html-loader'],
+      },
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: ['style-loader',

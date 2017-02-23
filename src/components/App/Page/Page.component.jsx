@@ -2,9 +2,24 @@ import React from 'react';
 
 import Header from './Header/Header.component';
 
-export default (props) => (
+import './Page.scss';
+
+const PageComponent = props => (
   <div>
     <Header>{props.title}</Header>
-    <main className="content"></main>
+    <main>
+      {props.children}
+    </main>
   </div>
 );
+
+PageComponent.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  children: React.PropTypes.string,
+};
+
+PageComponent.defaultProps = {
+  children: 'Hola Mundo',
+};
+
+export default PageComponent;
