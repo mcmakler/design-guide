@@ -9,14 +9,14 @@
 .burger {
   cursor: pointer;
   position: fixed;
-  top: 40px;
-  left: 40px;
+  top: 24px;
+  left: 24px;
   z-index: 200;
   transition: .3s transform ease;
   will-change: transform;
 
   &.active {
-    transform: translateX(200px);
+    transform: translateX(236px);
   }
 
   .burger__circle {
@@ -60,6 +60,7 @@
   }
 
   &.active > .burger__circle {
+    box-shadow: none;
     background-color: transparent;
   }
 

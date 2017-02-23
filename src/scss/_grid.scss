@@ -17,12 +17,3 @@
   margin-left: $grid-spacing;
   margin-right: $grid-spacing;
 }
-
-.page-section {
-  padding: $grid-spacing * 5 0;
-  text-align: center;
-}
-
-.page-section + .page-section {
-  border-top: 1px solid map_get($greys, 'border');
-}

@@ -9,6 +9,15 @@ h1, h2, h3, h4, h5, h6 {
   color: map_get($greys, 'darkest');
 }
 
+.page-section h1,
+.page-section h2,
+.page-section h3,
+.page-section h4,
+.page-section h5,
+.page-section h6 {
+  margin-bottom: 0;
+}
+
 .inverted h1,
 .inverted h2,
 .inverted h4 {

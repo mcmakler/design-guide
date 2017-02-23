@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Sidenav.scss';
 
 export default class Sidenav extends Component {
   renderMenuItems() {
     return this.props.menuItems && this.props.menuItems.map(item =>
-      <li><Link to={item.path} >{item.label}</Link></li>,
+      <li><NavLink activeClassName="active" to={item.path} >{item.label}</NavLink></li>,
     );
   }
 
   render() {
     return (
-      <nav className={`sidenav ${this.props.active ? 'active' : ''}`} >
-        <img alt="Logo" src="/assets/logo/logo.svg" />
+      <nav className={`sidenav ${this.props.active ? 'active' : ''}`}>
+        <header className="sidenav__header">
+          <img alt="Logo" src="assets/logo.svg" />
+        </header>
         <ul>
           {this.renderMenuItems()}
         </ul>

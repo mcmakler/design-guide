@@ -17,7 +17,9 @@ export default class extends Component {
     return (
       <Page title={this.state.title} >
         <section className="container page-section" >
-          <h2>Grid Explained</h2>
+          <header>
+            <h2>Grid Explained</h2>
+          </header>
           <div className="grid-page__sample-grid container grid" >
             {Array.from(new Array(12).keys()).map(() => (
               <div className="grid-page__sample-column column" />

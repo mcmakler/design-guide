@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 
 import '../../polyfills/grid';
 
@@ -8,8 +9,10 @@ import GridPage from './GridPage/GridPage.component';
 
 import './App.scss';
 
+const history = createHistory();
+
 export default () => (
-  <Router>
+  <Router history={history}>
     <div>
       <Navigation />
       <Switch>

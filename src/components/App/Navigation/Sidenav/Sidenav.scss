@@ -7,12 +7,40 @@ $sidenav-width: 320px;
   width: $sidenav-width;
   height: 100vh;
   z-index: 100;
-  transition: .3s transform ease;
+  transition: .3s transform ease, .3s box-shadow ease;
   will-change: transform;
   transform: translateX($sidenav-width * -1);
-  background-color: map_get($greys, 'darkest');
+  backdrop-filter: blur(10px);
+  background-color: rgba(map_get($greys, 'bg'), .9);
 
   &.active {
+    box-shadow: ($grid-spacing / 2) 0 ($grid-spacing * 2) rgba(0, 0, 0, 0.2);
     transform: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding: ($grid-spacing / 2) $grid-spacing;
+    transition: .3s background-color ease;
+  }
+
+  li:hover {
+    background-color: rgba(black, .07);
+  }
+}
+
+.sidenav__header {
+  display: flex;
+  align-items: center;
+  padding: $grid-spacing;
+  border-bottom: 1px solid map_get($greys, 'line');
+
+  img {
+    max-width: 160px;
   }
 }
