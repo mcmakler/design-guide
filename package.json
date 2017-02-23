@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "npm run lint && webpack-dashboard -- webpack-dev-server",
+    "serve": "npm run lint && webpack-dashboard -- webpack-dev-server --host 0.0.0.0",
     "build": "npm run lint && webpack -p",
     "lint": "eslint . --ext js --ext jsx"
   },
