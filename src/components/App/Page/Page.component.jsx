@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Header from './Header/Header.component';
-
 import './Page.scss';
 
 const PageComponent = props => (
   <div>
-    <Header>{props.title}</Header>
+    <div className="header">
+      <h2>{props.title}</h2>
+      <h3>{props.subtitle}</h3>
+    </div>
     <main>
       {props.children}
     </main>
@@ -15,11 +16,13 @@ const PageComponent = props => (
 
 PageComponent.propTypes = {
   title: React.PropTypes.string.isRequired,
-  children: React.PropTypes.string,
+  subtitle: React.PropTypes.string,
+  children: React.PropTypes.node,
 };
 
 PageComponent.defaultProps = {
-  children: 'Hola Mundo',
+  subtitle: '',
+  children: <div>hola mundo</div>,
 };
 
 export default PageComponent;

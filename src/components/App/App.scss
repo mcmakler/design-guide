@@ -1,3 +1,5 @@
+@import '../../scss/_header.scss';
+
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,12 +17,12 @@ html, body {
 
 a {
   display: inline-block;
+  position: relative;
 }
 
 a:link,
 a:visited,
 a:active {
-  position: relative;
   font-weight: 500;
   text-decoration: none;
   color: map_get($greys, 'darkest');
@@ -41,4 +43,8 @@ a::after {
 
 a.active::after {
   transform: none;
+}
+
+pre {
+  margin: 0;
 }

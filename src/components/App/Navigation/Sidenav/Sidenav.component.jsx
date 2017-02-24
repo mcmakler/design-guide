@@ -5,14 +5,18 @@ import './Sidenav.scss';
 export default class Sidenav extends Component {
   renderMenuItems() {
     return this.props.menuItems && this.props.menuItems.map(item =>
-      <li><NavLink activeClassName="active" to={item.path} >{item.label}</NavLink></li>,
+      <li key={item.id} >
+        <NavLink activeClassName="active" to={item.path} >
+          {item.label}
+        </NavLink>
+      </li>,
     );
   }
 
   render() {
     return (
-      <nav className={`sidenav ${this.props.active ? 'active' : ''}`}>
-        <header className="sidenav__header">
+      <nav className={`sidenav ${this.props.active ? 'active' : ''}`} >
+        <header className="sidenav__header" >
           <img alt="Logo" src="assets/logo.svg" />
         </header>
         <ul>

@@ -21,3 +21,7 @@
 .grid-page__sample-column::after {
   right: $grid-spacing * -1;
 }
+
+.grid-page__code-block {
+  margin-top: $grid-spacing * 2;
+}

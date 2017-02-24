@@ -1,2 +1,12 @@
 @import '../../../scss/grid';
 @import '../../../scss/sections';
+@import '../../../../src/scss/typography';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 263px;
+  background-color: map_get($greys, 'bg');
+}
