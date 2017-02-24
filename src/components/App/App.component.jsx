@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
-import '../../polyfills/grid';
-
 import Navigation from './Navigation/Navigation.component';
 import GridPage from './GridPage/GridPage.component';
 import TypographyPage from './TypographyPage/TypographyPage.component';

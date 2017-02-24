@@ -16,20 +16,20 @@ const GridPageComponent = () => (
         <h2>Grid Explained</h2>
       </header>
 
-      <div className="grid-page__sample-grid container grid" >
-        {Array.from(new Array(12).keys()).map(key => (
+      <div className="grid-page__sample-grid container columns" >
+        {Array.from([1,2,3,4,5,6,7,8,9,10,11,12]).map(key => (
           <div key={key} className="grid-page__sample-column column" />
         ))}
       </div>
 
-      <div className="grid-page__code-block container grid" >
-        <div className="column span-6" >
+      <div className="grid-page__code-block container columns" >
+        <div className="column">
           <header><h3>HTML</h3></header>
           <CodeSnippet language="html" >
             {htmlTemplate}
           </CodeSnippet>
         </div>
-        <div className="column span-6" >
+        <div className="column" >
           <header><h3>CSS</h3></header>
           <CodeSnippet language="css" >
             {cssTemplate}

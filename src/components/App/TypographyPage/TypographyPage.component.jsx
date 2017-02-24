@@ -17,26 +17,26 @@ const TypographyPage = () => (
     subtitle="Detailed definition of font styles and colors"
   >
     {/* H1 */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H1_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox><h1>This is a Normal &lt;H1&gt;.</h1></PreviewBox>
         <PreviewBox><h1>This is a Veeeeeeeeeeery Long Normal Heading</h1></PreviewBox>
         <PreviewBox className="inverted" ><h1>This is an Inverted Heading</h1></PreviewBox>
       </div>
     </div>
     {/* H2 */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H2_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox><h2>This is a Normal &lt;H2&gt;.</h2></PreviewBox>
         <PreviewBox><h2>
           This is a Veeeeeeeeeeery Long Normal &lt;H2&gt; tag. It is cool because I like pigs. 🐷
@@ -57,13 +57,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* H3 */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H3_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox><h3>This is a Normal &lt;H3&gt;.</h3></PreviewBox>
         <PreviewBox>
           <h3>
@@ -75,13 +75,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* H4 */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H4_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox><h4>This is a Normal &lt;H4&gt;.</h4></PreviewBox>
         <PreviewBox>
           <h4>
@@ -97,13 +97,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* H5 */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H5_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox><h5>This is a Normal &lt;H5&gt;.</h5></PreviewBox>
         <PreviewBox>
           <h5>
@@ -116,13 +116,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* BODY TEXT */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.BODY_TEXT_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox>
           <p>
             Bacon ipsum dolor amet brisket sausage ham hock cupim prosciutto flank tenderloin.
@@ -148,13 +148,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* NAVIGATION LINKS */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {navigationStyles}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox className="center" >
           <nav>
             <ul className="inline">
@@ -180,13 +180,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* TEXT LINKS */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {linkStyles}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox className="center" >
           <a>This is a text link.</a>
         </PreviewBox>
@@ -211,13 +211,13 @@ const TypographyPage = () => (
       </div>
     </div>
     {/* FINE PRINT */}
-    <div className="container grid page-section" >
-      <div className="column span-4" >
+    <div className="container columns page-section" >
+      <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {fineprintStyles}
         </CodeSnippet>
       </div>
-      <div className="column span-8" >
+      <div className="column " >
         <PreviewBox className="center" >
           <small className="fineprint">This is what fineprint looks like.</small>
         </PreviewBox>

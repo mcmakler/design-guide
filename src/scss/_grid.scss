@@ -1,25 +1,10 @@
 @import 'variables';
+@import '../../node_modules/bulma/sass/utilities/all';
+@import '../../node_modules/bulma/sass/grid/all';
 
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 1200px;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(12, 12fr);
-  grid-gap: $grid-spacing;
-
-  .column {
-    $i: 1;
-    @while $i <= 12 {
-      &.span-#{$i} {
-        grid-column: span $i;
-      }
-      $i: $i+1;
-    }
-  }
 }
