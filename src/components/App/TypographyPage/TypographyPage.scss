@@ -1,0 +1,10 @@
+@import '../../../scss/navigation';
+@import '../../../scss/links';
+
+.typography-page {
+  .span-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

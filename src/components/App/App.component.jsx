@@ -6,6 +6,7 @@ import '../../polyfills/grid';
 
 import Navigation from './Navigation/Navigation.component';
 import GridPage from './GridPage/GridPage.component';
+import TypographyPage from './TypographyPage/TypographyPage.component';
 
 import './App.scss';
 
@@ -17,6 +18,7 @@ export default () => (
       <Navigation />
       <Switch>
         <Route path="/grid" component={GridPage} />
+        <Route path="/typography" component={TypographyPage} />
       </Switch>
     </div>
   </Router>

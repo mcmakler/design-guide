@@ -1,0 +1,53 @@
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul.inline {
+  display: flex;
+}
+
+nav ul.inline li + li {
+  margin-left: $grid-spacing;
+}
+
+nav ul li {
+  display: block;
+
+  a {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: map_get($greys, 'body');
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: .3s transform ease;
+    transform: scaleX(0);
+    transform-origin: center;
+    background-color: map_get($greys, 'darkest');
+  }
+
+  a.active::after,
+  a:hover::after {
+    transform: none;
+  }
+}
+
+a {
+  cursor: pointer;
+}

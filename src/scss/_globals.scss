@@ -1,0 +1,19 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: map_get($greys, 'body');
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+pre {
+  margin: 0;
+}

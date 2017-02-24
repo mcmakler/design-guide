@@ -2,7 +2,8 @@
 
 .code-snippet {
   padding: $grid-spacing ($grid-spacing * 2);
-  height: 500px;
+  min-height: 415px;
+  max-height: 600px;
   overflow: auto;
   text-align: left;
 }

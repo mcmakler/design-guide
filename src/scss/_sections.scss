@@ -1,11 +1,12 @@
 .page-section {
   text-align: center;
+  padding: $grid-spacing * 5;
 
   & > header {
-    padding: ($grid-spacing * 5) 0 ($grid-spacing * 3);
+    padding: 0 0 ($grid-spacing * 3);
   }
 }
 
 .page-section + .page-section {
-  border-top: 1px solid map_get($greys, 'border');
+  border-top: 1px solid map_get($greys, 'line');
 }
