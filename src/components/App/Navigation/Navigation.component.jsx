@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Burger from './Burger/Burger.component';
 import Sidenav from './Sidenav/Sidenav.component';
+import menuItems from './menu-items';
 import './Navigation.scss';
 
 export default class extends Component {
@@ -10,23 +11,7 @@ export default class extends Component {
     this.state = {
       burgerOpen: false,
     };
-    this.menuItems = [
-      {
-        id: 1,
-        path: '/grid',
-        label: 'Grid',
-      },
-      {
-        id: 2,
-        path: '/typography',
-        label: 'Typography',
-      },
-      {
-        id: 3,
-        path: '/colors',
-        label: 'Colors',
-      },
-    ];
+    this.menuItems = menuItems;
   }
 
   toggleBurger() {

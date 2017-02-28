@@ -6,6 +6,7 @@ import Navigation from './Navigation/Navigation.component';
 import GridPage from './GridPage/GridPage.component';
 import TypographyPage from './TypographyPage/TypographyPage.component';
 import ColorsPage from './ColorsPage/ColorsPage.component';
+import ButtonsPage from './ButtonsPage/ButtonsPage.component';
 
 import './App.scss';
 
@@ -19,6 +20,7 @@ export default () => (
         <Route path="/grid" component={GridPage} />
         <Route path="/typography" component={TypographyPage} />
         <Route path="/colors" component={ColorsPage} />
+        <Route path="/buttons" component={ButtonsPage} />
       </Switch>
     </div>
   </Router>

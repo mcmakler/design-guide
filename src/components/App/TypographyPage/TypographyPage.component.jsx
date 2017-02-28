@@ -17,7 +17,7 @@ const TypographyPage = () => (
     subtitle="Detailed definition of font styles and colors"
   >
     {/* H1 */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H1_HEADING_STYLES}
@@ -28,9 +28,9 @@ const TypographyPage = () => (
         <PreviewBox><h1>This is a Veeeeeeeeeeery Long Normal Heading</h1></PreviewBox>
         <PreviewBox className="inverted" ><h1>This is an Inverted Heading</h1></PreviewBox>
       </div>
-    </div>
+    </section>
     {/* H2 */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H2_HEADING_STYLES}
@@ -55,9 +55,9 @@ const TypographyPage = () => (
         </PreviewBox>
         <PreviewBox className="inverted" ><h2>This is an Inverted &lt;H2&gt;.</h2></PreviewBox>
       </div>
-    </div>
+    </section>
     {/* H3 */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H3_HEADING_STYLES}
@@ -73,9 +73,9 @@ const TypographyPage = () => (
         </PreviewBox>
         <PreviewBox className="inverted" ><h3>This is an Inverted &lt;H3&gt;.</h3></PreviewBox>
       </div>
-    </div>
+    </section>
     {/* H4 */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H4_HEADING_STYLES}
@@ -95,9 +95,9 @@ const TypographyPage = () => (
         </PreviewBox>
         <PreviewBox className="inverted" ><h4>This is an Inverted &lt;H4&gt;.</h4></PreviewBox>
       </div>
-    </div>
+    </section>
     {/* H5 */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.H5_HEADING_STYLES}
@@ -114,9 +114,9 @@ const TypographyPage = () => (
           </h5>
         </PreviewBox>
       </div>
-    </div>
+    </section>
     {/* BODY TEXT */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {headingStyles.BODY_TEXT_STYLES}
@@ -146,9 +146,9 @@ const TypographyPage = () => (
           </p>
         </PreviewBox>
       </div>
-    </div>
+    </section>
     {/* NAVIGATION LINKS */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {navigationStyles}
@@ -178,9 +178,9 @@ const TypographyPage = () => (
           </nav>
         </PreviewBox>
       </div>
-    </div>
+    </section>
     {/* TEXT LINKS */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {linkStyles}
@@ -209,9 +209,9 @@ const TypographyPage = () => (
             mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.</p>
         </PreviewBox>
       </div>
-    </div>
+    </section>
     {/* FINE PRINT */}
-    <div className="container columns page-section" >
+    <section className="container columns page-section" >
       <div className="column is-one-third" >
         <CodeSnippet language="css" >
           {fineprintStyles}
@@ -231,7 +231,7 @@ const TypographyPage = () => (
             mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.</small>
         </PreviewBox>
       </div>
-    </div>
+    </section>
   </Page>
 );
 
