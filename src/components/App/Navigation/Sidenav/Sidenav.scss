@@ -29,6 +29,18 @@ $sidenav-width: 320px;
     transition: .3s background-color ease;
   }
 
+  a.active {
+    text-decoration: underline;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  a::after {
+    display: none;
+  }
+
   li:hover {
     background-color: rgba(black, .07);
   }

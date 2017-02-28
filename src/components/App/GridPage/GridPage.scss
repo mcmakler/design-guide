@@ -15,11 +15,11 @@
 }
 
 .grid-page__sample-column::before {
-  left: 0;
+  left: $grid-spacing * -1;
 }
 
 .grid-page__sample-column::after {
-  right: 0;
+  right: $grid-spacing * -1;
 }
 
 .grid-page__code-block {

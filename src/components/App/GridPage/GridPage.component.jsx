@@ -6,7 +6,6 @@ import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 import './GridPage.scss';
 
 import htmlTemplate from './snippets/grid.html';
-import cssTemplate from './snippets/grid.style';
 
 const GridPageComponent = () => (
   <Page title="Grid/Margin/Padding" subtitle="Definition of the Grid, Margin and Padding">
@@ -17,7 +16,7 @@ const GridPageComponent = () => (
       </header>
 
       <div className="grid-page__sample-grid container columns" >
-        {Array.from([1,2,3,4,5,6,7,8,9,10,11,12]).map(key => (
+        {Array.from(new Array(12)).map(key => (
           <div key={key} className="grid-page__sample-column column" />
         ))}
       </div>
@@ -27,12 +26,6 @@ const GridPageComponent = () => (
           <header><h3>HTML</h3></header>
           <CodeSnippet language="html" >
             {htmlTemplate}
-          </CodeSnippet>
-        </div>
-        <div className="column" >
-          <header><h3>CSS</h3></header>
-          <CodeSnippet language="css" >
-            {cssTemplate}
           </CodeSnippet>
         </div>
       </div>

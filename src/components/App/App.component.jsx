@@ -5,6 +5,7 @@ import createHistory from 'history/createBrowserHistory';
 import Navigation from './Navigation/Navigation.component';
 import GridPage from './GridPage/GridPage.component';
 import TypographyPage from './TypographyPage/TypographyPage.component';
+import ColorsPage from './ColorsPage/ColorsPage.component';
 
 import './App.scss';
 
@@ -17,6 +18,7 @@ export default () => (
       <Switch>
         <Route path="/grid" component={GridPage} />
         <Route path="/typography" component={TypographyPage} />
+        <Route path="/colors" component={ColorsPage} />
       </Switch>
     </div>
   </Router>

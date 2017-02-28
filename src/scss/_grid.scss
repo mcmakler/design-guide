@@ -8,3 +8,9 @@
   width: 100%;
   max-width: 1200px;
 }
+
+.column {
+  padding: 0;
+  margin-left: $grid-spacing;
+  margin-right: $grid-spacing;
+}
