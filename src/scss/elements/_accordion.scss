@@ -1,0 +1,68 @@
+@import '../mixins/prepend-circle';
+@import '../includes/greys';
+
+.accordion {
+  .accordion__radio {
+    display: none;
+  }
+
+  .accordion__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 40px;
+    text-align: left;
+    transition: .3s background-color ease;
+    cursor: pointer;
+    @include prepend-circle;
+  }
+
+  .accordion__item:hover {
+    background-color: map_get($greys, 'bg');
+  }
+
+  .accordion__item::before {
+    content: '+';
+    top: 3px;
+  }
+
+  .accordion__item ~ .accordion__item {
+    margin-top: $grid-spacing;
+  }
+
+  .accordion__item-header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .accordion__item-content {
+    height: 0;
+    overflow: hidden;
+    transition: .6s opacity ease, .3s transform ease;
+    will-change: opacity, transform;
+    transform: translateY($grid-spacing);
+    opacity: 0;
+  }
+
+  .accordion__radio:checked + .accordion__item > .accordion__item-content {
+    height: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .accordion__radio:checked + .accordion__item > .accordion__item-header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .accordion__radio:checked + .accordion__item::before {
+    content: '–';
+  }
+
+  .accordion__radio:checked + .accordion__item:hover {
+    background-color: transparent;
+  }
+}

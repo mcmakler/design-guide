@@ -26,31 +26,7 @@ export const css = `.question {
     font-weight: 500;
     font-style: italic;
     font-size: 18px;
-    line-height: 1; }
-    
-  .question.background__grey_darkest {
-    background-color: #222; }
-    
-  .question.background__grey_body {
-    background-color: #333; }
-    
-  .question.background__grey_secondaryAlt {
-    background-color: #999; }
-    
-  .question.background__grey_secondary {
-    background-color: #aaa; }
-    
-  .question.background__grey_line {
-    background-color: #dadada; }
-    
-  .question.background__grey_table {
-    background-color: #e8e8e8; }
-    
-  .question.background__grey_bg {
-    background-color: #f6f6f6; }
-    
-  .question.background__grey_lightest {
-    background-color: #fff; }`;
+    line-height: 1; }`;
 
 export const html = `
 <div className="question">

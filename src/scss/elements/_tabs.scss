@@ -1,7 +1,10 @@
-@import '../../scss/variables';
+@import '../variables';
+@import '../mixins/grey-backgrounds';
 
 .tabs {
-  min-height: 135px;
+  min-height: 175px;
+  padding: $grid-spacing;
+  box-sizing: border-box;
 
   .tabs__tab-container {
     position: relative;
@@ -61,4 +64,6 @@
     display: none;
     font-weight: 300;
   }
+
+  @include grey-backgrounds;
 }

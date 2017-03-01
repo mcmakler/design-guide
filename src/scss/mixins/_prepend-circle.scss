@@ -1,0 +1,25 @@
+@import '../variables';
+
+@mixin prepend-circle {
+  $circle-size: 30px !default;
+
+  position: relative;
+  padding-left: ($grid-spacing * 2 + $circle-size);
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    left: $grid-spacing;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $circle-size;
+    height: $circle-size;
+    padding-left: 1px;
+    border: 2px solid map_get($greys, 'line');
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    color: map_get($colors, 'primary');
+  }
+}

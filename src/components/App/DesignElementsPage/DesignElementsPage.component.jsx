@@ -5,6 +5,7 @@ import Page from '../Page/Page.component';
 import QuoteElement from './elements/QuoteElement/QuoteElement.component';
 import QuestionElement from './elements/QuestionElement/QuestionElement.component';
 import TabsElement from './elements/TabsElement/TabsElement.component';
+import AccordionElement from './elements/AccordionElement/AccordionElement.component';
 
 import './DesignElementsPage.scss';
 
@@ -18,5 +19,6 @@ export default () => (
       <QuoteElement />
       <QuestionElement />
       <TabsElement />
+      <AccordionElement />
     </div>
   </Page>);

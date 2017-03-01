@@ -31,39 +31,7 @@ export const css = `.quote {
   .quote .quote__content {
     margin: 0;
     font-family: "Noto Serif";
-    font-style: italic; }
-    
-  .quote.background__grey_darkest {
-    background-color: #222;
-    color: #fff; }
-    
-  .quote.background__grey_body {
-    background-color: #333;
-    color: #fff; }
-    
-  .quote.background__grey_secondaryAlt {
-    background-color: #999;
-    color: #fff; }
-    
-  .quote.background__grey_secondary {
-    background-color: #aaa;
-    color: #fff; }
-    
-  .quote.background__grey_line {
-    background-color: #dadada;
-    color: #aaa; }
-    
-  .quote.background__grey_table {
-    background-color: #e8e8e8;
-    color: #aaa; }
-    
-  .quote.background__grey_bg {
-    background-color: #f6f6f6;
-    color: #aaa; }
-    
-  .quote.background__grey_lightest {
-    background-color: #fff;
-    color: #aaa; }`;
+    font-style: italic; }`;
 
 export const html = `
 <blockquote className="quote" >

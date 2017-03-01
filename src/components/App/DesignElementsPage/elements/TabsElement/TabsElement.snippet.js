@@ -1,5 +1,7 @@
 export const css = `.tabs {
-  min-height: 135px; }
+  min-height: 175px;
+  padding: 20px;
+  box-sizing: border-box; }
   /* SUCKS, but it MUST have a fixed height */
   
   .tabs .tabs__tab-container {
