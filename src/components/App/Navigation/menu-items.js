@@ -19,4 +19,9 @@ export default [
     path: '/buttons',
     label: 'Buttons',
   },
+  {
+    id: 5,
+    path: '/elements',
+    label: 'Design Elements',
+  },
 ];

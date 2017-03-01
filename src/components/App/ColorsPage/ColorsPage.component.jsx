@@ -36,11 +36,11 @@ export default () => (
             <h5>Used for</h5>
             Table Heading Background
           </ColorSnippet>
-          <ColorSnippet color="#f6f6f6" textColor="black" border={true}>
+          <ColorSnippet color="#f6f6f6" textColor="black" border>
             <h5>Used for</h5>
             Secondary Background Color
           </ColorSnippet>
-          <ColorSnippet color="#ffffff" textColor="black" border={true}>
+          <ColorSnippet color="#ffffff" textColor="black" border>
             <h5>Used for</h5>
             Primary Background Color
           </ColorSnippet>

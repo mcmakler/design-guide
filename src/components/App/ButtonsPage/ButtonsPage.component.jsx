@@ -38,7 +38,7 @@ export default () => (
               <button className="button button__primary column" >Primary</button>
               <button className="button button__secondary column" >Secondary</button>
             </div>
-            <br/>
+            <br />
             <div className="columns">
               <button className="button button__positive column" >Positive</button>
               <button className="button button__warn column" >Warn</button>

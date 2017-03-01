@@ -1,0 +1,64 @@
+@import '../../scss/variables';
+
+.tabs {
+  min-height: 135px;
+
+  .tabs__tab-container {
+    position: relative;
+    display: flex;
+  }
+
+  .tabs__tab + .tabs__tab {
+    margin-left: $grid-spacing;
+  }
+
+  .tabs__radio {
+    display: none;
+  }
+
+  .tabs__link {
+    position: relative;
+    display: block;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .tabs__tab-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+    will-change: transform;
+    background-color: currentColor;
+  }
+
+  .tabs__radio:checked + .tabs__link {
+    font-weight: 500;
+  }
+
+  .tabs__radio:checked + .tabs__link > .tabs__tab-header::after {
+    transform: none;
+  }
+
+  .tabs__radio:checked + .tabs__link + .tabs__tab-content {
+    display: block;
+  }
+
+  .tabs__tab-header {
+
+  }
+
+  .tabs__tab-content {
+    position: absolute;
+    top: $grid-spacing * 2;
+    left: 0;
+    display: none;
+    font-weight: 300;
+  }
+}
