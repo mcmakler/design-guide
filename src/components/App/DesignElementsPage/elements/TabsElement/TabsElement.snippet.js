@@ -1,8 +1,7 @@
 export const css = `.tabs {
-  min-height: 175px;
+  min-height: 175px; /* sucks. */
   padding: 20px;
   box-sizing: border-box; }
-  /* SUCKS, but it MUST have a fixed height */
   
   .tabs .tabs__tab-container {
     position: relative;
@@ -34,12 +33,17 @@ export const css = `.tabs {
     will-change: transform;
     background-color: currentColor; }
     
+  .tabs .tabs__link:hover > .tabs__tab-header::after {
+    opacity: .2;
+    transform: scaleX(0.5); }
+    
   .tabs .tabs__radio:checked + .tabs__link {
     font-weight: 500; }
     
   .tabs .tabs__radio:checked + .tabs__link > .tabs__tab-header::after {
-    transform: none; }
-            
+    transform: none;
+    opacity: 1; }
+    
   .tabs .tabs__radio:checked + .tabs__link + .tabs__tab-content {
     display: block; }
     
@@ -50,17 +54,31 @@ export const css = `.tabs {
     display: none;
     font-weight: 300; }`;
 
-export const html = `<div class="tabs">
+export const html = `
+<div class="tabs">
   <div class="tabs__tab-container">
+  
+    <!-- Repeat this for each tab -->
     <div class="tabs__tab">
-      <input checked class="tabs__radio" id="tab-1" type="radio">
-      <label class="tabs__link" for="tab-1"></label>
-      <header class="tabs__tab-header">
-        <label class="tabs__link" for="tab-1">Tab 1</label>
-      </header>
+      <input 
+        class="tabs__radio"
+        type="radio"
+        name="tab"
+        id="tab-1"
+        checked
+      >
+      <label class="tabs__link" for="tab-1">
+        <header class="tabs__tab-header">Tab 1</header>
+      </label>
       <div class="tabs__tab-content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        Adipisci consequuntur
+        cupiditate dignissimos
       </div>
     </div>
+    <!-- End Repeat -->
+    
   </div>
-</div>`;
+</div>
+`;

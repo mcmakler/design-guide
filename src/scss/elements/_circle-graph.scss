@@ -1,0 +1,53 @@
+@import '../variables';
+@import '../mixins/graphs';
+
+.circle-graph {
+  $circle-size: 160px;
+  $circle-stroke: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $circle-size;
+  height: $circle-size;
+  text-align: center;
+
+  .circle-graph__circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: $circle-size;
+    height: $circle-size;
+    transform: rotate(-90deg);
+  }
+
+  .circle-graph__bar-base,
+  .circle-graph__bar-value {
+    r: ($circle-size / 2) - $circle-stroke;
+    cx: $circle-size / 2;
+    cy: $circle-size / 2;
+    fill: none;
+    stroke-width: $circle-stroke;
+  }
+
+  .circle-graph__bar-base {
+    stroke: map_get($greys, 'bg');
+  }
+
+  .circle-graph__bar-value {
+    stroke-dasharray: 313%;
+    stroke: map_get($colors, 'primary');
+  }
+
+  .circle-graph__value {
+    @include graph-value;
+    margin-bottom: $grid-spacing / 2;
+  }
+
+  .circle-graph__label {
+    @include graph-label;
+  }
+
+}

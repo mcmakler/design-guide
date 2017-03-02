@@ -34,8 +34,11 @@ export const css = `.quote {
     font-style: italic; }`;
 
 export const html = `
-<blockquote className="quote" >
-  <cite className="quote__citation" >Donald Trump</cite>
-  <p className="quote__content" >Jews and Mexicans are the same. They are not me,
-    they are not orange. Therefore, they are the same.</p>
+<blockquote class="quote">
+    <cite class="quote__citation">Donald Trump</cite>
+    <p class="quote__content">
+      Jews and Mexicans are the same.
+      They are not me, they are not orange.
+      Therefore, they are the same.
+    </p>
 </blockquote>`;

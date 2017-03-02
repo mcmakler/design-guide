@@ -2,25 +2,26 @@ import React from 'react';
 
 import CodeSnippet from '../../../CodeSnippet/CodeSnippet.component';
 import PreviewBox from '../../../PreviewBox/PreviewBox.component';
-import { css, html } from './QuoteElement.snippet';
+import { css, html } from './InfoboxElement.snippet';
 
 export default () => (
   <section className="page-section" >
     <header>
-      <h2>Quotes</h2>
+      <h2>Infobox</h2>
     </header>
     <PreviewBox className="center" >
-      <blockquote className="quote" style={{ maxWidth: 320 }} >
-        <cite className="quote__citation" >Donald Trump</cite>
-        <p className="quote__content" >Jews and Mexicans are the same. They are not me,
-          they are not orange. Therefore, they are the same.</p>
-      </blockquote>
-      <blockquote className="quote background--grey_bg" style={{ maxWidth: 320 }} >
-        <cite className="quote__citation" >Sai Baba Satchitanand</cite>
-        <p className="quote__content" >The ladies call me Captain Sexy
-          😎 because I write so much beautiful Javascript that they
-          instantly fall in love with me.</p>
-      </blockquote>
+      <div className="infobox">
+        <header className="infobox__header">70%</header>
+        <p className="infobox__content">mehr Ertag</p>
+      </div>
+      <div className="infobox">
+        <header className="infobox__header">5x</header>
+        <p className="infobox__content">more skillz than 2016</p>
+      </div>
+      <div className="infobox">
+        <header className="infobox__header">?</header>
+        <p className="infobox__content">u wot m8</p>
+      </div>
     </PreviewBox>
     <div className="columns design-elements-page__code-block" >
       <div className="column is-one-third" >

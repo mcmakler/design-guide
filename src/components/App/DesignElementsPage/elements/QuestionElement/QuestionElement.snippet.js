@@ -1,13 +1,13 @@
 export const css = `.question {
+  padding: 20px;
   position: relative;
-  padding: 40px 40px 40px 65px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-left: 70px; }
   
   .question::before {
-    content: '?';
+    content: '';
     position: absolute;
     left: 20px;
-    top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,12 @@ export const css = `.question {
     border-radius: 50%;
     font-weight: 500;
     font-size: 18px;
+    line-height: 0;
     color: #feb901; }
+    
+  .question::before {
+    content: '?';
+    top: 20px; }
     
   .question .question__title {
     display: block;
@@ -29,9 +34,14 @@ export const css = `.question {
     line-height: 1; }`;
 
 export const html = `
-<div className="question">
-  <header className="question__title">Why are Indians like cockroaches?</header>
-  <p className="question__content">Because there are so many of them.
-    Look under your table &mdash; there is probably an Indian there!
+<div class="question">
+  <header class="question__title">
+    Why are Indians like cockroaches?
+  </header>
+  <p class="question__content">
+    Because there are so many of them.
+    Look under your table — there is probably an Indian there!
+    Also, I need a third line so I am writing more.
   </p>
-</div>`;
+</div>
+`;

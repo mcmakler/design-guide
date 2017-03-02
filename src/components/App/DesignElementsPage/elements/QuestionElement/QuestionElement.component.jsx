@@ -17,7 +17,7 @@ export default () => (
           Also, I need a third line so I am writing more.
         </p>
       </div>
-      <div className="question background__grey_bg" style={{ maxWidth: 480 }} >
+      <div className="question background--grey_bg" style={{ maxWidth: 480 }} >
         <header className="question__title" >Why are Germans like machines?</header>
         <p className="question__content" >Workaholics. They feel a compulsive
         need to build things since World War 2, so they become very

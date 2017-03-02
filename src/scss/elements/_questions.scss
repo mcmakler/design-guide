@@ -3,11 +3,10 @@
 @import '../includes/fonts';
 @import '../mixins/grey-backgrounds';
 @import '../mixins/prepend-circle';
-@import '../grid';
 
 .question {
   padding: $grid-spacing;
-  @include prepend-circle;
+  @include prepend-circle(30px, true);
 
   &::before {
     content: '?';

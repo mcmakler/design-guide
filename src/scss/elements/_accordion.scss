@@ -7,38 +7,38 @@
   }
 
   .accordion__item {
+    display: block;
+  }
+
+  .accordion__item-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     min-height: 40px;
     text-align: left;
-    transition: .3s background-color ease;
-    cursor: pointer;
-    @include prepend-circle;
-  }
-
-  .accordion__item:hover {
-    background-color: map_get($greys, 'bg');
-  }
-
-  .accordion__item::before {
-    content: '+';
-    top: 3px;
-  }
-
-  .accordion__item ~ .accordion__item {
-    margin-top: $grid-spacing;
-  }
-
-  .accordion__item-header {
-    display: flex;
-    align-items: center;
-    margin: 0;
     font-weight: 500;
+    cursor: pointer;
+    @include prepend-circle(24px);
+  }
+
+  .accordion__item-header::before {
+    content: '+';
+    top: 6px;
+    transition: border-color .1s ease;
+    will-change: border-color;
+  }
+
+  .accordion__item-header:hover::before {
+    border-color: map_get($colors, 'primary');
+  }
+
+  .accordion__radio:checked + .accordion__item > .accordion__item-header::before {
+    content: '–';
   }
 
   .accordion__item-content {
+    box-sizing: border-box;
     height: 0;
     overflow: hidden;
     transition: .6s opacity ease, .3s transform ease;
@@ -49,20 +49,39 @@
 
   .accordion__radio:checked + .accordion__item > .accordion__item-content {
     height: auto;
+    margin: ($grid-spacing / 2) 0;
     opacity: 1;
     transform: none;
   }
+}
 
+.accordion.accordion--table {
+  .accordion__item-header {
+    @include prepend-circle(24px, true, true);
+    padding-left: $grid-spacing;
+    transition: .15s background-color ease;
+    will-change: background-color;
+    background-color: map_get($greys, 'bg');
+  }
+  .accordion__item-header:hover {
+    background-color: map_get($greys, 'table');
+  }
+  .accordion__item ~ .accordion__item > .accordion__item-header {
+    border-top: 1px solid white;
+  }
+  .accordion__item-header::before {
+    content: '+';
+    left: auto;
+  }
+  .accordion__item-content {
+    box-sizing: border-box;
+    background-color: map_get($greys, 'bg');
+  }
+  .accordion__radio:checked + .accordion__item > .accordion__item-content {
+    margin: 0;
+    padding: $grid-spacing * 2;
+  }
   .accordion__radio:checked + .accordion__item > .accordion__item-header {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  .accordion__radio:checked + .accordion__item::before {
-    content: '–';
-  }
-
-  .accordion__radio:checked + .accordion__item:hover {
-    background-color: transparent;
+    background-color: map_get($greys, 'table');
   }
 }
