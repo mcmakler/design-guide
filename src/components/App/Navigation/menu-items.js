@@ -24,4 +24,14 @@ export default [
     path: '/elements',
     label: 'Design Elements',
   },
+  {
+    id: 6,
+    path: '/tables',
+    label: 'Tables',
+  },,
+  {
+    id: 7,
+    path: '/figures',
+    label: 'Figures',
+  },
 ];

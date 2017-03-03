@@ -1,0 +1,23 @@
+@import 'variables';
+
+figure {
+  display: flex;
+  flex-direction: column;
+
+  figcaption {
+    box-sizing: border-box;
+    padding: $grid-spacing;
+    background-color: map_get($greys, 'bg');
+  }
+
+  figcaption p {
+    margin: 0;
+  }
+}
+
+.inverted figure,
+.background--grey_bg figure {
+  figcaption {
+    background-color: map_get($greys, 'lightest');
+  }
+}

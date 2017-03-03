@@ -1,0 +1,43 @@
+@import 'variables';
+
+table {
+  border-collapse: collapse;
+
+  tr {
+    min-height: 50px;
+  }
+
+  td {
+    box-sizing: border-box;
+    padding: $grid-spacing;
+    border: 2px solid white;
+    line-height: 1;
+  }
+
+  thead tr td {
+    font-size: 13px;
+    font-weight: 700;
+    color: map_get($greys, 'secondary');
+    background-color: map_get($greys, 'table');
+  }
+
+  tbody tr td {
+    background-color: map_get($greys, 'bg');
+  }
+}
+
+.inverted table,
+.background--grey_bg table {
+  td {
+    border-color: map_get($greys, 'bg');
+  }
+  thead td {
+    border-bottom: none;
+  }
+  tbody tr:first-child td {
+    border-top: none;
+  }
+  tbody td {
+    background-color: white;
+  }
+}

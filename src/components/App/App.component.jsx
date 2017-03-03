@@ -8,6 +8,8 @@ import TypographyPage from './TypographyPage/TypographyPage.component';
 import ColorsPage from './ColorsPage/ColorsPage.component';
 import ButtonsPage from './ButtonsPage/ButtonsPage.component';
 import DesignElementsPage from './DesignElementsPage/DesignElementsPage.component';
+import TablesPage from './TablesPage/TablesPage.component';
+import FiguresPage from './FiguresPage/FiguresPage.component';
 
 import './App.scss';
 
@@ -18,11 +20,14 @@ export default () => (
     <div>
       <Navigation />
       <Switch>
+        <Route path="/" component={GridPage} />
         <Route path="/grid" component={GridPage} />
         <Route path="/typography" component={TypographyPage} />
         <Route path="/colors" component={ColorsPage} />
         <Route path="/buttons" component={ButtonsPage} />
         <Route path="/elements" component={DesignElementsPage} />
+        <Route path="/tables" component={TablesPage} />
+        <Route path="/figures" component={FiguresPage} />
       </Switch>
     </div>
   </Router>
