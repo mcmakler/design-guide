@@ -20,7 +20,7 @@ export default () => (
     <div>
       <Navigation />
       <Switch>
-        <Route path="/" component={GridPage} />
+        <Route exact path="/" component={GridPage} />
         <Route path="/grid" component={GridPage} />
         <Route path="/typography" component={TypographyPage} />
         <Route path="/colors" component={ColorsPage} />

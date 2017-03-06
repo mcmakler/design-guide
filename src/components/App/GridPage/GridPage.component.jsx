@@ -16,7 +16,7 @@ const GridPageComponent = () => (
       </header>
 
       <div className="grid-page__sample-grid container columns" >
-        {Array.from(new Array(12)).map(key => (
+        {Array.from(Object.keys(new Array(12))).map(key => (
           <div key={key} className="grid-page__sample-column column" />
         ))}
       </div>

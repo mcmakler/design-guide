@@ -28,7 +28,7 @@ export default [
     id: 6,
     path: '/tables',
     label: 'Tables',
-  },,
+  },
   {
     id: 7,
     path: '/figures',
