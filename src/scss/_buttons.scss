@@ -1,0 +1,69 @@
+@import 'includes/colors';
+@import 'includes/greys';
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  min-height: 40px;
+  padding: 0 40px;
+  font-weight: 500;
+  font-size: inherit;
+  outline: none;
+  appearance: none;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .3s transform ease;
+    background-color: rgba(white, .15);
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  &:hover::after {
+    transform: none;
+  }
+
+  &:active {
+    transform: scale(.96);
+  }
+
+  @each $name, $hex in $colors {
+    $textColor: white;
+
+    @if lightness($hex) > 60 {
+      $textColor: black;
+    }
+
+    &.button__#{$name} {
+      background-color: #{$hex};
+      color: $textColor;
+    }
+  }
+
+  &.button__large {
+    min-height: 60px;
+    font-size: 18px;
+  }
+
+  &.button__fluid {
+    width: 100%;
+  }
+
+  &.button__secondary {
+    border: 1px solid map_get($greys, 'secondary');
+    background-color: white;
+    color: map_get($greys, 'secondaryAlt');
+  }
+}

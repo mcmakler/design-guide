@@ -1,0 +1,23 @@
+@import '../../../scss/mixins/grey-backgrounds';
+
+.preview-box {
+  padding: $grid-spacing * 2;
+  border: 1px solid map_get($greys, 'line');
+  text-align: left;
+
+  & + .preview-box {
+    border-top: none;
+  }
+
+  &.inverted {
+    background-color: map_get($greys, 'darkest');
+  }
+
+  &.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include grey-backgrounds;
+}

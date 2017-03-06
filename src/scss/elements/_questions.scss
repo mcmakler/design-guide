@@ -1,0 +1,27 @@
+@import '../includes/colors';
+@import '../includes/greys';
+@import '../includes/fonts';
+@import '../mixins/grey-backgrounds';
+@import '../mixins/prepend-circle';
+
+.question {
+  padding: $grid-spacing;
+  @include prepend-circle(30px, true);
+
+  &::before {
+    content: '?';
+    top: $grid-spacing;
+  }
+
+  .question__title {
+    display: block;
+    margin-top: 8px;
+    font-family: map_get($fonts, 'headingFont');
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  @include grey-backgrounds;
+}
