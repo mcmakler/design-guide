@@ -20,7 +20,7 @@ ColorSnippet.propTypes = {
   className: React.PropTypes.string,
   color: React.PropTypes.string,
   textColor: React.PropTypes.string,
-  children: React.PropTypes.string,
+  children: React.PropTypes.node,
   border: React.PropTypes.bool,
 };
 

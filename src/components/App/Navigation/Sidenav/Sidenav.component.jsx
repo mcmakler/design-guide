@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Sidenav.scss';
+import '../../../../assets/logo.svg';
 
 export default class Sidenav extends Component {
   renderMenuItems() {

@@ -1,6 +1,6 @@
 @import 'variables';
-@import '../../node_modules/bulma/sass/utilities/all';
-@import '../../node_modules/bulma/sass/grid/all';
+@import '~bulma/sass/utilities/all';
+@import '~bulma/sass/grid/all';
 
 .column {
   padding: $grid-spacing;
