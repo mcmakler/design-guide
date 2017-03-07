@@ -1,9 +1,9 @@
 {
-  "name": "mcmakler-styleguide",
-  "author": "Tejas Kumar",
+  "name": "mcmakler-design-guide",
+  "author": "Tejas Kumar <hello@tej.as>",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "repository": "git@github.com:mcmakler/design-guide.git",
   "scripts": {
     "serve": "npm run lint && webpack-dashboard -- webpack-dev-server --host 0.0.0.0",
     "build": "npm run lint && webpack -p",
