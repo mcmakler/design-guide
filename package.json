@@ -9,7 +9,8 @@
     "build": "npm run lint && webpack -p",
     "lint": "eslint . --ext js --ext jsx",
     "start": "node server.js",
-    "postinstall": "npm run lint && webpack -p",
+    "preinstall": "yarn install && npm run lint && webpack -p",
+    "postinstall": "yarn install && npm run lint && webpack -p",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "echo This runs afterwards."
   },
