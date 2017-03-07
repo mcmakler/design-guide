@@ -8,7 +8,10 @@
     "serve": "npm run lint && webpack-dashboard -- webpack-dev-server --host 0.0.0.0",
     "build": "npm run lint && webpack -p",
     "lint": "eslint . --ext js --ext jsx",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npm run lint && webpack -p",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "echo This runs afterwards."
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
