@@ -1,6 +1,7 @@
 a {
   font-weight: 400;
   text-decoration: underline;
+  color: map_get($greys, 'body');
 }
 
 .inverted a {
