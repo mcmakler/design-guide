@@ -28,7 +28,8 @@ table {
 
 .inverted table,
 .background--grey_bg table {
-  td {
+  td,
+  th {
     border-color: map_get($greys, 'bg');
   }
   thead th {
