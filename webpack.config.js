@@ -1,5 +1,10 @@
-/* eslint-disable import/no-dynamic-require */
-const env = process.env.NODE_ENV || 'dev';
-const config = `./webpack/${env}.config.js`;
+/*eslint-disable */
+switch (process.env.WEBPACK_CONFIG_MODE) {
+  case 'CLIENT_BUILD':
+    module.exports = require('./webpack/production.config');
+    break;
 
-module.exports = require(config);
+  default:
+    module.exports = require('./webpack/dev.config');
+}
+
