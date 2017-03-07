@@ -8,5 +8,5 @@
 }
 
 .page-section + .page-section {
-  border-top: 1px solid map_get($greys, 'line');
+  border-top: 1px solid map-get($greys, "line");
 }

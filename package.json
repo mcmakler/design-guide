@@ -1,13 +1,15 @@
 {
   "name": "mcmakler-design-guide",
-  "author": "Tejas Kumar <hello@tej.as>",
+  "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
   "version": "1.0.0",
   "license": "MIT",
   "repository": "git@github.com:mcmakler/design-guide.git",
   "scripts": {
     "serve": "npm run lint && webpack-dashboard -- webpack-dev-server --host 0.0.0.0",
     "build": "npm run lint && webpack -p",
-    "lint": "eslint . --ext js --ext jsx",
+    "lint-sass": "sass-lint -c .sass-lint.yml -v -q",
+    "lint-es": "eslint . --ext js --ext jsx",
+    "lint": "npm run lint-sass && npm run lint-es",
     "start": "node server.js",
     "heroku-prebuild": "yarn install",
     "heroku-postbuild": "npm run lint && WEBPACK_CONFIG_MODE=CLIENT_BUILD webpack -p"
@@ -24,6 +26,7 @@
     "node-sass": "^4.5.0",
     "postcss-loader": "0.9.1",
     "react-hot-loader": "3.0.0-beta.6",
+    "sass-lint": "^1.10.2",
     "sass-loader": "^6.0.0",
     "style-loader": "0.13.1"
   },

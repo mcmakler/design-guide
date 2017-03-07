@@ -1,7 +1,7 @@
 .color-snippet {
   box-sizing: border-box;
   min-height: 100px;
-  background-color: map_get($greys, 'bg');
+  background-color: map-get($greys, "bg");
 
   .color-snippet__color-panel,
   .color-snippet__content {
@@ -18,7 +18,7 @@
   }
 
   .color-snippet__color-panel_border {
-    border: 1px solid map_get($greys, 'line');
+    border: 1px solid map-get($greys, "line");
   }
 
   .color-snippet__content {

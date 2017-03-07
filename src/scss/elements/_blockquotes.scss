@@ -1,17 +1,17 @@
-@import '../variables';
-@import '../mixins/grey-backgrounds';
+@import "../variables";
+@import "../mixins/grey-backgrounds";
 
 .quote {
   position: relative;
   padding: ($grid-spacing) ($grid-spacing) ($grid-spacing) 70px; //70px is 20px from the ::before quote.
-  color: map_get($greys, 'secondary');
+  color: map-get($greys, "secondary");
 
   &::before {
     content: open-quote;
     position: absolute;
     top: 7px;
     left: 16px;
-    font-family: map-get($fonts, 'headingFont');
+    font-family: map-get($fonts, "headingFont");
     font-size: 75px;
     line-height: 1;
   }
@@ -36,7 +36,7 @@
 
   .quote__content {
     margin: 0;
-    font-family: map-get($fonts, 'headingFont');
+    font-family: map-get($fonts, "headingFont");
     font-style: italic;
   }
 

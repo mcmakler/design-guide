@@ -1,12 +1,12 @@
-@import 'includes/colors';
-@import 'includes/greys';
+@import "includes/colors";
+@import "includes/greys";
 
 .button {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: 0;
   min-height: 40px;
   padding: 0 40px;
   font-weight: 500;
@@ -17,7 +17,7 @@
   cursor: pointer;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -40,15 +40,15 @@
   }
 
   @each $name, $hex in $colors {
-    $textColor: white;
+    $text-color: white;
 
     @if lightness($hex) > 60 {
-      $textColor: black;
+      $text-color: black;
     }
 
     &.button__#{$name} {
       background-color: #{$hex};
-      color: $textColor;
+      color: $text-color;
     }
   }
 
@@ -62,8 +62,8 @@
   }
 
   &.button__secondary {
-    border: 1px solid map_get($greys, 'secondary');
+    border: 1px solid map-get($greys, "secondary");
     background-color: white;
-    color: map_get($greys, 'secondaryAlt');
+    color: map-get($greys, "secondaryAlt");
   }
 }

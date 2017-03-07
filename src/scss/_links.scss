@@ -1,9 +1,9 @@
 a {
   font-weight: 400;
   text-decoration: underline;
-  color: map_get($greys, 'body');
+  color: map-get($greys, "body");
 }
 
 .inverted a {
-  color: map_get($greys, 'lightest');
+  color: map-get($greys, "lightest");
 }

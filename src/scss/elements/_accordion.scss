@@ -1,5 +1,5 @@
-@import '../mixins/prepend-circle';
-@import '../includes/greys';
+@import "../mixins/prepend-circle";
+@import "../includes/greys";
 
 .accordion {
   .accordion__radio {
@@ -23,18 +23,18 @@
   }
 
   .accordion__item-header::before {
-    content: '+';
+    content: "+";
     top: 6px;
     transition: border-color .1s ease;
     will-change: border-color;
   }
 
   .accordion__item-header:hover::before {
-    border-color: map_get($colors, 'primary');
+    border-color: map-get($colors, "primary");
   }
 
   .accordion__radio:checked + .accordion__item > .accordion__item-header::before {
-    content: '–';
+    content: "–";
   }
 
   .accordion__item-content {
@@ -61,27 +61,27 @@
     padding-left: $grid-spacing;
     transition: .15s background-color ease;
     will-change: background-color;
-    background-color: map_get($greys, 'bg');
+    background-color: map-get($greys, "bg");
   }
   .accordion__item-header:hover {
-    background-color: map_get($greys, 'table');
+    background-color: map-get($greys, "table");
   }
   .accordion__item ~ .accordion__item > .accordion__item-header {
     border-top: 1px solid white;
   }
   .accordion__item-header::before {
-    content: '+';
+    content: "+";
     left: auto;
   }
   .accordion__item-content {
     box-sizing: border-box;
-    background-color: map_get($greys, 'bg');
+    background-color: map-get($greys, "bg");
   }
   .accordion__radio:checked + .accordion__item > .accordion__item-content {
     margin: 0;
     padding: $grid-spacing * 2;
   }
   .accordion__radio:checked + .accordion__item > .accordion__item-header {
-    background-color: map_get($greys, 'table');
+    background-color: map-get($greys, "table");
   }
 }
