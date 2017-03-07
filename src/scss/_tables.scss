@@ -14,7 +14,7 @@ table {
     line-height: 1;
   }
 
-  thead tr td {
+  thead tr th {
     font-size: 13px;
     font-weight: 700;
     color: map_get($greys, 'secondary');
@@ -31,7 +31,7 @@ table {
   td {
     border-color: map_get($greys, 'bg');
   }
-  thead td {
+  thead th {
     border-bottom: none;
   }
   tbody tr:first-child td {

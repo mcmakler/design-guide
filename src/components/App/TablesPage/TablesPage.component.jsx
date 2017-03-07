@@ -33,9 +33,9 @@ export default () => (
             <table>
               <thead>
                 <tr>
-                  <td>Jahr</td>
-                  <td>Preis</td>
-                  <td>Fläche</td>
+                  <th>Jahr</th>
+                  <th>Preis</th>
+                  <th>Fläche</th>
                 </tr>
               </thead>
               <tbody>
@@ -61,9 +61,9 @@ export default () => (
             <table>
               <thead>
                 <tr>
-                  <td>Jahr</td>
-                  <td>Preis</td>
-                  <td>Fläche</td>
+                  <th>Jahr</th>
+                  <th>Preis</th>
+                  <th>Fläche</th>
                 </tr>
               </thead>
               <tbody>
