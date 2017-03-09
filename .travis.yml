@@ -5,6 +5,6 @@ env:
   - NODE_ENV='production'
 before_install:
   - npm i -g yarn
-  - npm cache clear
+  - export PATH=./node_modules/.bin:$PATH
 install: yarn install
 script: npm run build
