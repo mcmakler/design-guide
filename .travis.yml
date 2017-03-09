@@ -4,7 +4,7 @@ node_js: node
 env:
   - NODE_ENV='production'
 before_install:
-  - npm i -g yarn
+  - npm i -g yarn sass-lint
   - export PATH=$(pwd)/node_modules/.bin:$PATH
 install: yarn install
 script: npm run build
