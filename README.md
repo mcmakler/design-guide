@@ -1,5 +1,5 @@
 # McMakler Design Guide
-![Build Status](https://travis-ci.org/mcmakler/design-guide.svg?branch=master "Build Status")
+![Build Status](https://travis-ci.org/mcmakler/design-guide.svg?branch=develop "Build Status")
 
 This Single Page Application, powered by [React](https://github.com/facebook/react), is a collection of Design Elements used throughout the [McMakler](https://www.mcmakler.de/) website and applications.
 
