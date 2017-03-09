@@ -2,9 +2,8 @@ os: linux
 language: node_js
 node_js: node
 env:
-  - NODE_ENV='production'
+  - WEBPACK_CONFIG_MODE='CLIENT_BUILD'
 before_install:
-  - npm i -g yarn sass-lint
-  - export PATH=$(pwd)/node_modules/.bin:$PATH
+  - npm i -g yarn
 install: yarn install
 script: npm run build
