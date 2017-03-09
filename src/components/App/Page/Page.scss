@@ -1,6 +1,6 @@
-@import '../../../scss/grid';
-@import '../../../scss/sections';
-@import '../../../../src/scss/typography';
+@import "../../../scss/grid";
+@import "../../../scss/sections";
+@import "../../../../src/scss/typography";
 
 .header {
   display: flex;
@@ -8,5 +8,5 @@
   align-items: center;
   justify-content: center;
   height: 263px;
-  background-color: map_get($greys, 'bg');
+  background-color: map-get($greys, "bg");
 }

@@ -26,11 +26,11 @@ nav ul li {
   a:visited,
   a:active {
     text-decoration: none;
-    color: map_get($greys, 'body');
+    color: map-get($greys, "body");
   }
 
   a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -39,7 +39,7 @@ nav ul li {
     transition: .3s transform ease;
     transform: scaleX(0);
     transform-origin: center;
-    background-color: map_get($greys, 'darkest');
+    background-color: map-get($greys, "darkest");
   }
 
   a.active::after,

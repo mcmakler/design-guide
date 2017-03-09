@@ -1,6 +1,6 @@
-@import '../variables';
-@import '../mixins/list-reset';
-@import '../mixins/prepend-circle';
+@import "../variables";
+@import "../mixins/list-reset";
+@import "../mixins/prepend-circle";
 
 .anchor-list {
   @include list-reset;
@@ -12,15 +12,15 @@
   }
 
   .anchor-list__item::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     left: 27px;
     display: block;
     width: 4px;
     height: 4px;
-    border-top: 2px solid map_get($colors, 'primary');
-    border-right: 2px solid map_get($colors, 'primary');
+    border-top: 2px solid map-get($colors, "primary");
+    border-right: 2px solid map-get($colors, "primary");
     transform: rotate(45deg);
   }
 

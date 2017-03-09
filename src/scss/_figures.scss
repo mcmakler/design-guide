@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 figure {
   display: flex;
@@ -7,7 +7,7 @@ figure {
   figcaption {
     box-sizing: border-box;
     padding: $grid-spacing;
-    background-color: map_get($greys, 'bg');
+    background-color: map-get($greys, "bg");
   }
 
   figcaption p {
@@ -18,6 +18,6 @@ figure {
 .inverted figure,
 .background--grey_bg figure {
   figcaption {
-    background-color: map_get($greys, 'lightest');
+    background-color: map-get($greys, "lightest");
   }
 }

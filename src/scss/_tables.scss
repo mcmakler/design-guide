@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 table {
   border-collapse: collapse;
@@ -18,12 +18,12 @@ table {
   thead tr th {
     font-size: 13px;
     font-weight: 700;
-    color: map_get($greys, 'secondary');
-    background-color: map_get($greys, 'table');
+    color: map-get($greys, "secondary");
+    background-color: map-get($greys, "table");
   }
 
   tbody tr td {
-    background-color: map_get($greys, 'bg');
+    background-color: map-get($greys, "bg");
   }
 }
 
@@ -31,13 +31,13 @@ table {
 .background--grey_bg table {
   td,
   th {
-    border-color: map_get($greys, 'bg');
+    border-color: map-get($greys, "bg");
   }
   thead th {
-    border-bottom: none;
+    border-bottom: 0;
   }
   tbody tr:first-child td {
-    border-top: none;
+    border-top: 0;
   }
   tbody td {
     background-color: white;

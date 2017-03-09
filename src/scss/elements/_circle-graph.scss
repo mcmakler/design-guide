@@ -1,5 +1,5 @@
-@import '../variables';
-@import '../mixins/graphs';
+@import "../variables";
+@import "../mixins/graphs";
 
 .circle-graph {
   $circle-size: 160px;
@@ -33,12 +33,12 @@
   }
 
   .circle-graph__bar-base {
-    stroke: map_get($greys, 'bg');
+    stroke: map-get($greys, "bg");
   }
 
   .circle-graph__bar-value {
     stroke-dasharray: 313%;
-    stroke: map_get($colors, 'primary');
+    stroke: map-get($colors, "primary");
   }
 
   .circle-graph__value {

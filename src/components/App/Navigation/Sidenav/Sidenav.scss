@@ -11,7 +11,7 @@ $sidenav-width: 320px;
   will-change: transform;
   transform: translateX($sidenav-width * -1);
   backdrop-filter: blur(10px);
-  background-color: rgba(map_get($greys, 'bg'), .9);
+  background-color: rgba(map-get($greys, "bg"), .9);
 
   &.active {
     box-shadow: ($grid-spacing / 2) 0 ($grid-spacing * 2) rgba(0, 0, 0, 0.2);
@@ -50,7 +50,7 @@ $sidenav-width: 320px;
   display: flex;
   align-items: center;
   padding: $grid-spacing;
-  border-bottom: 1px solid map_get($greys, 'line');
+  border-bottom: 1px solid map-get($greys, "line");
 
   img {
     max-width: 160px;

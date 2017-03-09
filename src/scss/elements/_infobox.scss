@@ -1,5 +1,5 @@
-@import '../variables';
-@import '../mixins/grey-backgrounds';
+@import "../variables";
+@import "../mixins/grey-backgrounds";
 
 .infobox {
   display: flex;
@@ -11,7 +11,7 @@
   min-height: 130px;
   padding: ($grid-spacing) ($grid-spacing * 3);
   text-align: center;
-  background-color: map_get($greys, 'bg');
+  background-color: map-get($greys, "bg");
 
   & + .infobox {
     margin-left: 2px;
@@ -19,9 +19,9 @@
 
   .infobox__header {
     line-height: 1;
-    font-family: map_get($fonts, 'headingFont');
+    font-family: map-get($fonts, "headingFont");
     font-size: 40px;
-    color: map_get($colors, 'primary');
+    color: map-get($colors, "primary");
   }
 
   .infobox__content {

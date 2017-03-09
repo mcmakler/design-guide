@@ -6,7 +6,7 @@
 
 .grid-page__sample-column::before,
 .grid-page__sample-column::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: $grid-spacing;
