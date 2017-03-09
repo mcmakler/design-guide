@@ -7,7 +7,7 @@
   "scripts": {
     "serve": "npm run lint && webpack-dashboard -- webpack-dev-server --host 0.0.0.0",
     "build": "npm run lint && webpack -p",
-    "lint-sass": "sass-lint -c .sass-lint.yml -v -q",
+    "lint-sass": "sass-lint -c \"$(pwd)/.sass-lint.yml\" -v -q",
     "lint-es": "eslint . --ext js --ext jsx",
     "lint": "npm run lint-sass && npm run lint-es",
     "start": "node server.js",
