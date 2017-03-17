@@ -18,6 +18,9 @@ nav ul li {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    font-weight: 400; }
+    
+  nav ul li a:active {
     font-weight: 500; }
     
   nav ul li a:link,
@@ -41,6 +44,9 @@ nav ul li {
   nav ul li a.active::after,
   nav ul li a:hover::after {
     transform: none; }
+    
+  .inverted nav ul li a::after {
+    background-color: #fff; }
 
 a {
   cursor: pointer; }

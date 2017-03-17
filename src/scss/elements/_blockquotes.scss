@@ -3,14 +3,14 @@
 
 .quote {
   position: relative;
-  padding: ($grid-spacing) ($grid-spacing) ($grid-spacing) 70px; //70px is 20px from the ::before quote.
+  padding: ($grid-spacing * 2) ($grid-spacing * 2) ($grid-spacing * 2) 87px; //87px is 20px from the ::before quote.
   color: map-get($greys, "secondary");
 
   &::before {
     content: open-quote;
     position: absolute;
-    top: 7px;
-    left: 16px;
+    top: 27px;
+    left: 36px;
     font-family: map-get($fonts, "headingFont");
     font-size: 75px;
     line-height: 1;
@@ -38,6 +38,8 @@
     margin: 0;
     font-family: map-get($fonts, "headingFont");
     font-style: italic;
+    font-size: 17px;
+    line-height: 1.647;
   }
 
   @include grey-backgrounds(true);

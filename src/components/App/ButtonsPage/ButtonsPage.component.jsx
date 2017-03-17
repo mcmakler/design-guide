@@ -34,14 +34,16 @@ export default () => (
         </div>
         <div className="column" >
           <PreviewBox>
-            <div className="columns">
-              <button className="button button__primary column" >Primary</button>
-              <button className="button button__secondary column" >Secondary</button>
-            </div>
-            <br />
-            <div className="columns">
-              <button className="button button__positive column" >Positive</button>
-              <button className="button button__warn column" >Warn</button>
+            <div className="pad">
+              <div className="columns">
+                <button className="button button__primary column" >Primary</button>
+                <button className="button button__secondary column" >Secondary</button>
+              </div>
+              <br />
+              <div className="columns">
+                <button className="button button__positive column" >Positive</button>
+                <button className="button button__warn column" >Warn</button>
+              </div>
             </div>
           </PreviewBox>
         </div>

@@ -24,8 +24,8 @@ export const css = `.accordion .accordion__radio {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border: 2px solid #dadada;
     border-radius: 50%;
     font-weight: 500;

@@ -18,7 +18,7 @@ nav ul li {
   a {
     display: inline-block;
     position: relative;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
   }
 
@@ -27,6 +27,10 @@ nav ul li {
   a:active {
     text-decoration: none;
     color: map-get($greys, "body");
+  }
+
+  a:active {
+    font-weight: 500;
   }
 
   a::after {
@@ -46,6 +50,10 @@ nav ul li {
   a:hover::after {
     transform: none;
   }
+}
+
+.inverted nav ul li a::after {
+  background-color: map-get($greys, "lightest");
 }
 
 a {

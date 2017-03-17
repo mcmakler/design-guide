@@ -31,6 +31,7 @@ $checkmark-width: 8px;
 }
 
 .checkmark-list--table {
+  width: 100%;
   .checkmark-list__item {
     padding: ($grid-spacing / 2) ($checkmark-width + ($grid-spacing * 2)) ($grid-spacing / 2) $grid-spacing;
     background-color: map-get($greys, "bg");

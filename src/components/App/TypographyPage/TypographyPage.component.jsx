@@ -177,6 +177,21 @@ const TypographyPage = () => (
             </ul>
           </nav>
         </PreviewBox>
+        <PreviewBox className="center inverted" >
+          <nav>
+            <ul className="inline">
+              <li>
+                <a className="active" >Mietpreise</a>
+              </li>
+              <li>
+                <a>Kaufpreis</a>
+              </li>
+              <li>
+                <a>Übersicht</a>
+              </li>
+            </ul>
+          </nav>
+        </PreviewBox>
       </div>
     </section>
     {/* TEXT LINKS */}
