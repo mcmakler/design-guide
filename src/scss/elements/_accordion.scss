@@ -19,7 +19,7 @@
     text-align: left;
     font-weight: 500;
     cursor: pointer;
-    @include prepend-circle(24px);
+    @include prepend-circle(22px);
   }
 
   .accordion__item-header::before {
@@ -57,11 +57,18 @@
 
 .accordion.accordion--table {
   .accordion__item-header {
-    @include prepend-circle(24px, true, true);
+    @include prepend-circle(22px, true, true); // should be 24 but there's a 2px border.
     padding-left: $grid-spacing;
+    padding-top: $grid-spacing / 2 + 2;
+    padding-bottom: $grid-spacing / 2 + 2;
+    min-height: 48px;
     transition: .15s background-color ease;
     will-change: background-color;
     background-color: map-get($greys, "bg");
+  }
+  .accordion__item-header::before {
+    top: 50%;
+    transform: translateY(-50%);
   }
   .accordion__item-header:hover {
     background-color: map-get($greys, "table");

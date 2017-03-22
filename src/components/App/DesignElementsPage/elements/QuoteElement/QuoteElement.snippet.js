@@ -1,13 +1,13 @@
 export const css = `.quote {
   position: relative;
-  padding: 20px 20px 20px 70px;
+  padding: 40px 40px 40px 87px;
   color: #aaa; }
   
   .quote::before {
     content: open-quote;
     position: absolute;
-    top: 7px;
-    left: 16px;
+    top: 27px;
+    left: 36px;
     font-family: "Noto Serif";
     font-size: 75px;
     line-height: 1; }
@@ -31,7 +31,9 @@ export const css = `.quote {
   .quote .quote__content {
     margin: 0;
     font-family: "Noto Serif";
-    font-style: italic; }`;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.647; }`;
 
 export const html = `
 <blockquote class="quote">

@@ -5,12 +5,13 @@
 @import "../mixins/prepend-circle";
 
 .question {
-  padding: $grid-spacing;
   @include prepend-circle(30px, true);
+  padding: ($grid-spacing * 2) ($grid-spacing * 2) ($grid-spacing * 2) 92px;
 
   &::before {
     content: "?";
-    top: $grid-spacing;
+    top: $grid-spacing * 2.3;
+    left: $grid-spacing * 2;
   }
 
   .question__title {
@@ -19,8 +20,8 @@
     font-family: map-get($fonts, "headingFont");
     font-weight: 500;
     font-style: italic;
-    font-size: 18px;
-    line-height: 1;
+    font-size: 17px;
+    line-height: 1.674;
   }
 
   @include grey-backgrounds;

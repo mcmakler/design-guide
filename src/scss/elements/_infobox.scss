@@ -9,7 +9,7 @@
   box-sizing: border-box;
   min-width: 190px;
   min-height: 130px;
-  padding: ($grid-spacing) ($grid-spacing * 3);
+  padding: ($grid-spacing);
   text-align: center;
   background-color: map-get($greys, "bg");
 

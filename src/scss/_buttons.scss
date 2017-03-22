@@ -54,8 +54,21 @@
   }
 
   &.button__large {
+    padding-right: $grid-spacing * 3;
     min-height: 60px;
     font-size: 18px;
+  }
+
+  &.button__large::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: $grid-spacing * 2;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-50%);
   }
 
   &.button__fluid {

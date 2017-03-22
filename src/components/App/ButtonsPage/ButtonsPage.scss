@@ -4,4 +4,8 @@
   button + button {
     margin-left: $grid-spacing;
   }
+
+  .pad {
+    padding: $grid-spacing;
+  }
 }

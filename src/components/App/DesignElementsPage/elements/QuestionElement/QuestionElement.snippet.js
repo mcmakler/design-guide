@@ -1,11 +1,11 @@
 export const css = `.question {
-  padding: 20px;
   position: relative;
   box-sizing: border-box;
-  padding-left: 70px; }
+  padding-left: 70px;
+  padding: 40px 40px 40px 92px; }
   
   .question::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 20px;
     display: flex;
@@ -21,8 +21,9 @@ export const css = `.question {
     color: #feb901; }
     
   .question::before {
-    content: '?';
-    top: 20px; }
+    content: "?";
+    top: 40px;
+    left: 40px; }
     
   .question .question__title {
     display: block;
