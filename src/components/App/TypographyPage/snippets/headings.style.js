@@ -62,8 +62,9 @@ export const H4_HEADING_STYLES = `h4 {
 
 export const H5_HEADING_STYLES = `h5 {
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.3px;
   line-height: 1.462;
   color: #aaa; }`;
 

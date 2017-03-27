@@ -57,7 +57,7 @@
 
 .accordion.accordion--table {
   .accordion__item-header {
-    @include prepend-circle(22px, true, true); // should be 24 but there's a 2px border.
+    @include prepend-circle(22px, true, true); // should be 24 but there"s a 2px border.
     padding-left: $grid-spacing;
     padding-top: $grid-spacing / 2 + 2;
     padding-bottom: $grid-spacing / 2 + 2;

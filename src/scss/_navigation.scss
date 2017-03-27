@@ -29,7 +29,8 @@ nav ul li {
     color: map-get($greys, "body");
   }
 
-  a:active {
+  a:active,
+  a.active {
     font-weight: 500;
   }
 

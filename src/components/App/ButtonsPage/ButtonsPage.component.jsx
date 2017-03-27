@@ -36,13 +36,13 @@ export default () => (
           <PreviewBox>
             <div className="pad">
               <div className="columns">
-                <button className="button button__primary column" >Primary</button>
-                <button className="button button__secondary column" >Secondary</button>
+                <button className="button button_primary column" >Primary</button>
+                <button className="button button_secondary column" >Secondary</button>
               </div>
               <br />
               <div className="columns">
-                <button className="button button__positive column" >Positive</button>
-                <button className="button button__warn column" >Warn</button>
+                <button className="button button_positive column" >Positive</button>
+                <button className="button button_warn column" >Warn</button>
               </div>
             </div>
           </PreviewBox>
@@ -56,7 +56,7 @@ export default () => (
         </div>
         <div className="column" >
           <PreviewBox className="center" >
-            <button className="button button__large button__primary" >
+            <button className="button button_large button_primary" >
               Very big primary button
             </button>
           </PreviewBox>
@@ -70,7 +70,7 @@ export default () => (
         </div>
         <div className="column" >
           <PreviewBox className="center" >
-            <button className="button button__fluid button__primary" >
+            <button className="button button_fluid button_primary" >
               I take the size of my container
             </button>
           </PreviewBox>
@@ -84,7 +84,7 @@ export default () => (
         </div>
         <div className="column" >
           <PreviewBox className="center" >
-            <button className="button button__secondary" >
+            <button className="button button_secondary" >
               Secondary Button
             </button>
           </PreviewBox>

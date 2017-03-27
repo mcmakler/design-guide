@@ -7,22 +7,16 @@
   color: map-get($greys, "secondary");
 
   &::before {
-    content: open-quote;
+    content: "";
     position: absolute;
-    top: 27px;
-    left: 36px;
-    font-family: map-get($fonts, "headingFont");
-    font-size: 75px;
-    line-height: 1;
-  }
-
-  &::after {
-    content: close-quote;
+    top: 36px;
+    left: 33px;
     display: block;
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    visibility: hidden;
+    width: 36px;
+    height: 36px;
+    background-image: url(/assets/quote.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .quote__citation {
