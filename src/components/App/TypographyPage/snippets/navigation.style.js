@@ -20,7 +20,8 @@ nav ul li {
     position: relative;
     font-weight: 400; }
     
-  nav ul li a:active {
+  nav ul li a:active,
+  nav ul li a.active {
     font-weight: 500; }
     
   nav ul li a:link,
