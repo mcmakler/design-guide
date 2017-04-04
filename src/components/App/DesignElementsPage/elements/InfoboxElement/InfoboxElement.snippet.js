@@ -6,13 +6,14 @@ export const css = `.infobox {
   box-sizing: border-box;
   min-width: 190px;
   min-height: 130px;
-  padding: 20px 60px;
+  padding: 20px;
   text-align: center;
   background-color: #f6f6f6; }
   
   .infobox + .infobox {
     margin-left: 2px; }
     
+  /* Basically H2 in Orange */
   .infobox .infobox__header {
     line-height: 1;
     font-family: "Noto Serif";

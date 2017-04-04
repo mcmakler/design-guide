@@ -6,7 +6,7 @@ export const css = `table {
     
   table td {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 16px;
     border: 2px solid white;
     line-height: 1; }
     

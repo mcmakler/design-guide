@@ -8,14 +8,14 @@
   .anchor-list__item {
     font-weight: 500;
 
-    @include prepend-circle(18px, true);
+    @include prepend-circle(22px, true);
   }
 
   .anchor-list__item::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 27px;
+    top: 10px;
+    left: 29px;
     display: block;
     width: 4px;
     height: 4px;

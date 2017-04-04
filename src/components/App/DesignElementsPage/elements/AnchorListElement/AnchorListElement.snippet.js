@@ -28,8 +28,8 @@ export const css = `.anchor-list {
   .anchor-list .anchor-list__item::after {
     content: '';
     position: absolute;
-    top: 8px;
-    left: 27px;
+    top: 10px;
+    left: 29px;
     display: block;
     width: 4px;
     height: 4px;
