@@ -1,9 +1,9 @@
 export const css = `.question {
   position: relative;
   box-sizing: border-box;
-  padding-left: 70px;
-  padding: 40px 40px 40px 92px; }
-  
+  padding-left: 62px;
+  padding: 40px 40px 40px 85px; }
+
   .question::before {
     content: "";
     position: absolute;
@@ -11,28 +11,28 @@ export const css = `.question {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     border: 2px solid #dadada;
     border-radius: 50%;
     font-weight: 500;
     font-size: 18px;
     line-height: 0;
     color: #feb901; }
-    
+
   .question::before {
     content: "?";
-    top: 40px;
+    top: 49px;
     left: 40px; }
-    
+
   .question .question__title {
     display: block;
     margin-top: 8px;
     font-family: "Noto Serif";
     font-weight: 500;
     font-style: italic;
-    font-size: 18px;
-    line-height: 1; }`;
+    font-size: 17px;
+    line-height: 1.674; }`;
 
 export const html = `
 <div class="question">
