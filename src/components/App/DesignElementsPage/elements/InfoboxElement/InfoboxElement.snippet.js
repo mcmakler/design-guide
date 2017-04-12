@@ -17,7 +17,7 @@ export const css = `.infobox {
   .infobox .infobox__header {
     line-height: 1;
     font-family: "Noto Serif";
-    font-size: 40px;
+    font-size: 32px;
     color: #feb901; }
     
   .infobox .infobox__content {

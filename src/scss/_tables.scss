@@ -1,7 +1,7 @@
 @import "variables";
 
 table {
-  $side-padding: 16px;
+  $vertical-padding: 16px;
 
   border-collapse: collapse;
 
@@ -12,7 +12,7 @@ table {
   td,
   th {
     box-sizing: border-box;
-    padding: $grid-spacing $side-padding;
+    padding: $vertical-padding $grid-spacing;
     border: 2px solid white;
     line-height: 1;
   }
