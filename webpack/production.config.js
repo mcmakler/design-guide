@@ -13,7 +13,7 @@ module.exports = () => webpackMerge(baseConfig(), {
     rules: [
       {
         test: /\.svg$/,
-        use: 'file-loader?name=[name].[ext]&outputPath=../assets/dist/',
+        use: 'file-loader?name=[name].[ext]&outputPath=/assets/',
       },
     ],
   },
