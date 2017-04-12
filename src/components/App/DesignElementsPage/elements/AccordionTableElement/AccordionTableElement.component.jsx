@@ -14,9 +14,7 @@ export default () => (
         <input type="radio" id="accordion-4" className="accordion__radio" name="accordion" />
         <label htmlFor="accordion-4" className="accordion__item" >
           <header className="accordion__item-header" >
-            I am an accordion item<br />
-            Line 2<br />
-            Line 3
+            I am an accordion item
           </header>
           <div className="accordion__item-content" >
             Hi I like accordions. They are like a polish instrument
