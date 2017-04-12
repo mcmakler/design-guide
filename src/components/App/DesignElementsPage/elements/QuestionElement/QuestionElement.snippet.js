@@ -16,7 +16,7 @@ export const css = `.question {
     border: 2px solid #dadada;
     border-radius: 50%;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 0;
     color: #feb901; }
 
