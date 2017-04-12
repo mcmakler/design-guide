@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../assets/quote.svg';
 
 import Page from '../Page/Page.component';
 
