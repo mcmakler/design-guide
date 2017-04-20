@@ -36,3 +36,9 @@ export const html = `<div class="infobox">
   <header class="infobox__header">?</header>
   <p class="infobox__content">u wot m8</p>
 </div>`;
+
+export const pug = `
+.infobox
+  header.infobox__header 70%
+  p.infobox__content mehr Ertrag
+`;
