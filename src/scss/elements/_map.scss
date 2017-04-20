@@ -1,0 +1,26 @@
+.map {
+  &.map_2columns .columns {
+    display: flex;
+    align-items: center;
+  }
+
+  .map__frame {
+    height: 360px;
+    width: 100%;
+    border: none;
+  }
+
+  .map__map-container {
+    padding-right: 0;
+    flex: 1 0 300px;
+  }
+
+  .map__address-container {
+    flex: 1 1 auto;
+  }
+
+  .map__headline {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
