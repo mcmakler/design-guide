@@ -34,20 +34,6 @@ module.exports = () => ({
           },
         ],
       },
-      {
-        test: /\.pug$/,
-        exclude: /node_modules/,
-        use: ['style-loader',
-          'css-loader',
-          'postcss-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              data: '@import "./src/scss/variables";',
-            },
-          },
-        ],
-      },
     ],
   },
   plugins: [
