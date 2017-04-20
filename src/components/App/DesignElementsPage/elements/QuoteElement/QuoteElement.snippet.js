@@ -44,3 +44,12 @@ export const html = `
       Therefore, they are the same.
     </p>
 </blockquote>`;
+
+export const pug = `
+blockquote.quote
+  cite.quote__citation Donald Trump
+  p.quote__content
+    | Jews and Mexicans are the same.
+    | They are not me, they are not orange.
+    | Therefore, they are the same.
+`;

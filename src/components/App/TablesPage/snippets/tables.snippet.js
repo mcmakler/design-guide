@@ -61,3 +61,17 @@ export const html = `<table>
     </tr>
   </tbody>
 </table>`;
+
+export const pug = `
+table
+  thead
+    tr
+      td Jahr
+      td Preis
+      td Fläche
+  tbody
+    tr
+      td 2016
+      td 50.000 $
+      td 92m
+`;

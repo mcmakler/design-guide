@@ -73,3 +73,7 @@ export const buttonSecondary = `.button_secondary {
   background-color: white;
   color: #999;
 }`;
+
+export const pug = `
+button.button.button_large.button_primary Very big primary button
+`;

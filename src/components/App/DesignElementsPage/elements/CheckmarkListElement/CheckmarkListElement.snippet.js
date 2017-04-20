@@ -33,3 +33,10 @@ export const html = `<ul class="checkmark-list">
       Live it well.
     </li>
   </ul>`;
+
+export const pug = `
+ul.checkmark-list
+  li.checkmark-list__item Hi, I like pies.
+  li.checkmark-list__item Life is short.
+  li.checkmark-list__item Live it well.
+`;
