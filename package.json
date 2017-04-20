@@ -1,7 +1,7 @@
 {
   "name": "mcmakler-design-guide",
   "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "repository": "git@github.com:mcmakler/design-guide.git",
   "scripts": {
