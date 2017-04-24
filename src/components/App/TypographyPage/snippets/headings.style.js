@@ -19,8 +19,8 @@ export const H1_HEADING_STYLES = `h1 {
   margin-bottom: 30px;
   font-family: "Noto Serif", serif;
   font-weight: 400;
-  font-size: 44px;
-  line-height: 1.227;
+  font-size: 42px;
+  line-height: 1.286;
   color: #222; }
 
 .inverted h1 {
@@ -31,8 +31,8 @@ h2 {
   margin-bottom: 23px;
   font-family: "Noto Serif", serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.188;
+  font-size: 30px;
+  line-height: 1.2;
   color: #222; }
 
 .inverted h2 {
@@ -42,8 +42,8 @@ export const H3_HEADING_STYLES = `h3 {
   margin-bottom: 0;
   font-family: "Roboto", sans-serif; 
   font-weight: 300;
-  font-size: 24px;
-  line-height: 1.417;
+  font-size: 22px;
+  line-height: 1.364;
   color: #222; }
 
 .inverted h3 {
