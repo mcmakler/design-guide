@@ -3,15 +3,22 @@
 figure {
   display: flex;
   flex-direction: column;
+  max-width: 280px;
+  margin: 0;
 
   figcaption {
     box-sizing: border-box;
     padding: $grid-spacing;
     background-color: map-get($greys, "bg");
+    text-align: left;
   }
 
   figcaption p {
     margin: 0;
+  }
+
+  & + figure {
+    margin-left: $grid-spacing;
   }
 }
 
