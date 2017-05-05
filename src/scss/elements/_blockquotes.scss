@@ -3,14 +3,18 @@
 
 .quote {
   position: relative;
-  padding: ($grid-spacing * 2) ($grid-spacing * 2) ($grid-spacing * 2) 87px; //87px is 20px from the ::before quote.
+  padding: 0 ($grid-spacing * 2) 0 54px; //54px is 20px from the ::before quote.
+  margin: ($grid-spacing * 2) auto;
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
   color: map-get($greys, "secondary");
 
   &::before {
     content: "";
     position: absolute;
-    top: 36px;
-    left: 33px;
+    top: -3px;
+    left: 0;
     display: block;
     width: 36px;
     height: 36px;
@@ -19,7 +23,8 @@
     background-repeat: no-repeat;
   }
 
-  .quote__citation {
+  .quote__citation,
+  footer {
     display: block;
     margin-bottom: $grid-spacing / 2;
     line-height: 1;
@@ -28,12 +33,26 @@
     font-style: normal;
   }
 
-  .quote__content {
+  .quote__content,
+  p {
     margin: 0;
     font-family: map-get($fonts, "headingFont");
     font-style: italic;
     font-size: 17px;
     line-height: 1.647;
+  }
+
+  footer {
+    color: transparent;
+  }
+
+  footer > a {
+    display: none;
+  }
+
+  footer > span {
+    margin-left: $grid-spacing * -0.5;
+    color: map-get($greys, "secondary");
   }
 
   @include grey-backgrounds(true);

@@ -1,14 +1,34 @@
 :root {
-  --page-section__container-width: 1200px;
+  #{--page-section__container-width}: 1200px; // SASS LINT WORKAROUND.
 }
 
 .page-section {
   text-align: center;
   padding: ($grid-spacing * 5) 0;
 
+  & > .page-section__header,
   & > header {
     padding: 0 0 ($grid-spacing * 3);
   }
+
+  & > .page-section__header > h3 + p,
+  & > header > h3 + p {
+    margin-top: $grid-spacing * 2;
+  }
+
+  &.page-section_padless-bottom {
+    padding-bottom: 0;
+
+    * {
+      padding-bottom: 1px; //border, ya kno?
+    }
+  }
+
+  .page-section__content,
+  .columns {
+    text-align: left;
+  }
+
 }
 
 .page-section + .page-section {

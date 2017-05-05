@@ -42,6 +42,10 @@ h2 {
   line-height: 1.2;
 }
 
+h2 + h3 {
+  margin-top: $grid-spacing / 2;
+}
+
 h3, h4 {
   font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
 }
@@ -58,10 +62,22 @@ h3 {
 }
 
 h4 {
-  margin-bottom: 20px;
+  margin-top: $grid-spacing;
+  margin-bottom: $grid-spacing;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.471;
+}
+
+h4 + p,
+p + h4 {
+  margin-top: $grid-spacing;
+}
+
+p.clip {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h5 {

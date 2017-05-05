@@ -3,6 +3,8 @@
 table {
   $vertical-padding: 16px;
 
+  margin: $grid-spacing 0;
+  width: 100%;
   border-collapse: collapse;
 
   tr {
@@ -15,6 +17,7 @@ table {
     padding: $vertical-padding $grid-spacing;
     border: 2px solid white;
     line-height: 1;
+    text-align: left;
   }
 
   thead tr th {

@@ -2,8 +2,8 @@
 
 .checkmark {
   display: inline-block;
-  border-bottom: 2px solid map-get($colors, 'primary');
-  border-right: 2px solid map-get($colors, 'primary');
+  border-bottom: 2px solid map-get($colors, "primary");
+  border-right: 2px solid map-get($colors, "primary");
   width: 10px;
   height: 20px;
   transform: rotate(45deg);

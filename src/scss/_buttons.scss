@@ -54,7 +54,11 @@
   }
 
   &.button_large {
+    display: inline-block;
+    padding-top: $grid-spacing;
+    padding-bottom: $grid-spacing;
     padding-right: $grid-spacing * 3;
+    margin-top: $grid-spacing;
     min-height: 60px;
     font-size: 18px;
   }
