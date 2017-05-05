@@ -1,29 +1,57 @@
 @import "variables";
 
-figure {
+.figure {
   display: flex;
   flex-direction: column;
   margin: 0;
 
-  figcaption {
-    box-sizing: border-box;
+  .figure__caption {
     padding: $grid-spacing;
     background-color: map-get($greys, "bg");
     text-align: left;
   }
 
-  figcaption p {
+  .figure__description {
     margin: 0;
   }
 
   & + figure {
     margin-left: $grid-spacing;
   }
+
+  .figure__header {
+    margin-top: 0;
+  }
 }
 
-.inverted figure,
-.background--grey_bg figure {
-  figcaption {
+.figure_card {
+  border: 1px solid map-get($greys, "line");
+  .figure__image {
+    width: 100%;
+  }
+  .figure__caption {
+    margin-top: -8px;
+    padding: $grid-spacing * 2;
+    background-color: white;
+  }
+  .figure__header {
+    margin-top: 0;
+    margin-bottom: $grid-spacing;
+  }
+  .figure__description {
+    margin-bottom: 0;
+  }
+  .figure__link {
+    margin-left: auto;
+    float: right;
+    font-weight: 400;
+    color: map-get($greys, "secondary");
+  }
+}
+
+.inverted .figure,
+.background--grey_bg .figure {
+  .figure__caption {
     background-color: map-get($greys, "lightest");
   }
 }

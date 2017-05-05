@@ -44,6 +44,14 @@ export default () => (
                 <button className="button button_positive column" >Positive</button>
                 <button className="button button_warn column" >Warn</button>
               </div>
+              <br />
+              <div className="columns">
+                <button className="button button_facebook column">Jetzt auf Facebook teilen</button>
+              </div>
+              <br />
+              <div className="columns">
+                <button className="button button_twitter column" >Jetzt Twittern</button>
+              </div>
             </div>
           </PreviewBox>
         </div>

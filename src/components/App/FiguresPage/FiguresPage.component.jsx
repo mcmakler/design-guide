@@ -27,30 +27,76 @@ export default () => (
         </div>
         <div className="column">
           <PreviewBox className="center">
-            <figure>
+            <figure className="figure">
               <img
                 alt="Placeholder"
                 src="http://lorempixel.com/260/230/business/"
               />
-              <figcaption>
-                <h4>Placeholder</h4>
-                <p>This is my placeholder, son.</p>
+              <figcaption className="figure__caption">
+                <h4 className="figure__header">Placeholder</h4>
+                <p className="figure__description">This is my placeholder, son.</p>
               </figcaption>
             </figure>
           </PreviewBox>
           <PreviewBox className="background--grey_bg center">
-            <figure>
+            <figure className="figure">
               <img
                 alt="Placeholder"
                 src="http://lorempixel.com/260/230/business/"
               />
-              <figcaption>
-                <h4>Placeholder</h4>
-                <p>This is my placeholder, son.</p>
+              <figcaption className="figure__caption">
+                <h4 className="figure__header">Placeholder</h4>
+                <p className="figure__description">This is my placeholder, son.</p>
               </figcaption>
             </figure>
           </PreviewBox>
         </div>
       </div>
+      <hr />
+
+      <section className="page-section">
+        <header>
+          <h2>Figure Cards</h2>
+          <p>
+            Used in:&nbsp;
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://projects.invisionapp.com/d/main#/console/5351634/232128360/preview"
+            >
+              McMakler Blog
+            </a>
+          </p>
+        </header>
+        <div className="columns">
+          <div className="column">
+            <CodeSnippet language="html">
+              { html }
+            </CodeSnippet>
+            <br />
+            <CodeSnippet language="css">
+              { css }
+            </CodeSnippet>
+          </div>
+          <div className="column">
+            <PreviewBox className="background--grey_bg center">
+              <figure className="figure_card">
+                <img
+                  className="figure__image"
+                  alt="Placeholder"
+                  src="http://lorempixel.com/260/230/business/"
+                />
+                <figcaption className="figure__caption">
+                  <h4 className="figure__header">
+                    Vorfälligkeitsentschädigung – lohnt sich der vorzeitige Ausstieg?
+                  </h4>
+                  <span className="fineprint">05.04.2017</span>
+                  <a className="figure__link">Read More</a>
+                </figcaption>
+              </figure>
+            </PreviewBox>
+          </div>
+        </div>
+      </section>
     </div>
   </Page>);
