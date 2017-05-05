@@ -15,8 +15,6 @@
     "heroku-postbuild": "WEBPACK_CONFIG_MODE=CLIENT_BUILD webpack -p"
   },
   "devDependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-stage-2": "6.13.0",
     "css-loader": "0.23.1",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-import": "^2.2.0",
@@ -31,6 +29,8 @@
     "style-loader": "0.13.1"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-stage-2": "6.13.0",
     "autoprefixer": "^6.7.3",
     "babel": "^6.23.0",
     "babel-core": "6.13.2",
