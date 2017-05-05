@@ -12,7 +12,7 @@
     "lint": "npm run lint-sass && npm run lint-es",
     "start": "node server.js",
     "heroku-prebuild": "yarn install",
-    "heroku-postbuild": "WEBPACK_CONFIG_MODE=CLIENT_BUILD webpack -p"
+    "heroku-postbuild": "WEBPACK_CONFIG_MODE=CLIENT_BUILD npm run build"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
