@@ -11,15 +11,15 @@ export default () => (
     </header>
     <PreviewBox className="center" >
       <blockquote className="quote" style={{ maxWidth: 320 }} >
-        <cite className="quote__citation" >Donald Trump</cite>
         <p className="quote__content" >Jews and Mexicans are the same. They are not me,
           they are not orange. Therefore, they are the same.</p>
+        <cite className="quote__citation" >Donald Trump</cite>
       </blockquote>
-      <blockquote className="quote background--grey_bg" style={{ maxWidth: 320 }} >
-        <cite className="quote__citation" >Sai Baba Satchitanand</cite>
+      <blockquote className="quote quote_boxed background--grey_bg" style={{ maxWidth: 320 }} >
         <p className="quote__content" >The ladies call me Captain Sexy
           😎 because I write so much beautiful Javascript that they
           instantly fall in love with me.</p>
+        <cite className="quote__citation" >Sai Baba Satchitanand</cite>
       </blockquote>
     </PreviewBox>
     <div className="columns design-elements-page__code-block" >

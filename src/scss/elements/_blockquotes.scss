@@ -57,3 +57,12 @@
 
   @include grey-backgrounds(true);
 }
+
+.quote_boxed {
+  padding: 24px $grid-spacing $grid-spacing 73px; //73px is 20px from the ::before quote.
+
+  &::before {
+    top: $grid-spacing;
+    left: $grid-spacing;
+  }
+}
