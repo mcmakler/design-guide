@@ -3,7 +3,7 @@
 table {
   $vertical-padding: 16px;
 
-  margin: $grid-spacing 0;
+  margin: $grid-spacing 0 ($grid-spacing * 2);
   width: 100%;
   border-collapse: collapse;
 

@@ -26,21 +26,26 @@
 
 .figure_card {
   border: 1px solid map-get($greys, "line");
+
   .figure__image {
     width: 100%;
   }
+
   .figure__caption {
     margin-top: -8px;
     padding: $grid-spacing * 2;
     background-color: white;
   }
+
   .figure__header {
     margin-top: 0;
     margin-bottom: $grid-spacing;
   }
+
   .figure__description {
     margin-bottom: 0;
   }
+
   .figure__link {
     margin-left: auto;
     float: right;

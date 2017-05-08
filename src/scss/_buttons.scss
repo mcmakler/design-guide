@@ -88,6 +88,7 @@
   }
 
   &.button_facebook {
+    padding-right: $grid-spacing * 3;
     background-color: #43609C;
     color: white;
   }
@@ -97,6 +98,7 @@
   }
 
   &.button_twitter {
+    padding-right: $grid-spacing * 3;
     background-color: #61BFE8;
     color: white;
   }
