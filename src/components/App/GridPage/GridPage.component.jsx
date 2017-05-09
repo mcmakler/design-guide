@@ -22,7 +22,7 @@ const GridPageComponent = () => (
       </div>
 
       <div className="grid-page__code-block container columns" >
-        <div className="column">
+        <div className="column page-section">
           <header><h3>HTML</h3></header>
           <CodeSnippet language="html" >
             {htmlTemplate}

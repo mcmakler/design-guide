@@ -1,10 +1,15 @@
+@import "mixins/respond-to";
+
 :root {
   #{--page-section__container-width}: 1200px; // SASS LINT WORKAROUND.
 }
 
 .page-section {
   text-align: center;
-  padding: ($grid-spacing * 5) 0;
+  padding: ($grid-spacing * 5) $grid-spacing;
+  @include respond-to('tablet') {
+    padding: ($grid-spacing * 5) 0;
+  }
 
   & > .page-section__header,
   & > header {
