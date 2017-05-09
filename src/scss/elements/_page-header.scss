@@ -11,6 +11,7 @@
   box-sizing: border-box;
   text-align: center;
   background-color: map-get($greys, "bg");
+  background-size: cover;
   @include respond-to('tablet--landscape') {
     min-height: 340px;
   }
