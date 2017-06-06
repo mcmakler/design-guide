@@ -7,7 +7,7 @@ import { css, html } from './QuoteElement.snippet';
 export default () => (
   <section className="page-section" >
     <header>
-      <h2>Quotes</h2>
+      <h2 className="heading heading_secondary">Quotes</h2>
     </header>
     <PreviewBox className="center" >
       <blockquote className="quote" style={{ maxWidth: 320 }} >
@@ -25,7 +25,7 @@ export default () => (
     <div className="columns design-elements-page__code-block" >
       <div className="column is-one-third" >
         <header>
-          <h3>CSS</h3>
+          <h3 className="heading heading_tertiary">CSS</h3>
         </header>
         <CodeSnippet language="css" >
           { css }
@@ -33,7 +33,7 @@ export default () => (
       </div>
       <div className="column" >
         <header>
-          <h3>HTML</h3>
+          <h3 className="heading heading_tertiary">HTML</h3>
         </header>
         <CodeSnippet language="html" >
           { html }

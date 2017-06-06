@@ -7,7 +7,7 @@ import { css, html } from './AccordionElement.snippet';
 export default () => (
   <section className="page-section" >
     <header>
-      <h2>Accordion</h2>
+      <h2 className="heading heading_secondary">Accordion</h2>
     </header>
     <PreviewBox className="center" >
       <div className="accordion" style={{ width: 400 }} >
@@ -52,7 +52,7 @@ export default () => (
     <div className="columns design-elements-page__code-block" >
       <div className="column is-half" >
         <header>
-          <h3>CSS</h3>
+          <h3 className="heading heading_tertiary">CSS</h3>
         </header>
         <CodeSnippet language="css" >
           { css }
@@ -60,7 +60,7 @@ export default () => (
       </div>
       <div className="column" >
         <header>
-          <h3>HTML</h3>
+          <h3 className="heading heading_tertiary">HTML</h3>
         </header>
         <CodeSnippet language="html" >
           { html }

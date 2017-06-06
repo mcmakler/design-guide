@@ -38,7 +38,7 @@ export default () => (
               </figcaption>
             </figure>
           </PreviewBox>
-          <PreviewBox className="background--grey_bg center">
+          <PreviewBox className="background_grey center">
             <figure className="figure">
               <img
                 alt="Placeholder"
@@ -56,7 +56,7 @@ export default () => (
 
       <section className="page-section">
         <header>
-          <h2>Figure Cards</h2>
+          <h2 className="heading heading_secondary">Figure Cards</h2>
           <p>
             Used in:&nbsp;
             <a
@@ -79,7 +79,7 @@ export default () => (
             </CodeSnippet>
           </div>
           <div className="column">
-            <PreviewBox className="background--grey_bg center">
+            <PreviewBox className="background_grey center">
               <figure className="figure_card">
                 <img
                   className="figure__image"

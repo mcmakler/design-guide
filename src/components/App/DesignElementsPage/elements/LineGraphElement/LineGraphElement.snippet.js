@@ -45,18 +45,18 @@ export const css = `.line-graph {
   to {
     transform: scaleX(1); } }`;
 
-export const html = `<div class="line-graph">
-  <div class="line-graph__item">
-    <div class="line-graph__info">
-      <span class="line-graph__label">
+export const html = `<div className="line-graph">
+  <div className="line-graph__item">
+    <div className="line-graph__info">
+      <span className="line-graph__label">
         Berlin
       </span>
-      <p class="line-graph__value">
+      <p className="line-graph__value">
         50%
       </p>
     </div>
-    <div class="line-graph__bar-base">
-      <div class="line-graph__bar-value" style="width: 50%;"></div>
+    <div className="line-graph__bar-base">
+      <div className="line-graph__bar-value" style="width: 50%;"></div>
     </div>
   </div>
 </div>`;

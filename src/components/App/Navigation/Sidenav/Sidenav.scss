@@ -29,11 +29,12 @@ $sidenav-width: 320px;
     transition: .3s background-color ease;
   }
 
-  a.active {
-    text-decoration: underline;
+  .link_active {
+    font-weight: 600;
   }
 
   a {
+    display: block;
     width: 100%;
   }
 

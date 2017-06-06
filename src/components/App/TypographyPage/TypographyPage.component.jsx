@@ -24,9 +24,15 @@ const TypographyPage = () => (
         </CodeSnippet>
       </div>
       <div className="column " >
-        <PreviewBox><h1>This is a Normal &lt;H1&gt;.</h1></PreviewBox>
-        <PreviewBox><h1>This is a Veeeeeeeeeeery Long Normal Heading</h1></PreviewBox>
-        <PreviewBox className="inverted" ><h1>This is an Inverted Heading</h1></PreviewBox>
+        <PreviewBox>
+          <h1 className="heading heading_primary" >This is a Normal &lt;H1&gt;.</h1>
+        </PreviewBox>
+        <PreviewBox>
+          <h1 className="heading heading_primary" >This is a Veeeeeeeeeeery Long Normal Heading</h1>
+        </PreviewBox>
+        <PreviewBox className="inverted" >
+          <h1 className="heading heading_primary" >This is an Inverted Heading</h1>
+        </PreviewBox>
       </div>
     </section>
     {/* H2 */}
@@ -37,12 +43,14 @@ const TypographyPage = () => (
         </CodeSnippet>
       </div>
       <div className="column " >
-        <PreviewBox><h2>This is a Normal &lt;H2&gt;.</h2></PreviewBox>
-        <PreviewBox><h2>
+        <PreviewBox>
+          <h2 className="heading heading_secondary" >This is a Normal &lt;H2&gt;.</h2>
+        </PreviewBox>
+        <PreviewBox><h2 className="heading heading_secondary" >
           This is a Veeeeeeeeeeery Long Normal &lt;H2&gt; tag. It is cool because I like pigs. 🐷
         </h2></PreviewBox>
         <PreviewBox>
-          <h2>This is a &lt;H2&gt;...</h2>
+          <h2 className="heading heading_secondary" >This is a &lt;H2&gt;...</h2>
           <p>
             With body text. How cool is this body text? This is by far the best body text you
             have ever seen. Donald Trump would be so proud. This is so amazing. Let us make body
@@ -50,10 +58,14 @@ const TypographyPage = () => (
           </p>
         </PreviewBox>
         <PreviewBox>
-          <h2>This is a &lt;H2&gt; with a &lt;H3&gt;</h2>
-          <h3>They often go together, like in the heading of this page.</h3>
+          <h2 className="heading heading_secondary" >This is a &lt;H2&gt; with a &lt;H3&gt;</h2>
+          <h3 className="heading heading_tertiary" >
+            They often go together, like in the heading of this page.
+          </h3>
         </PreviewBox>
-        <PreviewBox className="inverted" ><h2>This is an Inverted &lt;H2&gt;.</h2></PreviewBox>
+        <PreviewBox className="inverted" >
+          <h2 className="heading heading_secondary" >This is an Inverted &lt;H2&gt;
+          .</h2></PreviewBox>
       </div>
     </section>
     {/* H3 */}
@@ -64,14 +76,18 @@ const TypographyPage = () => (
         </CodeSnippet>
       </div>
       <div className="column " >
-        <PreviewBox><h3>This is a Normal &lt;H3&gt;.</h3></PreviewBox>
         <PreviewBox>
-          <h3>
+          <h3 className="heading heading_tertiary" >This is a Normal &lt;H3&gt;.</h3>
+        </PreviewBox>
+        <PreviewBox>
+          <h3 className="heading heading_tertiary" >
             This is a Veeeeeeeeeeery Long &lt;H3&gt;. Okay, it is not that long
             but I have to make it longer so words.
           </h3>
         </PreviewBox>
-        <PreviewBox className="inverted" ><h3>This is an Inverted &lt;H3&gt;.</h3></PreviewBox>
+        <PreviewBox className="inverted" >
+          <h3 className="heading heading_tertiary" >This is an Inverted &lt;H3&gt;.</h3>
+        </PreviewBox>
       </div>
     </section>
     {/* H4 */}
@@ -81,19 +97,23 @@ const TypographyPage = () => (
           {headingStyles.H4_HEADING_STYLES}
         </CodeSnippet>
       </div>
-      <div className="column " >
-        <PreviewBox><h4>This is a Normal &lt;H4&gt;.</h4></PreviewBox>
+      <div className="column" >
         <PreviewBox>
-          <h4>
+          <h4 className="heading heading_quarternary" >This is a Normal &lt;H4&gt;.</h4>
+        </PreviewBox>
+        <PreviewBox>
+          <h4 className="heading heading_quarternary" >
             This is a Veeeeeeeeeeery Long &lt;H4&gt;. Okay, it is not that long
             but I have to make it longer so words. Words words words words words.
           </h4>
         </PreviewBox>
         <PreviewBox>
-          <h4>This is a &lt;H4&gt;</h4>
+          <h4 className="heading heading_quarternary" >This is a &lt;H4&gt;</h4>
           <p>With body text. A nice pairing, like good wine and cheese.</p>
         </PreviewBox>
-        <PreviewBox className="inverted" ><h4>This is an Inverted &lt;H4&gt;.</h4></PreviewBox>
+        <PreviewBox className="inverted" >
+          <h4 className="heading heading_quarternary" >This is an Inverted &lt;H4&gt;
+          .</h4></PreviewBox>
       </div>
     </section>
     {/* H5 */}
@@ -104,9 +124,10 @@ const TypographyPage = () => (
         </CodeSnippet>
       </div>
       <div className="column " >
-        <PreviewBox><h5>This is a Normal &lt;H5&gt;.</h5></PreviewBox>
         <PreviewBox>
-          <h5>
+          <h5 className="heading heading_quinary" >This is a Normal &lt;H5&gt;.</h5></PreviewBox>
+        <PreviewBox>
+          <h5 className="heading heading_quinary" >
             This is a Veeeeeeeeeeery Long &lt;H5&gt;. Okay, it is not that long
             but I have to make it longer so words. Words words words words words.
             Ricardo is spanish and he is also cool but not mexican NEVER CALL HIM
@@ -157,37 +178,41 @@ const TypographyPage = () => (
       <div className="column " >
         <PreviewBox className="center" >
           <nav>
-            <ul className="inline">
-              <li><a>This is a Navigation Link</a></li>
+            <ul className="navigation-list" >
+              <li
+                className="navigation-list__item"
+              >
+                <a className="navigation-list__link" >This is a Navigation Link</a>
+              </li>
             </ul>
           </nav>
         </PreviewBox>
         <PreviewBox className="center" >
           <nav>
-            <ul className="inline">
-              <li>
-                <a className="active" >Mietpreise</a>
+            <ul className="navigation-list navigation-list_inline" >
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link navigation-list__link_active" >Mietpreise</a>
               </li>
-              <li>
-                <a>Kaufpreis</a>
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link" >Kaufpreis</a>
               </li>
-              <li>
-                <a>Übersicht</a>
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link" >Übersicht</a>
               </li>
             </ul>
           </nav>
         </PreviewBox>
         <PreviewBox className="center inverted" >
           <nav>
-            <ul className="inline">
-              <li>
-                <a className="active" >Mietpreise</a>
+            <ul className="navigation-list navigation-list_inline" >
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link navigation-list__link_active" >Mietpreise</a>
               </li>
-              <li>
-                <a>Kaufpreis</a>
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link" >Kaufpreis</a>
               </li>
-              <li>
-                <a>Übersicht</a>
+              <li className="navigation-list__item_inline" >
+                <a className="navigation-list__link" >Übersicht</a>
               </li>
             </ul>
           </nav>
@@ -234,16 +259,17 @@ const TypographyPage = () => (
       </div>
       <div className="column " >
         <PreviewBox className="center" >
-          <small className="fineprint">This is what fineprint looks like.</small>
+          <small className="fineprint" >This is what fineprint looks like.</small>
         </PreviewBox>
         <PreviewBox>
-          <small className="fineprint">Gentrify air plant tilde glossier, man bun keytar next
+          <small className="fineprint" >Gentrify air plant tilde glossier, man bun keytar next
             synth succulents subway tile scenester, fixie meh. Skateboard bitters next level, vice
             distillery blue bottle butcher enamel pin synth gentrify flexitarian. Keffiyeh hoodie
             batch af kitsch, knausgaard kombucha yuccie four dollar toast. Vegan williamsburg
             book, glossier poutine pug seitan live-edge shabby chic lomo godard
             trade skateboard. Fashion axe austin schlitz squid 8-bit. Tofu everyday carry-free,
-            mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.</small>
+            mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.
+          </small>
         </PreviewBox>
       </div>
     </section>

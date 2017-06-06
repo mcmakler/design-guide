@@ -44,20 +44,20 @@ export const css = `.accordion.accordion--table .accordion__item-header {
 .accordion.accordion--table .accordion__radio:checked + .accordion__item > .accordion__item-header {
   background-color: #e8e8e8; }`;
 
-export const html = `<div class="accordion accordion--table">
+export const html = `<div className="accordion accordion--table">
 
-  <input class="accordion__radio"
+  <input className="accordion__radio"
          id="accordion-1"
          name="accordion"
          type="radio" />
   
-  <label class="accordion__item" for="accordion-1">
+  <label className="accordion__item" for="accordion-1">
   
-    <header class="accordion__item-header">
+    <header className="accordion__item-header">
       I am an accordion item
     </header>
     
-    <div class="accordion__item-content">
+    <div className="accordion__item-content">
       Hi I like accordions. They are like a polish
       instrument that you HAVE TO know how to play
       or else you cannot be polish. You have to be

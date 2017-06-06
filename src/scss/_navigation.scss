@@ -1,40 +1,41 @@
-nav ul {
+.navigation-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
 
-nav ul.inline {
-  display: flex;
-}
+  &_inline {
+    display: flex;
+  }
 
-nav ul.inline li + li {
-  margin-left: $grid-spacing;
-}
+  &__item_inline + #{&}__item_inline {
+    margin-left: $grid-spacing;
+  }
 
-nav ul li {
-  display: block;
+  &__item {
+    display: block;
+  }
 
-  a {
+  &__link {
     display: inline-block;
     position: relative;
     font-weight: 400;
     text-decoration: none;
+    cursor: pointer;
   }
 
-  a:link,
-  a:visited,
-  a:active {
+  &__link:link,
+  &__link:visited,
+  &__link:active {
     text-decoration: none;
     color: map-get($greys, "body");
   }
 
-  a:active,
-  a.active {
+  &__link:active,
+  &__link.active {
     font-weight: 500;
   }
 
-  a::after {
+  &__link::after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -47,16 +48,12 @@ nav ul li {
     background-color: map-get($greys, "darkest");
   }
 
-  a.active::after,
-  a:hover::after {
+  &__link_active::after,
+  &__link:hover::after {
     transform: none;
   }
 }
 
-.inverted nav ul li a::after {
+.inverted .navigation-list__link::after {
   background-color: map-get($greys, "lightest");
-}
-
-a {
-  cursor: pointer;
 }

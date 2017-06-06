@@ -45,15 +45,15 @@ export const css = `.circle-graph {
   font-size: 12px;
   color: #aaa; }`;
 
-export const html = `<div class="circle-graph">
-  <svg class="circle-graph__circle">
-    <circle class="circle-graph__bar-base"></circle>
+export const html = `<div className="circle-graph">
+  <svg className="circle-graph__circle">
+    <circle className="circle-graph__bar-base"></circle>
     
     <!-- stroke-dashoffset is a value such that: 500 = empty, 0 = full -->
-    <circle class="circle-graph__bar-value" stroke-dashoffset="350"></circle>
+    <circle className="circle-graph__bar-value" stroke-dashoffset="350"></circle>
   </svg>
-  <div class="circle-graph__content">
-    <div class="circle-graph__value">75.000</div>
-    <div class="circle-graph__label">Düsseldorf</div>
+  <div className="circle-graph__content">
+    <div className="circle-graph__value">75.000</div>
+    <div className="circle-graph__label">Düsseldorf</div>
   </div>
 </div>`;

@@ -12,7 +12,7 @@ const GridPageComponent = () => (
     <section className="container page-section" >
 
       <header>
-        <h2>Grid Explained</h2>
+        <h2 className="heading heading_secondary">Grid Explained</h2>
       </header>
 
       <div className="grid-page__sample-grid container columns" >
@@ -23,7 +23,7 @@ const GridPageComponent = () => (
 
       <div className="grid-page__code-block container columns" >
         <div className="column page-section">
-          <header><h3>HTML</h3></header>
+          <header><h3 className="heading heading_tertiary">HTML</h3></header>
           <CodeSnippet language="html" >
             {htmlTemplate}
           </CodeSnippet>

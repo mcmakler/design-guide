@@ -1,4 +1,5 @@
 @import "mixins/respond-to";
+@import "mixins/grey-backgrounds";
 
 :root {
   #{--page-section__container-width}: 1200px; // SASS LINT WORKAROUND.
@@ -11,36 +12,30 @@
     padding: ($grid-spacing * 5) 0;
   }
 
-  & > .page-section__header,
-  & > header {
+  &__header {
     padding: 0 0 ($grid-spacing * 3);
   }
 
-  & > .page-section__header > h3 + p,
-  & > header > h3 + p {
-    margin-top: $grid-spacing * 2;
-  }
-
-  &.page-section_padless-bottom {
-    padding-bottom: 0;
-
-    * {
-      padding-bottom: 1px; //border, ya kno?
-    }
-  }
-
-  .page-section__content,
-  .columns {
+  &__content {
     text-align: left;
   }
 
-}
+  &__content_has-header {
+    margin-top: $grid-spacing * 2;
+  }
 
-.page-section + .page-section {
-  border-top: 1px solid map-get($greys, "line");
-}
+  &_padless-bottom {
+    padding-bottom: 0;
+  }
 
-.page-section__container {
-  margin: 0 auto;
-  max-width: var(--page-section__container-width);
+  &:not(:first-of-type) {
+    border-top: 1px solid map-get($greys, "line");
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--page-section__container-width);
+  }
+
+  @include grey-backgrounds($text-color: false);
 }

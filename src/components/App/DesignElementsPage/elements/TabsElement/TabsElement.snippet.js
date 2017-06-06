@@ -55,22 +55,22 @@ export const css = `.tabs {
     font-weight: 300; }`;
 
 export const html = `
-<div class="tabs">
-  <div class="tabs__tab-container">
+<div className="tabs">
+  <div className="tabs__tab-container">
   
     <!-- Repeat this for each tab -->
-    <div class="tabs__tab">
+    <div className="tabs__tab">
       <input 
-        class="tabs__radio"
+        className="tabs__radio"
         type="radio"
         name="tab"
         id="tab-1"
         checked
       >
-      <label class="tabs__link" for="tab-1">
-        <header class="tabs__tab-header">Tab 1</header>
+      <label className="tabs__link" for="tab-1">
+        <header className="tabs__tab-header">Tab 1</header>
       </label>
-      <div class="tabs__tab-content">
+      <div className="tabs__tab-content">
         Lorem ipsum dolor sit amet,
         consectetur adipisicing elit.
         Adipisci consequuntur
