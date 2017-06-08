@@ -2,7 +2,7 @@
 
 @mixin text-colors {
   @each $name, $hex in $colors {
-    &.color--#{$name} {
+    &_color_#{$name} {
       color: $hex;
     }
   }

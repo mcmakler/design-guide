@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
   }
 
-  .quote__citation,
+  &__citation,
   footer {
     display: block;
     margin-bottom: $grid-spacing / 2;
@@ -33,7 +33,7 @@
     font-style: normal;
   }
 
-  .quote__content,
+  &__content,
   p {
     margin: 0;
     font-family: map-get($fonts, "headingFont");
@@ -56,13 +56,14 @@
   }
 
   @include grey-backgrounds(true);
-}
 
-.quote_boxed {
-  padding: 24px $grid-spacing $grid-spacing 73px; //73px is 20px from the ::before quote.
+  &_boxed {
+    padding: 24px $grid-spacing $grid-spacing 73px; //73px is 20px from the ::before quote.
+  }
 
-  &::before {
+  &_boxed::before {
     top: $grid-spacing;
     left: $grid-spacing;
   }
 }
+

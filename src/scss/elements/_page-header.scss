@@ -12,16 +12,22 @@
   text-align: center;
   background-color: map-get($greys, "bg");
   background-size: cover;
-  @include respond-to('tablet--landscape') {
+  background-repeat: no-repeat;
+  background-position: center;
+  @include respond-to("tablet_landscape") {
     min-height: 340px;
   }
 
-  .page-header__separator {
+  &__heading {
+    margin-bottom: $grid-spacing;
+  }
+
+  &__separator {
     display: block;
     height: 2px;
     width: $grid-spacing * 2;
-    margin: 0 auto 30px;
+    margin: 30px auto;
     border: 0;
-    background-color: map-get($colors, 'primary');
+    background-color: map-get($colors, "primary");
   }
 }

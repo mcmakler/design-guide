@@ -16,7 +16,7 @@
     font-size: 16px;
   }
 
-  .question__title {
+  &__title {
     display: block;
     margin-top: 0;
     font-family: map-get($fonts, "headingFont");
@@ -27,21 +27,21 @@
   }
 
   @include grey-backgrounds;
-}
 
-.question_boxed {
-  padding: $grid-spacing $grid-spacing $grid-spacing 65px;
+  &_boxed {
+    padding: $grid-spacing $grid-spacing $grid-spacing 65px;
+  }
 
-  &::before {
+  &_boxed::before {
     top: 20px;
     left: 20px;
   }
 
-  .question__title_boxed {
+  &__title_boxed {
     margin-top: 0;
   }
 
-  .question__content_boxed {
+  &__content_boxed {
     margin-bottom: 0;
   }
 }

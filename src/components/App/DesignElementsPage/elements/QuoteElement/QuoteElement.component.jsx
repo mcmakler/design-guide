@@ -10,12 +10,12 @@ export default () => (
       <h2 className="heading heading_secondary">Quotes</h2>
     </header>
     <PreviewBox className="center" >
-      <blockquote className="quote" style={{ maxWidth: 320 }} >
+      <blockquote className="quote">
         <p className="quote__content" >Jews and Mexicans are the same. They are not me,
           they are not orange. Therefore, they are the same.</p>
         <cite className="quote__citation" >Donald Trump</cite>
       </blockquote>
-      <blockquote className="quote quote_boxed background--grey_bg" style={{ maxWidth: 320 }} >
+      <blockquote className="quote quote_boxed background--grey_bg">
         <p className="quote__content" >The ladies call me Captain Sexy
           😎 because I write so much beautiful Javascript that they
           instantly fall in love with me.</p>

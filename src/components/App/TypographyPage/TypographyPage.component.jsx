@@ -244,9 +244,10 @@ const TypographyPage = () => (
             synth succulents subway tile scenester, fixie meh. Skateboard bitters next level, vice
             distillery blue bottle butcher enamel pin synth gentrify flexitarian. Keffiyeh hoodie
             batch af kitsch, knausgaard kombucha yuccie four dollar toast. Vegan williamsburg
-            book, glossier poutine pug seitan live-edge <a className="link">my text link</a> shabby chic lomo godard
-            trade skateboard. Fashion axe austin schlitz squid 8-bit. Tofu everyday carry-free,
-            mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.</p>
+            book, glossier poutine pug seitan live-edge <a className="link">my text link</a>
+            shabby chic lomo godard trade skateboard. Fashion axe austin schlitz squid 8-bit.
+            Tofu everyday carry-free, mumblecore hammock raclette etsy art party ethical
+            schlitz quinoa vape.</p>
         </PreviewBox>
       </div>
     </section>

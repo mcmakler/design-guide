@@ -6,9 +6,11 @@
 }
 
 .page-section {
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  padding: ($grid-spacing * 5) $grid-spacing;
-  @include respond-to('tablet') {
+  padding: ($grid-spacing * 2) $grid-spacing;
+  @include respond-to("tablet") {
     padding: ($grid-spacing * 5) 0;
   }
 
@@ -35,6 +37,11 @@
   &__container {
     margin: 0 auto;
     max-width: var(--page-section__container-width);
+  }
+
+  &__header,
+  & > header {
+    padding: 0 0 ($grid-spacing * 2);
   }
 
   @include grey-backgrounds($text-color: false);

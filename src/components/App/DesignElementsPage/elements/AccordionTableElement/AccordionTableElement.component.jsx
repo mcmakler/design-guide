@@ -10,13 +10,13 @@ export default () => (
       <h2 className="heading heading_secondary">Accordion Table</h2>
     </header>
     <PreviewBox className="center" >
-      <div className="accordion accordion--table" style={{ width: 400 }} >
+      <div className="accordion accordion_table" style={{ width: 400 }} >
         <input type="radio" id="accordion-4" className="accordion__radio" name="accordion" />
         <label htmlFor="accordion-4" className="accordion__item" >
-          <header className="accordion__item-header" >
+          <header className="accordion__item-header accordion__item-header_table" >
             I am an accordion item
           </header>
-          <div className="accordion__item-content" >
+          <div className="accordion__item-content accordion__item-content_table" >
             Hi I like accordions. They are like a polish instrument
             that you HAVE TO know how to play or else you cannot be
             polish. You have to be Russian. I hope you enjoyed reading
@@ -25,10 +25,10 @@ export default () => (
         </label>
         <input type="radio" id="accordion-5" className="accordion__radio" name="accordion" />
         <label htmlFor="accordion-5" className="accordion__item" >
-          <header className="accordion__item-header" >
+          <header className="accordion__item-header accordion__item-header_table" >
             I am an accordion item
           </header>
-          <div className="accordion__item-content" >
+          <div className="accordion__item-content accordion__item-content_table" >
             Hi I like accordions. They are like a polish instrument
             that you HAVE TO know how to play or else you cannot be
             polish. You have to be Russian. I hope you enjoyed reading
@@ -37,10 +37,10 @@ export default () => (
         </label>
         <input type="radio" id="accordion-6" className="accordion__radio" name="accordion" />
         <label htmlFor="accordion-6" className="accordion__item" >
-          <header className="accordion__item-header" >
+          <header className="accordion__item-header accordion__item-header_table" >
             I am an accordion item
           </header>
-          <div className="accordion__item-content" >
+          <div className="accordion__item-content accordion__item-content_table" >
             Hi I like accordions. They are like a polish instrument
             that you HAVE TO know how to play or else you cannot be
             polish. You have to be Russian. I hope you enjoyed reading

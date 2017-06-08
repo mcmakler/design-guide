@@ -1,7 +1,65 @@
+@import "mixins/respond-to";
+
 .push-right {
+  display: block;
   margin-left: auto;
 }
 
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hide {
+  display: none !important;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+// RWD
+@include respond-to("tablet_landscape") {
+  .hide-on-tablet_landscape {
+    display: none !important;
+  }
+}
+@include respond-to("desktop") {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+.show-on-tablet_landscape {
+  display: none !important;
+  @include respond-to("tablet_landscape") {
+    display: block !important;
+  }
+}
+
+.show-on-mobile {
+  @include respond-to("mobile") {
+    display: block !important;
+  }
+  @include respond-to("tablet") {
+    display: none !important;
+  }
+}
+
+.hide-on-mobile {
+  display: none !important;
+  @include respond-to("tablet") {
+    display: block !important;
+  }
+}
+
+.show-on-desktop {
+  display: none !important;
+  @include respond-to("desktop") {
+    display: block !important;
+  }
 }

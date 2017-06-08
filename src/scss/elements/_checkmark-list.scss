@@ -7,14 +7,12 @@ $checkmark-width: 8px;
 .checkmark-list {
   @include list-reset;
 
-  .checkmark-list__item,
-  li {
+  &__item {
     position: relative;
     padding-left: $checkmark-width + $grid-spacing;
   }
 
-  .checkmark-list__item::before,
-  li::before {
+  &__item::before {
     content: "";
     position: absolute;
     top: 0;
@@ -27,26 +25,21 @@ $checkmark-width: 8px;
     transform: rotate(45deg);
   }
 
-  .checkmark-list__item + .checkmark-list__item,
-  li + li {
+  &__item + &__item {
     margin-top: $grid-spacing - 3px;
   }
-}
 
-.checkmark-list--table {
-  width: 100%;
-  .checkmark-list__item,
-  li {
+  &__item_table {
     padding: ($grid-spacing / 2) ($checkmark-width + ($grid-spacing * 2)) ($grid-spacing / 2) $grid-spacing;
     background-color: map-get($greys, "bg");
   }
-  .checkmark-list__item + .checkmark-list__item,
-  li + li {
+
+  &__item_table + &__item_table {
     margin-top: 0;
     border-top: 1px solid white;
   }
-  .checkmark-list__item::before,
-  li::before {
+
+  &__item_table::before {
     top: 11px;
     left: auto;
     right: $grid-spacing;

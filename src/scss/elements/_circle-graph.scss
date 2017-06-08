@@ -13,7 +13,7 @@
   height: $circle-size;
   text-align: center;
 
-  .circle-graph__circle {
+  &__circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,8 +23,8 @@
     transform: rotate(-90deg);
   }
 
-  .circle-graph__bar-base,
-  .circle-graph__bar-value {
+  &__bar-base,
+  &__bar-value {
     r: ($circle-size / 2) - $circle-stroke;
     cx: $circle-size / 2;
     cy: $circle-size / 2;
@@ -32,21 +32,21 @@
     stroke-width: $circle-stroke;
   }
 
-  .circle-graph__bar-base {
+  &__bar-base {
     stroke: map-get($greys, "bg");
   }
 
-  .circle-graph__bar-value {
+  &__bar-value {
     stroke-dasharray: 313%;
     stroke: map-get($colors, "primary");
   }
 
-  .circle-graph__value {
+  &__value {
     @include graph-value;
     margin-bottom: $grid-spacing / 2;
   }
 
-  .circle-graph__label {
+  &__label {
     @include graph-label;
   }
 

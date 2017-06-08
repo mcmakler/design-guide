@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins/is-ie";
 
 .figure {
   display: flex;
@@ -16,7 +17,7 @@
   }
 
   &__header {
-    margin: 0;
+    margin: 0 0 $grid-spacing / 2 0;
     font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
     font-weight: 400;
     font-size: 17px;
@@ -50,6 +51,14 @@
 
   &_card {
     border: 1px solid map-get($greys, "line");
+  }
+
+  //TODO: Fix IE bugs.
+  @include is-ie {
+    a {
+      max-height: 250px;
+      display: block;
+    }
   }
 }
 

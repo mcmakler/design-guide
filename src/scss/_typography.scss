@@ -9,69 +9,92 @@
 }
 
 .heading {
+  margin: 0;
   color: map-get($greys, "darkest");
+  word-wrap: break-word;
+  -webkit-hyphens: auto; // why doesn"t autoprefixer get this?
+  hyphens: auto;
+
+  & + &,
+  & + .paragraph,
+  & + p {
+    margin-top: $grid-spacing / 2;
+  }
+
+  &_no-top-margin {
+    margin-top: 0;
+  }
+
+  &_no-bottom-margin {
+    margin-bottom: 0;
+  }
+
+  &_inverted {
+    color: map-get($greys, "lightest");
+  }
+
+  &_primary {
+    font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.286;
+  }
+
+  &_secondary {
+    font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  &_tertiary {
+    font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.364;
+  }
+
+  &_tertiary-inverted {
+    color: map-get($greys, "secondary");
+  }
+
+  &_quarternary {
+    font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.471;
+  }
+
+  &_quinary {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 1.462;
+    color: map-get($greys, "secondary");
+  }
 }
 
-.heading_no-top-margin {
-  margin-top: 0;
+.paragraph,
+p {
+  margin: 0;
+
+  &_clip {
+    max-width: 550px;
+  }
+
+  &_center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.heading_no-bottom-margin {
-  margin-bottom: 0;
-}
-
-.heading_inverted {
-  color: map-get($greys, "lightest");
-}
-
-.heading_primary {
-  font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
-  font-size: 42px;
-  font-weight: 400;
-  line-height: 1.286;
-}
-
-.heading_secondary {
-  font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
-  font-size: 30px;
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-.heading_tertiary {
-  font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
-  margin-top: $grid-spacing / 2;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 1.364;
-}
-
-.heading_tertiary-inverted {
+.inverted {
   color: map-get($greys, "secondary");
 }
 
-.heading_quarternary {
-  font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.471;
-}
-
-.paragraph_clip {
-  max-width: 550px;
-}
-
-.paragraph_center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading_quinary {
-  margin: 0;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  line-height: 1.462;
+.fineprint {
+  font-size: 12px;
+  line-height: 1.667;
   color: map-get($greys, "secondary");
 }
 
@@ -81,15 +104,4 @@ body {
   font-size: 15px;
   line-height: 1.733;
   color: map-get($greys, "darkest");
-}
-
-.inverted {
-  color: map-get($greys, "secondary");
-}
-
-.fineprint {
-  margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 1.667;
-  color: map-get($greys, "secondary");
 }

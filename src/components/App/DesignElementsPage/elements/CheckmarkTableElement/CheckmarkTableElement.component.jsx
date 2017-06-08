@@ -10,10 +10,10 @@ export default () => (
       <h2 className="heading heading_secondary">Checkmark Table</h2>
     </header>
     <PreviewBox className="center" >
-      <ul className="checkmark-list checkmark-list--table">
-        <li className="checkmark-list__item">Hi, I like pies.</li>
-        <li className="checkmark-list__item">Life is short.</li>
-        <li className="checkmark-list__item">Live it well.</li>
+      <ul className="checkmark-list checkmark-list_table">
+        <li className="checkmark-list__item checkmark-list__item_table">Hi, I like pies.</li>
+        <li className="checkmark-list__item checkmark-list__item_table">Life is short.</li>
+        <li className="checkmark-list__item checkmark-list__item_table">Live it well.</li>
       </ul>
     </PreviewBox>
     <div className="columns design-elements-page__code-block" >
