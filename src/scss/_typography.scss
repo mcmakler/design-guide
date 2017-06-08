@@ -4,6 +4,10 @@
   color: map-get($greys, "secondary");
 }
 
+.inverted .heading {
+  color: map-get($greys, "lightest");
+}
+
 .heading {
   color: map-get($greys, "darkest");
 }
@@ -63,6 +67,7 @@
 }
 
 .heading_quinary {
+  margin: 0;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.3px;

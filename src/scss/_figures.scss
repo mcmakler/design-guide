@@ -16,7 +16,11 @@
   }
 
   &__header {
-    margin-top: 0;
+    margin: 0;
+    font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.471;
   }
 
   &__image {
@@ -27,11 +31,6 @@
     margin-top: -8px;
     padding: $grid-spacing * 2;
     background-color: white;
-  }
-
-  &__header {
-    margin-top: 0;
-    margin-bottom: $grid-spacing;
   }
 
   &__description {
@@ -55,7 +54,7 @@
 }
 
 .inverted .figure,
-.background_grey-bg .figure {
+.background_bg .figure {
   &__caption {
     background-color: map-get($greys, "lightest");
   }

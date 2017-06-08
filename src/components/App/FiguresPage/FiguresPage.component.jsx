@@ -38,7 +38,7 @@ export default () => (
               </figcaption>
             </figure>
           </PreviewBox>
-          <PreviewBox className="background_grey center">
+          <PreviewBox className="background_bg center">
             <figure className="figure">
               <img
                 alt="Placeholder"
@@ -79,7 +79,7 @@ export default () => (
             </CodeSnippet>
           </div>
           <div className="column">
-            <PreviewBox className="background_grey center">
+            <PreviewBox className="background_bg center">
               <figure className="figure_card">
                 <img
                   className="figure__image"

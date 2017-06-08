@@ -228,7 +228,7 @@ const TypographyPage = () => (
       </div>
       <div className="column " >
         <PreviewBox className="center" >
-          <a>This is a text link.</a>
+          <a className="link">This is a text link.</a>
         </PreviewBox>
         <PreviewBox className="center" >
           <p>Gentrify air plant tilde glossier, man bun keytar next level cardigan bespoke.
@@ -244,7 +244,7 @@ const TypographyPage = () => (
             synth succulents subway tile scenester, fixie meh. Skateboard bitters next level, vice
             distillery blue bottle butcher enamel pin synth gentrify flexitarian. Keffiyeh hoodie
             batch af kitsch, knausgaard kombucha yuccie four dollar toast. Vegan williamsburg
-            book, glossier poutine pug seitan live-edge <a>my text link</a> shabby chic lomo godard
+            book, glossier poutine pug seitan live-edge <a className="link">my text link</a> shabby chic lomo godard
             trade skateboard. Fashion axe austin schlitz squid 8-bit. Tofu everyday carry-free,
             mumblecore hammock raclette etsy art party ethical schlitz quinoa vape.</p>
         </PreviewBox>
