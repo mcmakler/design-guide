@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 
 module.exports = () => ({
@@ -43,13 +42,6 @@ module.exports = () => ({
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: module => module.context && module.context.indexOf('node_modules') !== -1,
-    }),
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        postcss: [
-          autoprefixer(),
-        ],
-      },
     }),
   ],
   resolve: {

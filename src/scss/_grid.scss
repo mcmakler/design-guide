@@ -53,4 +53,9 @@
   margin-right: auto;
   width: 100%;
   max-width: 1200px;
+  padding: 0 $grid-spacing;
+
+  .container {
+    padding: 0;
+  }
 }

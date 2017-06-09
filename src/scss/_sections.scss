@@ -9,13 +9,14 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  padding: ($grid-spacing * 2) $grid-spacing;
+  padding: ($grid-spacing * 2) 0;
   @include respond-to("tablet") {
     padding: ($grid-spacing * 5) 0;
   }
 
-  &__header {
-    padding: 0 0 ($grid-spacing * 3);
+  &__header,
+  & > header {
+    padding-bottom: ($grid-spacing * 2);
   }
 
   &__content {
@@ -37,11 +38,6 @@
   &__container {
     margin: 0 auto;
     max-width: var(--page-section__container-width);
-  }
-
-  &__header,
-  & > header {
-    padding: 0 0 ($grid-spacing * 2);
   }
 
   @include grey-backgrounds($text-color: false);

@@ -80,13 +80,13 @@ export default () => (
           </div>
           <div className="column">
             <PreviewBox className="background_bg center">
-              <figure className="figure_card">
+              <figure className="figure figure_card">
                 <img
                   className="figure__image"
                   alt="Placeholder"
                   src="http://lorempixel.com/260/230/business/"
                 />
-                <figcaption className="figure__caption">
+                <figcaption className="figure__caption figure__caption_card">
                   <h4 className="figure__header">
                     Vorfälligkeitsentschädigung – lohnt sich der vorzeitige Ausstieg?
                   </h4>

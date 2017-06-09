@@ -28,9 +28,7 @@
     width: 100%;
   }
 
-  &__caption {
-    margin-top: -8px;
-    padding: $grid-spacing * 2;
+  &__caption_card {
     background-color: white;
   }
 
@@ -45,12 +43,12 @@
     color: map-get($greys, "secondary");
   }
 
-  & + .figure {
-    margin-left: $grid-spacing;
-  }
-
   &_card {
     border: 1px solid map-get($greys, "line");
+  }
+
+  & + .figure {
+    margin-left: $grid-spacing;
   }
 
   //TODO: Fix IE bugs.

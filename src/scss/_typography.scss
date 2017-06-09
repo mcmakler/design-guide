@@ -74,6 +74,11 @@
   }
 }
 
+.heading + .paragraph,
+.heading + p {
+  margin-top: $grid-spacing * 2;
+}
+
 .paragraph,
 p {
   margin: 0;

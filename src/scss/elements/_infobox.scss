@@ -32,11 +32,15 @@
   & + & {
     margin-top: 2px;
     margin-left: 0;
-    @include respond-to("tablet_landscape") {
+    @include respond-to("tablet") {
       margin-top: 0;
       margin-left: 1px;
     }
   }
 
   @include grey-backgrounds;
+}
+
+.background_bg .infobox {
+  background-color: white;
 }

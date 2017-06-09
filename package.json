@@ -24,6 +24,7 @@
     "extract-text-webpack-plugin": "beta",
     "husky": "^0.13.4",
     "node-sass": "^4.5.0",
+    "postcss-css-variables": "^0.7.0",
     "postcss-loader": "0.9.1",
     "pug-loader": "^2.3.0",
     "sass-lint": "^1.10.2",

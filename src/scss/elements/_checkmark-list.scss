@@ -45,3 +45,9 @@ $checkmark-width: 8px;
     right: $grid-spacing;
   }
 }
+
+.background_bg .checkmark-list__item_table {
+  background: white;
+  border-color: map-get($greys, "bg");
+}
+
