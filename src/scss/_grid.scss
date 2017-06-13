@@ -1,5 +1,7 @@
 @import "variables";
 @import "mixins/grey-backgrounds";
+
+$tablet: 768px;
 @import "~bulma/sass/utilities/all";
 @import "~bulma/sass/grid/all";
 

@@ -10,6 +10,7 @@ import ButtonsPage from './ButtonsPage/ButtonsPage.component';
 import DesignElementsPage from './DesignElementsPage/DesignElementsPage.component';
 import TablesPage from './TablesPage/TablesPage.component';
 import FiguresPage from './FiguresPage/FiguresPage.component';
+import SectionsPage from './SectionsPage/SectionsPage.component';
 
 import './App.scss';
 
@@ -28,6 +29,7 @@ export default () => (
         <Route path="/elements" component={DesignElementsPage} />
         <Route path="/tables" component={TablesPage} />
         <Route path="/figures" component={FiguresPage} />
+        <Route path="/page-sections" component={SectionsPage} />
       </Switch>
     </div>
   </Router>

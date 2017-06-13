@@ -23,43 +23,16 @@
 }
 
 // RWD
-@include respond-to("tablet_landscape") {
-  .hide-on-tablet_landscape {
+@each $name, $value in $breakpoints {
+  @include respond-to("#{$name}") {
+    .hide-on-#{$name} {
+      display: none !important;
+    }
+  }
+  .show-on-#{$name} {
     display: none !important;
-  }
-}
-@include respond-to("desktop") {
-  .hide-on-desktop {
-    display: none !important;
-  }
-}
-
-.show-on-tablet_landscape {
-  display: none !important;
-  @include respond-to("tablet_landscape") {
-    display: block !important;
-  }
-}
-
-.show-on-mobile {
-  @include respond-to("mobile") {
-    display: block !important;
-  }
-  @include respond-to("tablet") {
-    display: none !important;
-  }
-}
-
-.hide-on-mobile {
-  display: none !important;
-  @include respond-to("tablet") {
-    display: block !important;
-  }
-}
-
-.show-on-desktop {
-  display: none !important;
-  @include respond-to("desktop") {
-    display: block !important;
+    @include respond-to("#{$name}") {
+      display: block !important;
+    }
   }
 }

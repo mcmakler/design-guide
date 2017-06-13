@@ -34,4 +34,9 @@ export default [
     path: '/figures',
     label: 'Figures',
   },
+  {
+    id: 8,
+    path: '/page-sections',
+    label: 'Page Sections',
+  },
 ];

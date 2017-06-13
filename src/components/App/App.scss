@@ -1,6 +1,7 @@
-@import "../../scss/_header.scss";
-@import "../../scss/_globals.scss";
-@import "../../scss/_horizontal-rule.scss";
+@import "../../scss/header";
+@import "../../scss/globals";
+@import "../../scss/helpers";
+@import "../../scss/horizontal-rule";
 
 .app {
   width: 100vw;
