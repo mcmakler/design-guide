@@ -12,6 +12,7 @@ import TablesPage from './TablesPage/TablesPage.component';
 import FiguresPage from './FiguresPage/FiguresPage.component';
 import SectionsPage from './SectionsPage/SectionsPage.component';
 import CarouselPage from './CarouselPage/CarouselPage.component';
+import TimelinePage from './TimelinePage/TimelinePage.component';
 
 import './App.scss';
 
@@ -32,6 +33,7 @@ export default () => (
         <Route path="/figures" component={FiguresPage} />
         <Route path="/page-sections" component={SectionsPage} />
         <Route path="/carousel" component={CarouselPage} />
+        <Route path="/timeline" component={TimelinePage} />
       </Switch>
     </div>
   </Router>

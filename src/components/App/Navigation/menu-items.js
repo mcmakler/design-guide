@@ -44,4 +44,9 @@ export default [
     path: '/carousel',
     label: 'Carousel',
   },
+  {
+    id: 10,
+    path: '/timeline',
+    label: 'Timeline',
+  },
 ];
