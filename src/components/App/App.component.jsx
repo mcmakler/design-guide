@@ -11,6 +11,7 @@ import DesignElementsPage from './DesignElementsPage/DesignElementsPage.componen
 import TablesPage from './TablesPage/TablesPage.component';
 import FiguresPage from './FiguresPage/FiguresPage.component';
 import SectionsPage from './SectionsPage/SectionsPage.component';
+import CarouselPage from './CarouselPage/CarouselPage.component';
 
 import './App.scss';
 
@@ -30,6 +31,7 @@ export default () => (
         <Route path="/tables" component={TablesPage} />
         <Route path="/figures" component={FiguresPage} />
         <Route path="/page-sections" component={SectionsPage} />
+        <Route path="/carousel" component={CarouselPage} />
       </Switch>
     </div>
   </Router>

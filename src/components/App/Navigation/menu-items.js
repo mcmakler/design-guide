@@ -39,4 +39,9 @@ export default [
     path: '/page-sections',
     label: 'Page Sections',
   },
+  {
+    id: 9,
+    path: '/carousel',
+    label: 'Carousel',
+  },
 ];
