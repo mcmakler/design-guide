@@ -2,7 +2,9 @@ import React from 'react';
 
 import Page from '../Page/Page.component';
 import PreviewBox from '../PreviewBox/PreviewBox.component';
+import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 
+import { html, css } from './SectionsPage.snippet';
 import './SectionsPage.scss';
 
 const SectionsPageComponent = () => (
@@ -70,6 +72,40 @@ const SectionsPageComponent = () => (
           </div>
         </div>
       </PreviewBox>
+    </section>
+    <section className="container page-section" >
+      <h2 className="heading heading_secondary">Persona Banner</h2>
+      <PreviewBox>
+        <div className="page-section_persona persona-banner">
+          <div className="persona-banner__header">
+            <h2 className="persona-banner__heading heading heading_secondary">
+              Kaufvertrag
+            </h2>
+            <p className="persona-banner__header-content">
+              Wir koordinieren die Unterschriften aller Mietparteien
+              auf einem rechtsgültigen Vertrag.
+            </p>
+          </div>
+          <p>Der Käufer wird durch den Verzicht auf versteckte
+            Kosten im Kaufpreis von inflationierten Grunderwerbssteuern
+            und Notargebühren bewahrt. Der Käufer wird durch den
+            Verzicht auf versteckte Kosten im Kaufpreis von
+            inflationierten Grunderwerbssteuern und Notargebühren
+            bewahrt.</p>
+        </div>
+      </PreviewBox>
+      <div className="columns">
+        <div className="column">
+          <CodeSnippet language="html">
+            { html }
+          </CodeSnippet>
+        </div>
+        <div className="column">
+          <CodeSnippet language="css">
+            { css }
+          </CodeSnippet>
+        </div>
+      </div>
     </section>
   </Page>
 );
