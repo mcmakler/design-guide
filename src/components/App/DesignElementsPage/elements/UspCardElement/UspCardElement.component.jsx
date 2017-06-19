@@ -3,6 +3,8 @@ import React from 'react';
 import CodeSnippet from '../../../CodeSnippet/CodeSnippet.component';
 import PreviewBox from '../../../PreviewBox/PreviewBox.component';
 
+import './UspCardElement.scss';
+
 import { html, css } from './UspCardElement.snippet';
 
 export default () => (
