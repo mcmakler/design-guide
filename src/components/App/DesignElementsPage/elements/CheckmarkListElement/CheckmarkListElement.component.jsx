@@ -9,7 +9,7 @@ export default () => (
     <header>
       <h2 className="heading heading_secondary">Checkmark List</h2>
     </header>
-    <PreviewBox className="center" >
+    <PreviewBox >
       <ul className="checkmark-list">
         <li className="checkmark-list__item">Hi, I like pies.</li>
         <li className="checkmark-list__item">Life is short.</li>
