@@ -10,7 +10,7 @@ export default () => (
       <h2 className="heading heading_secondary">Infobox</h2>
     </header>
     <PreviewBox className="center" >
-      <div className="columns">
+      <div className="columns" style={{ width: '100%' }}>
         <div className="infobox">
           <header className="infobox__header">70%</header>
           <p className="infobox__content">mehr Ertag</p>

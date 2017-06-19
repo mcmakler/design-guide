@@ -3,11 +3,13 @@
 @import "../mixins/respond-to";
 
 .infobox {
+  --infobox-size: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex: 1 1 100px;
+  flex: 1 1 var(--infobox-size);
+  max-width: var(--infobox-size);
   box-sizing: border-box;
   min-height: 130px;
   padding: ($grid-spacing);
