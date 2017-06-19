@@ -10,24 +10,20 @@ import './SectionsPage.scss';
 const SectionsPageComponent = () => (
   <Page title="Page Sections" subtitle="This is what Page Sections should look like.">
     <section className="container page-section" >
-      <PreviewBox>
+      <PreviewBox className="page-section__preview-box">
         <div className="page-section">
           <h2 className="heading heading_secondary">Hola Mundo¡</h2>
           <h3 className="heading heading_tertiary">Ich kann auf Spanisch reden, digga!</h3>
           <p>This is a simple section with no graphic. </p>
         </div>
       </PreviewBox>
-      <PreviewBox>
-        <div className="page-section text-left">
-          <h2 className="heading heading_secondary">Hola Mundo¡</h2>
-          <h3 className="heading heading_tertiary">Ich kann auf Spanisch schreiben, digga!</h3>
-          <p>This is a simple section with no graphic, but left-aligned text. WOOOO LEFT!</p>
-        </div>
-      </PreviewBox>
-      <PreviewBox>
-        <div className="page-section text-left">
+      <PreviewBox className="page-section__preview-box">
+        <div className="page-section">
           <div className="columns columns_center-vertical">
-            <div className="column is-6">
+            <div className="column is-6-desktop">
+              <div className="hide-on-tablet_landscape page-section__mobile-header">
+                <img className="center-block" alt="Sup" src="https://www.mcmakler.de/images/pages/verkaufen/boardroom.jpg" />
+              </div>
               <h2 className="heading heading_secondary">Kaufvertrag</h2>
               <h3
                 className="heading heading_tertiary"
@@ -40,20 +36,38 @@ const SectionsPageComponent = () => (
                 versteckte Kosten im Kaufpreis von inflationierten
                 Grunderwerbssteuern und Notargebühren bewahrt.
               </p>
+              <br />
+              <div className="columns" style={{ width: '100%' }}>
+                <div className="infobox">
+                  <header className="infobox__header">70%</header>
+                  <p className="infobox__content">mehr Ertag</p>
+                </div>
+                <div className="infobox">
+                  <header className="infobox__header">5x</header>
+                  <p className="infobox__content">more skillz than 2016</p>
+                </div>
+                <div className="infobox">
+                  <header className="infobox__header">?</header>
+                  <p className="infobox__content">u wot m8</p>
+                </div>
+              </div>
             </div>
-            <div className="column is-6">
+            <div className="column show-on-tablet_landscape is-6-desktop">
               <img className="center-block" alt="Sup" src="https://www.mcmakler.de/images/pages/verkaufen/boardroom.jpg" />
             </div>
           </div>
         </div>
       </PreviewBox>
-      <PreviewBox>
-        <div className="page-section text-left">
+      <PreviewBox className="page-section__preview-box">
+        <div className="page-section">
           <div className="columns columns_center-vertical">
-            <div className="column is-6">
+            <div className="column is-6-desktop show-on-tablet_landscape">
               <img className="center-block" alt="Sup" src="https://www.mcmakler.de/images/pages/verkaufen/customer-care-admin-ui.jpg" />
             </div>
-            <div className="column is-6">
+            <div className="column is-6-desktop">
+              <div className="hide-on-tablet_landscape page-section__mobile-header">
+                <img className="center-block" alt="Sup" src="https://www.mcmakler.de/images/pages/verkaufen/customer-care-admin-ui.jpg" />
+              </div>
               <h2 className="heading heading_secondary">Berichterstattung</h2>
               <h3
                 className="heading heading_tertiary"
@@ -94,13 +108,16 @@ const SectionsPageComponent = () => (
             bewahrt.</p>
         </div>
       </PreviewBox>
+      <br />
       <div className="columns">
         <div className="column">
+          <h3 className="heading heading_tertiary">HTML</h3>
           <CodeSnippet language="html">
             { html }
           </CodeSnippet>
         </div>
         <div className="column">
+          <h3 className="heading heading_tertiary">CSS</h3>
           <CodeSnippet language="css">
             { css }
           </CodeSnippet>
