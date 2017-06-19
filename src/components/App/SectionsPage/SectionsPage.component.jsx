@@ -37,7 +37,7 @@ const SectionsPageComponent = () => (
                 Grunderwerbssteuern und Notargebühren bewahrt.
               </p>
               <br />
-              <div className="columns" style={{ width: '100%' }}>
+              <div className="columns infobox__container" style={{ width: '100%' }}>
                 <div className="infobox">
                   <header className="infobox__header">70%</header>
                   <p className="infobox__content">mehr Ertag</p>
