@@ -17,7 +17,7 @@
   }
 
   &__header {
-    margin: 0 0 $grid-spacing / 2 0;
+    margin: 0;
     font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
     font-weight: 400;
     font-size: 17px;
