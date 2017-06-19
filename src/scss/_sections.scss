@@ -51,10 +51,12 @@
 
 .persona-banner {
   position: relative;
-  padding: ($grid-spacing * 4) ($grid-spacing);
+  padding: ($grid-spacing * 4) ($grid-spacing) ($grid-spacing  * 2);
   box-sizing: border-box;
   background: map-get($greys, "bg");
   background-size: cover;
+  overflow: hidden;
+  text-align: center;
   @include respond-to("tablet") {
     padding: ($grid-spacing * 4);
   }
@@ -62,13 +64,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -32px;
     left: 0;
     right: 0;
     display: block;
     margin: 0 auto;
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     background: white;
     transform: rotate(45deg);
   }
@@ -82,7 +84,6 @@
     box-sizing: border-box;
     text-align: center;
     @include respond-to("tablet") {
-      max-width: 50%;
       padding: ($grid-spacing * 2);
     }
   }
@@ -97,7 +98,7 @@
     width: ($grid-spacing * .5);
     background-color: map-get($greys, "line");
     @include respond-to("tablet") {
-      width: ($grid-spacing * 3);
+      width: 30%;
     }
   }
 
