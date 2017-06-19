@@ -67,13 +67,17 @@
     }
   }
 
+  &_fixed-width {
+    max-width: 250px;
+  }
+
   &_large::before {
     content: "";
     position: absolute;
     top: calc(50% - 2px);
     right: $grid-spacing * 2;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-top: 2px solid currentColor;
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-50%);
