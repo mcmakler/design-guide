@@ -7,9 +7,9 @@ import { css, html } from './CheckmarkListElement.snippet';
 export default () => (
   <section className="page-section" >
     <header>
-      <h2>Checkmark List</h2>
+      <h2 className="heading heading_secondary">Checkmark List</h2>
     </header>
-    <PreviewBox className="center" >
+    <PreviewBox >
       <ul className="checkmark-list">
         <li className="checkmark-list__item">Hi, I like pies.</li>
         <li className="checkmark-list__item">Life is short.</li>
@@ -19,7 +19,7 @@ export default () => (
     <div className="columns design-elements-page__code-block" >
       <div className="column is-half" >
         <header>
-          <h3>CSS</h3>
+          <h3 className="heading heading_tertiary">CSS</h3>
         </header>
         <CodeSnippet language="css" >
           { css }
@@ -27,7 +27,7 @@ export default () => (
       </div>
       <div className="column" >
         <header>
-          <h3>HTML</h3>
+          <h3 className="heading heading_tertiary">HTML</h3>
         </header>
         <CodeSnippet language="html" >
           { html }

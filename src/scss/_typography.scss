@@ -4,88 +4,102 @@
   color: map-get($greys, "secondary");
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  color: map-get($greys, "darkest");
-}
-
-.page-section h1,
-.page-section h2,
-.page-section h3,
-.page-section h4,
-.page-section h5,
-.page-section h6 {
-  margin-bottom: 0;
-}
-
-.inverted h1,
-.inverted h2,
-.inverted h4 {
+.inverted .heading {
   color: map-get($greys, "lightest");
 }
 
-h1,
-h2 {
-  font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
-  font-weight: 400;
+.heading {
+  margin: 0;
+  color: map-get($greys, "darkest");
+  word-wrap: break-word;
+  -webkit-hyphens: auto; // why doesn"t autoprefixer get this?
+  hyphens: auto;
+
+  & + &,
+  & + .paragraph,
+  & + p {
+    margin-top: $grid-spacing / 2;
+  }
+
+  &_no-top-margin {
+    margin-top: 0;
+  }
+
+  &_no-bottom-margin {
+    margin-bottom: 0;
+  }
+
+  &_inverted {
+    color: map-get($greys, "lightest");
+  }
+
+  &_primary {
+    font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.286;
+  }
+
+  &_secondary {
+    font-family: map-get($fonts, "headingFont") map-get($fonts, "headingFontFallback");
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  &_tertiary {
+    font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.364;
+  }
+
+  &_tertiary-inverted {
+    color: map-get($greys, "secondary");
+  }
+
+  &_quarternary {
+    font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.471;
+  }
+
+  &_quinary {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 1.462;
+    color: map-get($greys, "secondary");
+  }
 }
 
-h1 {
-  margin-bottom: 30px;
-  font-size: 42px;
-  line-height: 1.286;
+.heading + .paragraph,
+.heading + p {
+  margin-top: $grid-spacing * 2;
 }
 
-h2 {
-  margin-bottom: 23px;
-  font-size: 30px;
-  line-height: 1.2;
+.paragraph,
+p {
+  margin: 0;
+
+  &_clip {
+    max-width: 550px;
+  }
+
+  &_center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-h2 + h3 {
-  margin-top: $grid-spacing / 2;
-}
-
-h3, h4 {
-  font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
-}
-
-h3 {
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 1.364;
-}
-
-.inverted h3 {
+.inverted {
   color: map-get($greys, "secondary");
 }
 
-h4 {
-  margin-top: $grid-spacing;
-  margin-bottom: $grid-spacing;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.471;
-}
-
-h4 + p,
-p + h4 {
-  margin-top: $grid-spacing;
-}
-
-p.clip {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h5 {
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  line-height: 1.462;
+.fineprint {
+  font-size: 12px;
+  line-height: 1.667;
   color: map-get($greys, "secondary");
 }
 
@@ -97,13 +111,6 @@ body {
   color: map-get($greys, "darkest");
 }
 
-.inverted body {
-  color: map-get($greys, "secondary");
-}
-
-.fineprint {
-  margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 1.667;
-  color: map-get($greys, "secondary");
+input, textarea, select, button, meter, progress, figure {
+  font: inherit;
 }

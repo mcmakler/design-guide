@@ -1,5 +1,9 @@
 files:
   include: 'src/**/*.s+(a|c)ss'
+  ignore:
+    - 'src/scss/elements/_circle-graph.scss' # This file uses CSS Variables that sass-lint doesn't currently like.
+    - 'src/scss/elements/_infobox.scss' # This file uses CSS Variables that sass-lint doesn't currently like.
+    - 'src/scss/_carousel.scss' # This file uses CSS Variables that sass-lint doesn't currently like.
 options:
   formatter: stylish
   merge-default-rules: false

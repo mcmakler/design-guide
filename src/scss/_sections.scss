@@ -1,46 +1,129 @@
+@import "variables";
 @import "mixins/respond-to";
+@import "mixins/grey-backgrounds";
 
 :root {
   #{--page-section__container-width}: 1200px; // SASS LINT WORKAROUND.
 }
 
 .page-section {
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  padding: ($grid-spacing * 5) $grid-spacing;
-  @include respond-to('tablet') {
-    padding: ($grid-spacing * 5) 0;
-  }
-
-  & > .page-section__header,
-  & > header {
-    padding: 0 0 ($grid-spacing * 3);
-  }
-
-  & > .page-section__header > h3 + p,
-  & > header > h3 + p {
-    margin-top: $grid-spacing * 2;
-  }
-
-  &.page-section_padless-bottom {
-    padding-bottom: 0;
-
-    * {
-      padding-bottom: 1px; //border, ya kno?
-    }
-  }
-
-  .page-section__content,
-  .columns {
+  padding: ($grid-spacing * 2.5) 0;
+  @include respond-to("tablet") {
+    padding: ($grid-spacing * 3.5) 0;
     text-align: left;
   }
 
+  &__header,
+  & > header {
+    padding-bottom: ($grid-spacing * 2);
+  }
+
+  &__mobile-header {
+    margin-bottom: $grid-spacing * 2;
+  }
+
+  &__content {
+    text-align: left;
+  }
+
+  &__content_has-header {
+    margin-top: $grid-spacing * 2;
+  }
+
+  &_padless-bottom {
+    padding-bottom: 0;
+  }
+
+  &:not(:first-of-type) {
+    border-top: 1px solid map-get($greys, "line");
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--page-section__container-width);
+  }
+
+  @include grey-backgrounds($text-color: false);
 }
 
-.page-section + .page-section {
-  border-top: 1px solid map-get($greys, "line");
-}
+.persona-banner {
+  position: relative;
+  padding: ($grid-spacing * 4) ($grid-spacing) ($grid-spacing  * 2);
+  box-sizing: border-box;
+  background: map-get($greys, "bg");
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  @include respond-to("tablet") {
+    padding: ($grid-spacing * 4);
+  }
 
-.page-section__container {
-  margin: 0 auto;
-  max-width: var(--page-section__container-width);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: white;
+    transform: rotate(45deg);
+  }
+
+  &__header {
+    position: relative;
+    margin: $grid-spacing auto ($grid-spacing * 2);
+    padding: $grid-spacing;
+    border: 1px solid map-get($greys, "line");
+    border-top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    @include respond-to("tablet") {
+      padding: ($grid-spacing * 2);
+    }
+  }
+
+  &__header::before,
+  &__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 1px;
+    width: ($grid-spacing * .5);
+    background-color: map-get($greys, "line");
+    @include respond-to("tablet") {
+      width: 30%;
+    }
+  }
+
+  &__header::before {
+    left: 0;
+  }
+
+  &__header::after {
+    right: 0;
+  }
+
+  &__heading {
+    position: absolute;
+    top: $grid-spacing * -1;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin: 0 auto;
+    white-space: pre;
+  }
+
+  &__heading + &__header-content {
+    margin: 0;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    color: map-get($greys, "secondary");
+  }
 }

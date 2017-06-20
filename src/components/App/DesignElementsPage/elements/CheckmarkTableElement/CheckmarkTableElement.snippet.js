@@ -13,14 +13,14 @@ export const css = `.checkmark-list--table .checkmark-list__item {
   left: auto;
   right: 20px; }`;
 
-export const html = `<ul class="checkmark-list checkmark-list--table">
-    <li class="checkmark-list__item">
+export const html = `<ul className="checkmark-list checkmark-list--table">
+    <li className="checkmark-list__item">
       Hi, I like pies.
     </li>
-    <li class="checkmark-list__item">
+    <li className="checkmark-list__item">
       Life is short.
     </li>
-    <li class="checkmark-list__item">
+    <li className="checkmark-list__item">
       Live it well.
     </li>
   </ul>`;

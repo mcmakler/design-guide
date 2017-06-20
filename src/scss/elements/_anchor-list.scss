@@ -5,13 +5,13 @@
 .anchor-list {
   @include list-reset;
 
-  .anchor-list__item {
+  &__item {
     font-weight: 500;
 
     @include prepend-circle(22px, false);
   }
 
-  .anchor-list__item::after {
+  &__item::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -24,7 +24,7 @@
     transform: rotate(45deg);
   }
 
-  .anchor-list__item + .anchor-list__item {
+  &__item + &__item {
     margin-top: $grid-spacing - 3px;
   }
 }

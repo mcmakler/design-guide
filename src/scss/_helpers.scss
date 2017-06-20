@@ -1,7 +1,38 @@
+@import "mixins/respond-to";
+
 .push-right {
+  display: block;
   margin-left: auto;
 }
 
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hide {
+  display: none !important;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+// RWD
+@each $name, $value in $breakpoints {
+  @include respond-to("#{$name}") {
+    .hide-on-#{$name} {
+      display: none !important;
+    }
+  }
+  .show-on-#{$name} {
+    display: none !important;
+    @include respond-to("#{$name}") {
+      display: block !important;
+    }
+  }
 }

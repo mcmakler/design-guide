@@ -22,14 +22,14 @@ export const css = `.checkmark-list {
   .checkmark-list .checkmark-list__item + .checkmark-list__item {
     margin-top: 17px; }`;
 
-export const html = `<ul class="checkmark-list">
-    <li class="checkmark-list__item">
+export const html = `<ul className="checkmark-list">
+    <li className="checkmark-list__item">
       Hi, I like pies.
     </li>
-    <li class="checkmark-list__item">
+    <li className="checkmark-list__item">
       Life is short.
     </li>
-    <li class="checkmark-list__item">
+    <li className="checkmark-list__item">
       Live it well.
     </li>
   </ul>`;

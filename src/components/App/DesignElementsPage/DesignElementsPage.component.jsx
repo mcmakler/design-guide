@@ -14,6 +14,7 @@ import CheckmarkTableElement from './elements/CheckmarkTableElement/CheckmarkTab
 import InfoboxElement from './elements/InfoboxElement/InfoboxElement.component';
 import LineGraphElement from './elements/LineGraphElement/LineGraphElement.component';
 import CircleGraphElement from './elements/CircleGraphElement/CircleGraphElement.component';
+import UspCardElement from './elements/UspCardElement/UspCardElement.component';
 
 import './DesignElementsPage.scss';
 
@@ -35,5 +36,6 @@ export default () => (
       <InfoboxElement />
       <LineGraphElement />
       <CircleGraphElement />
+      <UspCardElement />
     </div>
   </Page>);

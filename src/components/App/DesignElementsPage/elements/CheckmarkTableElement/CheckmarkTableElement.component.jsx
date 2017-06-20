@@ -7,19 +7,19 @@ import { css, html } from './CheckmarkTableElement.snippet';
 export default () => (
   <section className="page-section" >
     <header>
-      <h2>Checkmark Table</h2>
+      <h2 className="heading heading_secondary">Checkmark Table</h2>
     </header>
     <PreviewBox className="center" >
-      <ul className="checkmark-list checkmark-list--table">
-        <li className="checkmark-list__item">Hi, I like pies.</li>
-        <li className="checkmark-list__item">Life is short.</li>
-        <li className="checkmark-list__item">Live it well.</li>
+      <ul className="checkmark-list checkmark-list_table">
+        <li className="checkmark-list__item checkmark-list__item_table">Hi, I like pies.</li>
+        <li className="checkmark-list__item checkmark-list__item_table">Life is short.</li>
+        <li className="checkmark-list__item checkmark-list__item_table">Live it well.</li>
       </ul>
     </PreviewBox>
     <div className="columns design-elements-page__code-block" >
       <div className="column is-half" >
         <header>
-          <h3>CSS</h3>
+          <h3 className="heading heading_tertiary">CSS</h3>
         </header>
         <CodeSnippet language="css" >
           { css }
@@ -27,7 +27,7 @@ export default () => (
       </div>
       <div className="column" >
         <header>
-          <h3>HTML</h3>
+          <h3 className="heading heading_tertiary">HTML</h3>
         </header>
         <CodeSnippet language="html" >
           { html }

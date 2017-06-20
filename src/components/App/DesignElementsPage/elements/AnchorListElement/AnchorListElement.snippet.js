@@ -40,8 +40,8 @@ export const css = `.anchor-list {
   .anchor-list .anchor-list__item + .anchor-list__item {
     margin-top: 17px; }`;
 
-export const html = `<ul class="anchor-list">
-    <li class="anchor-list__item">Hi, I like pies.</li>
-    <li class="anchor-list__item">Life is short.</li>
-    <li class="anchor-list__item">Live it well.</li>
+export const html = `<ul className="anchor-list">
+    <li className="anchor-list__item">Hi, I like pies.</li>
+    <li className="anchor-list__item">Life is short.</li>
+    <li className="anchor-list__item">Live it well.</li>
   </ul>`;

@@ -34,4 +34,19 @@ export default [
     path: '/figures',
     label: 'Figures',
   },
+  {
+    id: 8,
+    path: '/page-sections',
+    label: 'Page Sections',
+  },
+  {
+    id: 9,
+    path: '/carousel',
+    label: 'Carousel',
+  },
+  {
+    id: 10,
+    path: '/timeline',
+    label: 'Timeline',
+  },
 ];

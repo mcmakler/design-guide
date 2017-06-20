@@ -1,0 +1,9 @@
+@import "../../../scss/sections";
+
+.heading_secondary + .preview-box {
+  margin-top: $grid-spacing * 2;
+}
+
+.page-section__preview-box {
+  padding: 0 ($grid-spacing * 2);
+}

@@ -36,9 +36,9 @@ export const css = `.quote {
     line-height: 1.647; }`;
 
 export const html = `
-<blockquote class="quote">
-    <cite class="quote__citation">Donald Trump</cite>
-    <p class="quote__content">
+<blockquote className="quote">
+    <cite className="quote__citation">Donald Trump</cite>
+    <p className="quote__content">
       Jews and Mexicans are the same.
       They are not me, they are not orange.
       Therefore, they are the same.

@@ -5,9 +5,9 @@ import './Page.scss';
 const PageComponent = props => (
   <div>
     <div className="page-header">
-      <h1>{props.title}</h1>
+      <h1 className="heading heading_primary">{props.title}</h1>
       <hr className="page-header__separator" />
-      <h3>{props.subtitle}</h3>
+      <h3 className="heading heading_tertiary">{props.subtitle}</h3>
     </div>
     <main className={props.className}>
       {props.children}

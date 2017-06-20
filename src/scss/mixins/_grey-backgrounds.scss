@@ -2,7 +2,7 @@
 
 @mixin grey-backgrounds($text-color: false) {
   @each $name, $hex in $greys {
-    &.background--grey_#{$name} {
+    &.background_#{$name} {
       background-color: $hex;
 
       @if ($text-color) {

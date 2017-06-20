@@ -64,7 +64,7 @@ export default () => (
         </div>
         <div className="column" >
           <PreviewBox className="center" >
-            <button className="button button_large button_primary" >
+            <button className="button button_large button_fixed-width button_primary" >
               Very big primary button
             </button>
           </PreviewBox>

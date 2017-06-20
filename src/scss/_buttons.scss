@@ -14,6 +14,7 @@
   padding: 0 40px;
   font-weight: 500;
   font-size: inherit;
+  text-decoration: none;
   outline: none;
   appearance: none;
   overflow: hidden;
@@ -49,61 +50,70 @@
       $text-color: black;
     }
 
-    &.button_#{$name} {
+    &_#{$name} {
       background-color: #{$hex};
       color: $text-color;
     }
   }
 
-  &.button_large {
+  &_large {
     display: inline-block;
-    padding-top: $grid-spacing;
-    padding-bottom: $grid-spacing;
-    padding-right: $grid-spacing * 3;
-    margin-top: $grid-spacing;
-    min-height: 60px;
-    font-size: 18px;
+    padding: $grid-spacing ($grid-spacing * 3) $grid-spacing ($grid-spacing * 2);
+    min-height: 50px;
+    font-size: 15px;
+    @include respond-to("tablet") {
+      min-height: 60px;
+      font-size: 18px;
+    }
   }
 
-  &.button_large::before {
+  &_fixed-width {
+    max-width: 250px;
+  }
+
+  &_large::before {
     content: "";
     position: absolute;
     top: calc(50% - 2px);
     right: $grid-spacing * 2;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-top: 2px solid currentColor;
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-50%);
   }
 
-  &.button_fluid {
+  &_fluid {
     width: 100%;
   }
 
-  &.button_secondary {
+  &_flex {
+    display: flex;
+  }
+
+  &_secondary {
     border: 1px solid map-get($greys, "secondary");
-    background-color: white;
+    background-color: transparent;
     color: map-get($greys, "secondaryAlt");
   }
 
-  &.button_facebook {
+  &_facebook {
     padding-right: $grid-spacing * 3;
     background-color: #43609C;
     color: white;
   }
 
-  &.button_facebook::before {
+  &_facebook::before {
     @include facebook-logo(white);
   }
 
-  &.button_twitter {
+  &_twitter {
     padding-right: $grid-spacing * 3;
     background-color: #61BFE8;
     color: white;
   }
 
-  &.button_twitter::before {
+  &_twitter::before {
     @include twitter-logo(white, #61BFE8);
     transform: scale(0.1);
     top: -22px;

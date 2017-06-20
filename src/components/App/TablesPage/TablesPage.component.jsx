@@ -16,7 +16,7 @@ export default () => (
   >
     <div className="container page-section" >
       <header>
-        <h2>Basic Tables</h2>
+        <h2 className="heading heading_secondary">Basic Tables</h2>
       </header>
       <div className="columns">
         <div className="column">
@@ -30,57 +30,69 @@ export default () => (
         </div>
         <div className="column">
           <PreviewBox className="center">
-            <table>
-              <thead>
+            <table className="table">
+              <thead className="table__header">
                 <tr>
-                  <th>Jahr</th>
-                  <th>Preis</th>
-                  <th>Fläche</th>
+                  <th className="table__cell table__cell_header">Jahr</th>
+                  <th className="table__cell table__cell_header">Preis</th>
+                  <th className="table__cell table__cell_header">Fläche</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell">2016</td>
+                  <td className="table__cell">50.000 &euro;</td>
+                  <td className="table__cell">92m</td>
                 </tr>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell">2016</td>
+                  <td className="table__cell">50.000 &euro;</td>
+                  <td className="table__cell">92m</td>
                 </tr>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell">2016</td>
+                  <td className="table__cell">50.000 &euro;</td>
+                  <td className="table__cell">92m</td>
                 </tr>
               </tbody>
             </table>
           </PreviewBox>
-          <PreviewBox className="background--grey_bg center">
-            <table>
-              <thead>
+          <PreviewBox className="background_bg center">
+            <table className="table">
+              <thead className="table__header">
                 <tr>
-                  <th>Jahr</th>
-                  <th>Preis</th>
-                  <th>Fläche</th>
+                  <th
+                    className={'table__cell table__cell_inverted table__cell_header table__cell_header_inverted'}
+                  >
+                    Jahr
+                  </th>
+                  <th
+                    className={'table__cell table__cell_inverted table__cell_header table__cell_header_inverted'}
+                  >
+                    Preis
+                  </th>
+                  <th
+                    className={'table__cell table__cell_inverted table__cell_header table__cell_header_inverted'}
+                  >
+                    Fläche
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell table__cell_inverted">2016</td>
+                  <td className="table__cell table__cell_inverted">50.000 &euro;</td>
+                  <td className="table__cell table__cell_inverted">92m</td>
                 </tr>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell table__cell_inverted">2016</td>
+                  <td className="table__cell table__cell_inverted">50.000 &euro;</td>
+                  <td className="table__cell table__cell_inverted">92m</td>
                 </tr>
-                <tr>
-                  <td>2016</td>
-                  <td>50.000 &euro;</td>
-                  <td>92m</td>
+                <tr className="table__row">
+                  <td className="table__cell table__cell_inverted">2016</td>
+                  <td className="table__cell table__cell_inverted">50.000 &euro;</td>
+                  <td className="table__cell table__cell_inverted">92m</td>
                 </tr>
               </tbody>
             </table>

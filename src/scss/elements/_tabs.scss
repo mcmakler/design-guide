@@ -6,27 +6,27 @@
   padding: $grid-spacing;
   box-sizing: border-box;
 
-  .tabs__tab-container {
+  &__tab-container {
     position: relative;
     display: flex;
   }
 
-  .tabs__tab + .tabs__tab {
+  &__tab + #{&}__tab {
     margin-left: $grid-spacing;
   }
 
-  .tabs__radio {
+  &__radio {
     display: none;
   }
 
-  .tabs__link {
+  &__link {
     position: relative;
     display: block;
     font-weight: 400;
     cursor: pointer;
   }
 
-  .tabs__tab-header::after {
+  &__tab-header::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -41,25 +41,25 @@
     background-color: currentColor;
   }
 
-  .tabs__link:hover > .tabs__tab-header::after {
+  &__link:hover > &__tab-header::after {
     opacity: .2;
     transform: scaleX(.5);
   }
 
-  .tabs__radio:checked + .tabs__link {
+  &__radio:checked + &__link {
     font-weight: 500;
   }
 
-  .tabs__radio:checked + .tabs__link > .tabs__tab-header::after {
+  &__radio:checked + &__link > &__tab-header::after {
     transform: none;
     opacity: 1;
   }
 
-  .tabs__radio:checked + .tabs__link + .tabs__tab-content {
+  &__radio:checked + &__link + &__tab-content {
     display: block;
   }
 
-  .tabs__tab-content {
+  &__tab-content {
     position: absolute;
     top: $grid-spacing * 2;
     left: 0;

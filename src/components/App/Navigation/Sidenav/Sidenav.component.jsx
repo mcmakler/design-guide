@@ -7,7 +7,7 @@ export default class Sidenav extends Component {
   renderMenuItems() {
     return this.props.menuItems && this.props.menuItems.map(item =>
       <li key={item.id} >
-        <NavLink activeClassName="active" to={item.path} >
+        <NavLink className="link" activeClassName="link_active" to={item.path} >
           {item.label}
         </NavLink>
       </li>,

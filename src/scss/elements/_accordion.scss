@@ -2,15 +2,16 @@
 @import "../includes/greys";
 
 .accordion {
-  .accordion__radio {
+
+  &__radio {
     display: none;
   }
 
-  .accordion__item {
+  &__item {
     display: block;
   }
 
-  .accordion__item-header {
+  &__item-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,22 +23,22 @@
     @include prepend-circle(22px);
   }
 
-  .accordion__item-header::before {
+  &__item-header::before {
     content: "+";
     top: 6px;
     transition: border-color .1s ease;
     will-change: border-color;
   }
 
-  .accordion__item-header:hover::before {
+  &__item-header:hover::before {
     border-color: map-get($colors, "primary");
   }
 
-  .accordion__radio:checked + .accordion__item > .accordion__item-header::before {
+  &__radio:checked + &__item > &__item-header::before {
     content: "–";
   }
 
-  .accordion__item-content {
+  &__item-content {
     box-sizing: border-box;
     height: 0;
     overflow: hidden;
@@ -47,48 +48,51 @@
     opacity: 0;
   }
 
-  .accordion__radio:checked + .accordion__item > .accordion__item-content {
+  &__radio:checked + &__item > &__item-content {
     height: auto;
     margin: ($grid-spacing / 2) 0;
     opacity: 1;
     transform: none;
   }
-}
 
-.accordion.accordion--table {
-  .accordion__item-header {
+  &__item-header_table {
     @include prepend-circle(22px, true, true); // should be 24 but there"s a 2px border.
     padding-left: $grid-spacing;
     padding-top: $grid-spacing / 2 + 2;
     padding-bottom: $grid-spacing / 2 + 2;
-    min-height: 48px;
     transition: .15s background-color ease;
     will-change: background-color;
     background-color: map-get($greys, "bg");
   }
-  .accordion__item-header::before {
+
+  &__item-header_table::before {
     top: 50%;
     transform: translateY(-50%);
   }
-  .accordion__item-header:hover {
+
+  &__item-header_table:hover {
     background-color: map-get($greys, "table");
   }
-  .accordion__item ~ .accordion__item > .accordion__item-header {
+
+  &__item ~ &__item > &__item-header_table {
     border-top: 1px solid white;
   }
-  .accordion__item-header::before {
+
+  &__item-header_table::before {
     content: "+";
     left: auto;
   }
-  .accordion__item-content {
-    box-sizing: border-box;
+
+  &__item-content_table {
     background-color: map-get($greys, "bg");
   }
-  .accordion__radio:checked + .accordion__item > .accordion__item-content {
+
+  &__radio:checked + &__item > &__item-content_table {
     margin: 0;
     padding: $grid-spacing * 2;
   }
-  .accordion__radio:checked + .accordion__item > .accordion__item-header {
+
+  &__radio:checked + &__item > &__item-header_table {
     background-color: map-get($greys, "table");
   }
 }

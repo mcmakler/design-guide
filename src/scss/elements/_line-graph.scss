@@ -6,26 +6,26 @@
   margin: ($grid-spacing * 2) auto;
   max-width: 100%;
 
-  .line-graph__item + .line-graph__item {
+  &__item + &__item {
     margin-top: $grid-spacing;
   }
 
-  .line-graph__info {
+  &__info {
     display: flex;
     align-items: flex-end;
   }
 
-  .line-graph__label {
+  &__label {
     margin-right: auto;
     @include graph-label;
   }
 
-  .line-graph__value {
+  &__value {
     margin: 0 0 0 auto;
     @include graph-value;
   }
 
-  .line-graph__bar-base {
+  &__bar-base {
     position: relative;
     width: 100%;
     height: 6px;
@@ -33,7 +33,7 @@
     background-color: map-get($greys, "bg");
   }
 
-  .line-graph__bar-value {
+  &__bar-value {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,5 +42,4 @@
     transform-origin: left;
     animation: fill-width .6s ease forwards;
   }
-
 }

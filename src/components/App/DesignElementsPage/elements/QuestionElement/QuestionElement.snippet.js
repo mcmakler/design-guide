@@ -35,11 +35,11 @@ export const css = `.question {
     line-height: 1.674; }`;
 
 export const html = `
-<div class="question">
-  <header class="question__title">
+<div className="question">
+  <header className="question__title">
     Why are Indians like cockroaches?
   </header>
-  <p class="question__content">
+  <p className="question__content">
     Because there are so many of them.
     Look under your table — there is probably an Indian there!
     Also, I need a third line so I am writing more.

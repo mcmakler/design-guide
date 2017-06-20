@@ -24,17 +24,17 @@ export const css = `.infobox {
     margin-top: 10px;
     margin-bottom: 0; }`;
 
-export const html = `<div class="infobox">
-  <header class="infobox__header">70%</header>
-  <p class="infobox__content">mehr Ertrag</p>
+export const html = `<div className="infobox">
+  <header className="infobox__header">70%</header>
+  <p className="infobox__content">mehr Ertrag</p>
 </div>
-<div class="infobox">
-  <header class="infobox__header">5x</header>
-  <p class="infobox__content">more skillz than 2016</p>
+<div className="infobox">
+  <header className="infobox__header">5x</header>
+  <p className="infobox__content">more skillz than 2016</p>
 </div>
-<div class="infobox">
-  <header class="infobox__header">?</header>
-  <p class="infobox__content">u wot m8</p>
+<div className="infobox">
+  <header className="infobox__header">?</header>
+  <p className="infobox__content">u wot m8</p>
 </div>`;
 
 export const pug = `
