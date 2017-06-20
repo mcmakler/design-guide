@@ -107,6 +107,6 @@
   }
 
   &__item + &__item {
-    margin-left: $grid-spacing;
+    margin-left: $grid-spacing * 1.5;
   }
 }
