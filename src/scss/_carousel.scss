@@ -85,13 +85,21 @@
   }
 
   &__navigation_prev::before {
+    --rotationPrev: -45deg;
+    --translateX: 0;
+    --rotationNext: 0;
+
     border-left: 2px solid map-get($greys, "secondary");
-    transform: rotate(var(--rotationPrev, -45deg)) translateX(var(--translateX, 0)) translateY(var(--translateX, 0));
+    transform: rotate(var(--rotationPrev)) translateX(var(--translateX)) translateY(var(--translateX));
   }
 
   &__navigation_next::before {
+    --rotationPrev: 45deg;
+    --translateX: 0;
+    --rotationNext: 0;
+
     border-right: 2px solid map-get($greys, "secondary");
-    transform: rotate(var(--rotationNext, 45deg)) translateX(var(--translateX, 0)) translateY(var(--translateY, 0));
+    transform: rotate(var(--rotationNext)) translateX(var(--translateX)) translateY(var(--translateY));
   }
 
   &__navigation_prev:hover::before {
