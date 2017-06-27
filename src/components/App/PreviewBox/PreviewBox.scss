@@ -1,4 +1,5 @@
 @import "../../../scss/mixins/grey-backgrounds";
+@import "../../../scss/mixins/respond-to";
 
 .preview-box {
   padding: $grid-spacing * 2;
@@ -17,6 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &_stripped {
+    padding: 0;
   }
 
   @include grey-backgrounds;

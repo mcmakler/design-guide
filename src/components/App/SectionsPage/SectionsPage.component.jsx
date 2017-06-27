@@ -4,7 +4,7 @@ import Page from '../Page/Page.component';
 import PreviewBox from '../PreviewBox/PreviewBox.component';
 import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 
-import { html, css } from './SectionsPage.snippet';
+import * as snippets from './SectionsPage.snippet';
 import './SectionsPage.scss';
 
 const SectionsPageComponent = () => (
@@ -86,6 +86,21 @@ const SectionsPageComponent = () => (
           </div>
         </div>
       </PreviewBox>
+      <br />
+      <div className="columns">
+        <div className="column">
+          <h3 className="heading heading_tertiary">HTML</h3>
+          <CodeSnippet language="html">
+            { snippets.normal.html }
+          </CodeSnippet>
+        </div>
+        <div className="column">
+          <h3 className="heading heading_tertiary">CSS</h3>
+          <CodeSnippet language="css">
+            { snippets.normal.css }
+          </CodeSnippet>
+        </div>
+      </div>
     </section>
     <section className="container page-section" >
       <h2 className="heading heading_secondary">Persona Banner</h2>
@@ -113,13 +128,44 @@ const SectionsPageComponent = () => (
         <div className="column">
           <h3 className="heading heading_tertiary">HTML</h3>
           <CodeSnippet language="html">
-            { html }
+            { snippets.personaBanner.html }
           </CodeSnippet>
         </div>
         <div className="column">
           <h3 className="heading heading_tertiary">CSS</h3>
           <CodeSnippet language="css">
-            { css }
+            { snippets.personaBanner.css }
+          </CodeSnippet>
+        </div>
+      </div>
+    </section>
+    <section className="container page-section" >
+      <h2 className="heading heading_secondary">Section with Background</h2>
+      <PreviewBox className="preview-box_stripped">
+        <div
+          className="page-section page-section_background"
+        >
+          <div className="columns page-section__content">
+            <div className="column is-6 is-offset-6">
+              <h2 className="heading heading_secondary">Hola Mundo¡</h2>
+              <h3 className="heading heading_tertiary">Ich kann auf Spanisch reden, digga!</h3>
+              <p>This is a simple section with no graphic. </p>
+            </div>
+          </div>
+        </div>
+      </PreviewBox>
+      <br />
+      <div className="columns">
+        <div className="column">
+          <h3 className="heading heading_tertiary">HTML</h3>
+          <CodeSnippet language="html">
+            { snippets.withBackground.html }
+          </CodeSnippet>
+        </div>
+        <div className="column">
+          <h3 className="heading heading_tertiary">CSS</h3>
+          <CodeSnippet language="css">
+            { snippets.withBackground.css }
           </CodeSnippet>
         </div>
       </div>
