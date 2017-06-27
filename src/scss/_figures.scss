@@ -7,7 +7,7 @@
   margin: 0;
 
   &__caption {
-    padding: $grid-spacing;
+    padding: $grid-spacing * 2;
     background-color: map-get($greys, "bg");
     text-align: left;
   }
@@ -16,8 +16,13 @@
     margin: 0;
   }
 
+  &__header-container {
+    text-decoration: none;
+  }
+
   &__header {
     margin: 0;
+    min-height: 72px; // accommodate two lines by default.
     font-family: map-get($fonts, "bodyFont") map-get($fonts, "bodyFontFallback");
     font-weight: 400;
     font-size: 17px;
