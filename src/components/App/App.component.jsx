@@ -37,7 +37,7 @@ export default () => (
         <Route path="/carousel" component={CarouselPage} />
         <Route path="/timeline" component={TimelinePage} />
         <Route path="/starrating" component={StarRatingPage} />
-         <Route path="/bubble" component={BubblePage} /> 
+        <Route path="/bubble" component={BubblePage} />
       </Switch>
     </div>
   </Router>
