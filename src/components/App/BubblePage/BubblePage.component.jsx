@@ -7,7 +7,7 @@ import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 import { html, css } from './snippets/bubble.snippet';
 
 import './BubblePage.scss';
-import '../../../assets/logo.svg';
+import '../../../assets/bubble_image.jpg';
 
 export default () => (
   <Page
