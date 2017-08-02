@@ -42,7 +42,6 @@ export const css = `.bubble {
   width: 80px;
   height: 80px;
   margin-right: 15px;
-  background: red;
 }
 .bubble-person__info-name {
   font-size: 18px;
