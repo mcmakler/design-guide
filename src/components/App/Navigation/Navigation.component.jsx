@@ -27,7 +27,7 @@ export default class extends Component {
         <Sidenav
           active={this.state.burgerOpen}
           menuItems={this.menuItems}
-          menuItemClick={() => this.toggleBurger}
+          menuItemClick={() => this.toggleBurger()}
         />
       </div>
     );
