@@ -12,7 +12,6 @@ export default class extends Component {
       burgerOpen: false,
     };
     this.menuItems = menuItems;
-    this.toggleBurger = this.toggleBurger.bind(this);
   }
 
   toggleBurger() {
@@ -28,7 +27,7 @@ export default class extends Component {
         <Sidenav
           active={this.state.burgerOpen}
           menuItems={this.menuItems}
-          menuItemClick={this.toggleBurger}
+          menuItemClick={() => this.toggleBurger}
         />
       </div>
     );
