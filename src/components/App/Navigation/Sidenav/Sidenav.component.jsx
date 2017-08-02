@@ -7,8 +7,18 @@ export default class Sidenav extends Component {
   renderMenuItems() {
     return this.props.menuItems && this.props.menuItems.map(item =>
       <li key={item.id} >
-        <NavLink className="link" activeClassName="link_active" to={item.path} >
-          {item.label}
+        <NavLink
+          className="link"
+          activeClassName="link_active"
+          to={item.path}
+        >
+          {/* stupid html is stupid - href attr required to make anchor interactive */}
+          <a
+            href=""
+            onClick={() => this.props.menuItemClick()}
+          >
+            {item.label}
+          </a>
         </NavLink>
       </li>,
     );
@@ -31,4 +41,5 @@ export default class Sidenav extends Component {
 Sidenav.propTypes = {
   menuItems: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
   active: React.PropTypes.bool.isRequired,
+  menuItemClick: React.PropTypes.func.isRequired,
 };
