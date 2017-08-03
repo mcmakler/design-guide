@@ -21,7 +21,7 @@ module.exports = () => webpackMerge(baseConfig(), {
   module: {
     rules: [
       {
-        test: /\.svg$/,
+        test: /\.(svg|jpg|jpeg)$/,
         use: 'file-loader?name=[name].[ext]&publicPath=../src/assets/',
       },
     ],

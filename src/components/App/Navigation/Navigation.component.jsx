@@ -24,7 +24,11 @@ export default class extends Component {
         <a tabIndex="-1" onClick={() => this.toggleBurger()}>
           <Burger active={this.state.burgerOpen} />
         </a>
-        <Sidenav active={this.state.burgerOpen} menuItems={this.menuItems} />
+        <Sidenav
+          active={this.state.burgerOpen}
+          menuItems={this.menuItems}
+          menuItemClick={() => this.toggleBurger()}
+        />
       </div>
     );
   }

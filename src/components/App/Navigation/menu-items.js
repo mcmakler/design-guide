@@ -49,4 +49,14 @@ export default [
     path: '/timeline',
     label: 'Timeline',
   },
+  {
+    id: 11,
+    path: '/starrating',
+    label: 'Star Rating',
+  },
+  {
+    id: 12,
+    path: '/bubble',
+    label: 'Bubble',
+  },
 ];
