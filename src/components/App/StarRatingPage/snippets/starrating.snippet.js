@@ -1,26 +1,4 @@
-export const css = `.stars-rating .stars {
-  position: relative;
-  color: #aaa;
-  display: inline;
-  overflow: hidden;
-  margin-right: 10px;
-  font-size: 25px;
-}
-.stars-rating .stars__filled {
-  position: absolute;
-  overflow: hidden;
-  color: #feb901;
-  z-index: 2;
-  width: 20%;
-}
-.stars-rating .stars__empty {
-  position: relative;
-  z-index: 1;
-  display: inline;
-}
-.stars-rating .rating {
-  font-size: 22px;
-}`;
+export const css = '@import "~mcmakler-design-guide/elements/starrating";';
 
 export const html = `<div class="stars-rating columns columns_center-vertical">
   <div class="stars">
