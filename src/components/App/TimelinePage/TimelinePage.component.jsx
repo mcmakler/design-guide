@@ -2,6 +2,8 @@ import React from 'react';
 
 import Page from '../Page/Page.component';
 import PreviewBox from '../PreviewBox/PreviewBox.component';
+import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
+import { html, css } from './snippets/timeline.snippet';
 
 import './TimelinePage.scss';
 
@@ -79,6 +81,18 @@ const TimelinePage = () => (
           </div>
         </div>
       </PreviewBox>
+    </section>
+    <section className="container page-section columns">
+      <div className="column">
+        <CodeSnippet language="html">
+          { html }
+        </CodeSnippet>
+      </div>
+      <div className="column">
+        <CodeSnippet language="css">
+          { css }
+        </CodeSnippet>
+      </div>
     </section>
   </Page>
 );
