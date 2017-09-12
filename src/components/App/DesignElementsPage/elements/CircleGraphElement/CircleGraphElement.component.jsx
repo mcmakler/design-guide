@@ -12,10 +12,18 @@ export default () => (
     <PreviewBox className="center" >
       <div className="circle-graph">
         <svg className="circle-graph__circle">
-          <circle cx="80" cy="80" r="74" className="circle-graph__bar-base" />
+          <circle
+            cx="80"
+            cy="80"
+            r="74"
+            className="circle-graph__bar-base"
+          />
           <circle
             className="circle-graph__bar-value"
-            cx="80" cy="80" r="74" strokeDashoffset="400"
+            cx="80"
+            cy="80"
+            r="74"
+            strokeDashoffset="400"
           />
         </svg>
         <div className="circle-graph__content">
@@ -25,10 +33,18 @@ export default () => (
       </div>
       <div className="circle-graph">
         <svg className="circle-graph__circle">
-          <circle cx="80" cy="80" r="74" className="circle-graph__bar-base" />
+          <circle
+            cx="80"
+            cy="80"
+            r="74"
+            className="circle-graph__bar-base"
+          />
           <circle
             className="circle-graph__bar-value"
-            cx="80" cy="80" r="74" strokeDashoffset="200"
+            cx="80"
+            cy="80"
+            r="74"
+            strokeDashoffset="200"
           />
         </svg>
         <div className="circle-graph__content">
@@ -38,10 +54,18 @@ export default () => (
       </div>
       <div className="circle-graph">
         <svg className="circle-graph__circle">
-          <circle cx="80" cy="80" r="74" className="circle-graph__bar-base" />
+          <circle
+            cx="80"
+            cy="80"
+            r="74"
+            className="circle-graph__bar-base"
+          />
           <circle
             className="circle-graph__bar-value"
-            cx="80" cy="80" r="74" strokeDashoffset="350"
+            cx="80"
+            cy="80"
+            r="74"
+            strokeDashoffset="350"
           />
         </svg>
         <div className="circle-graph__content">

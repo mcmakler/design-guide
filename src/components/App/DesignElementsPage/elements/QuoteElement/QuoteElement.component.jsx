@@ -17,7 +17,7 @@ export default () => (
       </blockquote>
       <blockquote className="quote quote_boxed background--grey_bg">
         <p className="quote__content" >The ladies call me Captain Sexy
-          😎 because I write so much beautiful Javascript that they
+          because I write so much beautiful Javascript that they
           instantly fall in love with me.</p>
         <cite className="quote__citation" >Sai Baba Satchitanand</cite>
       </blockquote>

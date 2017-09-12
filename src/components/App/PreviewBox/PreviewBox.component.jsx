@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './PreviewBox.scss';
 
 const PreviewBoxComponent = props => (
@@ -9,8 +9,8 @@ const PreviewBoxComponent = props => (
 );
 
 PreviewBoxComponent.propTypes = {
-  children: React.PropTypes.node.isRequired,
-  className: React.PropTypes.string,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };
 
 PreviewBoxComponent.defaultProps = {
