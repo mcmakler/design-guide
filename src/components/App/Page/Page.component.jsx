@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Page.scss';
 
@@ -16,10 +17,10 @@ const PageComponent = props => (
 );
 
 PageComponent.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  subtitle: React.PropTypes.string,
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 PageComponent.defaultProps = {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Burger.scss';
 
 const BurgerComponent = props => (
@@ -10,7 +11,7 @@ const BurgerComponent = props => (
 );
 
 BurgerComponent.propTypes = {
-  active: React.PropTypes.bool.isRequired,
+  active: PropTypes.bool.isRequired,
 };
 
 export default BurgerComponent;

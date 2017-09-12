@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './ColorSnippet.scss';
 
 const ColorSnippet = props => (
@@ -17,11 +17,11 @@ const ColorSnippet = props => (
 );
 
 ColorSnippet.propTypes = {
-  className: React.PropTypes.string,
-  color: React.PropTypes.string,
-  textColor: React.PropTypes.string,
-  children: React.PropTypes.node,
-  border: React.PropTypes.bool,
+  className: PropTypes.string,
+  color: PropTypes.string,
+  textColor: PropTypes.string,
+  children: PropTypes.node,
+  border: PropTypes.bool,
 };
 
 ColorSnippet.defaultProps = {

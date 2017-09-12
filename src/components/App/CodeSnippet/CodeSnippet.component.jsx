@@ -1,5 +1,6 @@
 import React from 'react';
 import Highlight from 'react-highlight';
+import PropTypes from 'prop-types';
 
 import './CodeSnippet.scss';
 
@@ -10,8 +11,8 @@ const CodeSnippet = props => (
 );
 
 CodeSnippet.propTypes = {
-  children: React.PropTypes.string.isRequired,
-  language: React.PropTypes.string,
+  children: PropTypes.string.isRequired,
+  language: PropTypes.string,
 };
 
 CodeSnippet.defaultProps = {
