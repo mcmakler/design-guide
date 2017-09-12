@@ -8,7 +8,6 @@ import PreviewBox from '../PreviewBox/PreviewBox.component';
 import './CarouselPage.scss';
 
 class CarouselPageComponent extends Component {
-
   componentDidMount() {
     new Carousel({ element: document.querySelector('.carousel') }).init();
   }
