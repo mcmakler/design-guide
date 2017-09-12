@@ -47,7 +47,7 @@ const TypographyPage = () => (
           <h2 className="heading heading_secondary" >This is a Normal &lt;H2&gt;.</h2>
         </PreviewBox>
         <PreviewBox><h2 className="heading heading_secondary" >
-          This is a Veeeeeeeeeeery Long Normal &lt;H2&gt; tag. It is cool because I like pigs. 🐷
+          This is a Veeeeeeeeeeery Long Normal &lt;H2&gt; tag. It is cool because I like pigs.
         </h2></PreviewBox>
         <PreviewBox>
           <h2 className="heading heading_secondary" >This is a &lt;H2&gt;...</h2>
