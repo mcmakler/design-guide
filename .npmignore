@@ -1,4 +1,14 @@
 .babelrc
+.eslintignore
+.eslintrc
+.gitignore
+.postcssrc
+.sass-lint.yml
+.travis.yml
 node_modules/
 src/*
 !src/scss
+webpack.*
+webpack/
+*.lock
+*.js
