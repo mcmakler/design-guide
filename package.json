@@ -5,7 +5,7 @@
     "Sai Satchitanand <sai.satchitanand@mcmakler.de>",
     "Baruch Velez <baruch.velez@mcmakler.de"
   ],
-  "version": "3.1.6",
+  "version": "3.1.7",
   "license": "MIT",
   "repository": "git@github.com:mcmakler/design-guide.git",
   "scripts": {
