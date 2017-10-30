@@ -59,4 +59,9 @@ export default [
     path: '/bubble',
     label: 'Bubble',
   },
+  {
+    id: 13,
+    path: '/minimap',
+    label: 'Mini Map',
+  },
 ];

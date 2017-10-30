@@ -12,6 +12,7 @@ import TablesPage from './TablesPage/TablesPage.component';
 import FiguresPage from './FiguresPage/FiguresPage.component';
 import SectionsPage from './SectionsPage/SectionsPage.component';
 import CarouselPage from './CarouselPage/CarouselPage.component';
+import MiniMapPage from './MiniMapPage/MiniMapPage.component';
 import TimelinePage from './TimelinePage/TimelinePage.component';
 import StarRatingPage from './StarRatingPage/StarRatingPage.component';
 import BubblePage from './BubblePage/BubblePage.component';
@@ -35,6 +36,7 @@ export default () => (
         <Route path="/figures" component={FiguresPage} />
         <Route path="/page-sections" component={SectionsPage} />
         <Route path="/carousel" component={CarouselPage} />
+        <Route path="/minimap" component={MiniMapPage} />
         <Route path="/timeline" component={TimelinePage} />
         <Route path="/starrating" component={StarRatingPage} />
         <Route path="/bubble" component={BubblePage} />
