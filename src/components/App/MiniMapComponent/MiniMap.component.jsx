@@ -18,15 +18,15 @@ const MiniMap = compose(
   withGoogleMap,
 )(props => (
   <GoogleMap
-    defaultZoom={8}
+    defaultZoom={14}
     defaultCenter={{ lat: props.center.lat, lng: props.center.lng }}
   >
-    <Marker
+    {props.isMarkerShown && <Marker
       position={{ lat: props.center.lat, lng: props.center.lng }}
       icon={{
         url: svg,
       }}
-    />
+    />}
   </GoogleMap>));
 
 export default MiniMap;
