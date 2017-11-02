@@ -5,7 +5,7 @@ import PreviewBox from '../PreviewBox/PreviewBox.component';
 import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 import MiniMap from '../MiniMapComponent/MiniMap.component';
 
-import { html1, html2 } from './snippets/minimap.snippet';
+import { noMarker, marker } from './snippets/minimap.snippet';
 
 export default() => (
   <Page
@@ -17,7 +17,7 @@ export default() => (
       <div className="columns">
         <div className="column">
           <CodeSnippet language="html">
-            { html1 }
+            { noMarker }
           </CodeSnippet>
         </div>
         <div className="column">
@@ -32,7 +32,7 @@ export default() => (
       <div className="columns">
         <div className="column">
           <CodeSnippet language="html">
-            { html2 }
+            { marker }
           </CodeSnippet>
         </div>
         <div className="column">
