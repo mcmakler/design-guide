@@ -1,0 +1,10 @@
+@import "../../../scss/elements/input";
+
+.FormPage__form {
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

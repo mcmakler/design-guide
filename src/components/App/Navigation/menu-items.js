@@ -64,4 +64,9 @@ export default [
     path: '/minimap',
     label: 'Mini Map',
   },
+  {
+    id: 14,
+    path: '/form',
+    label: 'Forms',
+  },
 ];

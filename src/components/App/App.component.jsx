@@ -16,6 +16,7 @@ import MiniMapPage from './MiniMapPage/MiniMapPage.component';
 import TimelinePage from './TimelinePage/TimelinePage.component';
 import StarRatingPage from './StarRatingPage/StarRatingPage.component';
 import BubblePage from './BubblePage/BubblePage.component';
+import FormPage from './FormPage/FormPage.component';
 
 import './App.scss';
 
@@ -40,6 +41,7 @@ export default () => (
         <Route path="/timeline" component={TimelinePage} />
         <Route path="/starrating" component={StarRatingPage} />
         <Route path="/bubble" component={BubblePage} />
+        <Route path="/form" component={FormPage} />
       </Switch>
     </div>
   </Router>
