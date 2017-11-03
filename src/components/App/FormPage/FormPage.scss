@@ -1,7 +1,12 @@
 @import "../../../scss/elements/input";
+@import "../../../scss/elements/radio";
 
 .FormPage__form {
-  input,
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  input[type="text"],
   textarea {
     display: block;
     margin-bottom: 10px;
