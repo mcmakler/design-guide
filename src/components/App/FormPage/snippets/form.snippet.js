@@ -13,9 +13,6 @@ textarea {
   min-height: 140px;
 }`;
 
-export const htmlInput = `<input type="text" placeholder="Mein Vorname" />
-<textarea placeholder="Meine Nachricht" />`;
-
 export const htmlRadio = `<div className="radio--styled">
   <input
     type="radio"

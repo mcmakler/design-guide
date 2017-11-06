@@ -2,13 +2,34 @@ import React from 'react';
 
 import Page from '../Page/Page.component';
 import PreviewBox from '../PreviewBox/PreviewBox.component';
+import StyledSelect from '../StyledSelect/StyledSelect.component';
 import CodeSnippet from '../CodeSnippet/CodeSnippet.component';
 
-import { htmlInput, cssInput, htmlRadio } from './snippets/form.snippet';
+import { cssInput, htmlRadio } from './snippets/form.snippet';
 
 import './FormPage.scss';
 
+const selectOptions = [
+  {
+    id: 1,
+    option: 'Berlin',
+  },
+  {
+    id: 2,
+    option: 'Mieten',
+  },
+  {
+    id: 3,
+    option: 'Preis bis 22193€',
+  },
+  {
+    id: 4,
+    option: 'ab 2 Zimmer',
+  },
+];
+
 export default () => (
+
   <Page
     title="FormPage"
     className="form-page"
@@ -17,10 +38,6 @@ export default () => (
     <div className="container page-section" >
       <div className="columns">
         <div className="column">
-          <CodeSnippet language="html">
-            { htmlInput }
-          </CodeSnippet>
-          <br />
           <CodeSnippet language="css">
             { cssInput }
           </CodeSnippet>
@@ -70,6 +87,25 @@ export default () => (
                   Herr
                 </label>
               </div>
+            </div>
+          </PreviewBox>
+        </div>
+      </div>
+      <hr />
+      <div className="columns">
+        <div className="column">
+          <PreviewBox>
+            <div>
+              <StyledSelect
+                options={selectOptions}
+                isSecondary
+              />
+            </div>
+            <div>
+              <StyledSelect
+                options={selectOptions}
+                isSecondary={false}
+              />
             </div>
           </PreviewBox>
         </div>
