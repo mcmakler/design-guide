@@ -11,7 +11,7 @@
   background-color: map-get($greys, "bg");
 
   .styledSelect__icon {
-    background: url("/assets/arrowdown.svg") ;
+    background: url(/assets/arrowdown.svg) ;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
