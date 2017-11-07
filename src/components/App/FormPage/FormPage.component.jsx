@@ -98,13 +98,14 @@ export default () => (
             <div>
               <StyledSelect
                 options={selectOptions}
-                isSecondary
+                kind="primary"
+
               />
             </div>
             <div>
               <StyledSelect
                 options={selectOptions}
-                isSecondary={false}
+                kind="secondary"
               />
             </div>
           </PreviewBox>

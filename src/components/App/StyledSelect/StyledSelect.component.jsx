@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import './StyledSelect.scss';
 
-
 const StyledSelect = (props) => {
-  const { options, isSecondary } = props;
+  const { options, kind } = props;
   if (!options) return null;
 
   const optionList = options.map(i =>
@@ -13,7 +12,7 @@ const StyledSelect = (props) => {
 
   const styledSelectClass = classNames({
     styledSelect: true,
-    'styledSelect--secondary': isSecondary,
+    'styledSelect--secondary': kind === 'secondary',
   });
 
   return (
@@ -28,11 +27,11 @@ const StyledSelect = (props) => {
 
 StyledSelect.propTypes = {
   options: PropTypes.instanceOf(Object).isRequired,
-  isSecondary: PropTypes.bool,
+  kind: PropTypes.oneOf(['primary', 'secondary']).isRequired,
 };
 
 StyledSelect.defaultProps = {
-  isSecondary: false,
+  kind: 'primary',
 };
 
 export default StyledSelect;
