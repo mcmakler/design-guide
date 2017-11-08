@@ -1,0 +1,42 @@
+.radio--styled {
+  .radio__label--styled {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    position: relative;
+
+    &:before {
+      border: 1px solid map-get($greys, "line");
+      height: 30px;
+      left: 0;
+      top: 0;
+      width: 30px;
+    }
+
+    &:before,
+    &:after {
+      background-color: #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+      content: "";
+      display: inline-block;
+      margin-left: -20px;
+      position: absolute;
+    }
+
+    &:after {
+      content: "";
+      height: 14px;
+      left: 8px;
+      top: 8px;
+      width: 14px;
+    }
+  }
+
+  input[type=radio]:checked+.radio__label--styled::after {
+    background-color: map-get($colors, "primary");
+  }
+}

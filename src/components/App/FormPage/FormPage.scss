@@ -1,0 +1,18 @@
+@import "../../../scss/components/input";
+@import "../../../scss/components/radio";
+@import "../../../scss/components/select";
+
+
+.FormPage__form {
+  input[type="text"],
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .radio--styled {
+    float: left;
+    margin-right: 20px;
+  }
+}
