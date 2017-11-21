@@ -3,11 +3,13 @@
 
 $tablet: 768px;
 @import "~bulma/sass/utilities/all";
+@import "~bulma/sass/base/helpers";
 @import "~bulma/sass/grid/all";
 
 .columns {
   margin-left: $grid-spacing * -1;
   margin-right: $grid-spacing * -1;
+  margin-top: $grid-spacing * -1;
 
   &_center-horizontal {
     justify-content: center;
